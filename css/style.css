@@ -62,7 +62,7 @@ header {
   position: absolute;
   top: 90%;
   left: 0;
-  min-width: 250px;
+  min-width: 235px;
   z-index: 1;
 }
 
@@ -111,29 +111,41 @@ header {
   }
 }
 
-#donate a {
+#donate a {  
   font-weight: bolder;
-  animation: changeColor 3s infinite;
-  padding: 2px 6px 2px 6px;
-  background-color: #d61f7b;
+  animation: change 2s infinite;
 }
 
-#donate a:hover {
-  background-color: #78024e;
-}
-
-@keyframes changeColor {
-  33% {
-    outline: 10px #d61f7b solid;
-    border-radius: 5px;
+@keyframes change {
+  10% {
+    text-decoration: 4px underline;
   }
-  66% {
-    outline: 2px white solid;
-    border-radius: 5px;
+  20% {
+    text-decoration: 9px underline;
+  }
+  30% {
+    text-decoration: 8px underline;
+  }
+  40% {
+    text-decoration: 7px underline;
+  }
+  50% {
+    text-decoration: 6px underline;
+  }
+  60% {
+    text-decoration: 5px underline;
+  }
+  70% {
+    text-decoration: 4px underline;
+  }
+  80% {
+    text-decoration: 3px underline;
+  }
+  90% {
+    text-decoration: 2px underline;
   }
   0%, 100% {
-    outline: 2px #78024e solid;
-    border-radius: 5px;
+    text-decoration: 1px underline;
   }
 }
 
@@ -221,10 +233,12 @@ section {
 
 section h2 {
   font-size: 2rem;
+  color:#d61f7b;
 }
 
 section > p {
   text-align: center;
+  color:#78024e;
 }
 
 section .cards {
@@ -247,6 +261,11 @@ section.about {
 
 .about h3 {
   margin: 30px 0 10px;
+  color:#d61f7b;
+}
+
+h3 {
+  color:#78024e;
 }
 
 .about .team {
@@ -292,6 +311,7 @@ section .cards .card {
 .cards .card p {
   padding: 0 15px;
   margin-top: 5px;
+  color:#78024e;
 }
 
 .about .row {
@@ -314,6 +334,7 @@ section .cards .card {
 
 .contact .col p {
   margin-bottom: 10px;
+  color:#78024e;
 }
 
 .contact .col p i {
@@ -349,12 +370,12 @@ section .cards .card {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  background: #333;
+  background:#d61f7b;
   transition: 0.2s ease;
 }
 
 .contact form button:hover {
-  background: #525252;
+  background: #78024e;
 }
 
 footer {
@@ -386,33 +407,51 @@ hr {
   border-top: 1px solid #e5d7de;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1150px) {
   .navbar .all-links {
     position:fixed;
     right: -100%;
-    width: 250px;
+    width: 225px;
     display: block;
     height: 100vh;
     top: 75px;
-    background-color: rgba(51, 51, 51, 0.9);
+    background-color: rgba(214, 31, 123, 0.9);
     border-radius: 0px 0px 5px 5px;
     transition: right 0.3s ease;
-    max-height: 450px;
+    max-height: 460px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
 
- 
+  .navbar .all-links li:hover {
+    background-color: rgba(120, 2, 78, 0.9);
+    outline: #bfbfbf 1px solid;
+  }
+  
   .navbar .all-links::-webkit-scrollbar {
-    width: 0.5em;
+    width: 0.3em;
   }
 
-  .navbar #menu-toggler:checked~.all-links {
+  .navbar #menu-toggler:checked~ .all-links {
     right: 0;
   }
 
   .navbar .all-links li {
     font-size: 15px;
+  }
+
+  .dropdown-content {    
+    min-width: 225px;
+    background-color:rgb(241, 102, 172);
+  }
+
+  .all-links #donate {
+    background-color: rgba(214, 31, 123, 1);
+  }
+
+  .dropdown-content #program:hover {    
+    min-width: 225px;
+    background-color: rgba(120, 2, 78, 0.9);
   }
 
   .navbar #hamburger-btn {
@@ -421,6 +460,7 @@ hr {
 
   section > p {
     text-align: center;
+    color:#78024e;
   }
 
   section .cards .card {
@@ -464,9 +504,5 @@ hr {
   section .cards .card {
     width: 100%;
     margin-bottom: 30px;
-  }
-
-  .dropdown-content {    
-    min-width: 250px;   
   }
 }
