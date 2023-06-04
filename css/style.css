@@ -93,8 +93,9 @@ header {
 }
 
 .navbar .nav-name {
-  display: inline-block;
-  padding-right: 120px;
+  display: block;
+  position: relative;
+  padding-right: 86px;
 }
 
 #donate a {
