@@ -452,6 +452,7 @@ hr {
   .dropdown-content #program:hover {    
     min-width: 100px;
     background-color: rgba(120, 2, 78, 0.9);
+    border-radius: 5px;
   }
 
   .all-links #donate {
