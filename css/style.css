@@ -446,6 +446,7 @@ hr {
   .dropdown-content {    
     background-color:rgb(241, 102, 172);
     left: 5%;
+    border-radius: 5px;
   }
 
   .dropdown-content #program:hover {    
