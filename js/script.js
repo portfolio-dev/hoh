@@ -24,6 +24,3 @@ menuItems.forEach(function(item) {
         menuToggle.checked = false;
     });
 });
-
-
-
