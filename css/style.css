@@ -32,7 +32,7 @@ header {
   max-width: 1200px;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 
 .navbar input#menu-toggler {
@@ -56,7 +56,7 @@ header {
 
 .dropdown-content {
   background-color: rgba(214, 31, 123, 0.9);
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 5px;
   display: none;
   color: white;
   position: absolute;
@@ -69,6 +69,7 @@ header {
 #program:hover {
   background-color: rgba(120, 2, 78, 0.9);
   outline: #bfbfbf 1px solid;
+  border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -170,8 +171,8 @@ header a:hover, footer a:hover {
   width: 100%;
   position: relative;
   background: url("../images/home-bg.jpg");
-  background-position: center 50%;
-  background-size: 150vh;
+  background-position:center 150%;
+  background-size: 165vh;
 }
 
 .homepage::before {
@@ -432,7 +433,7 @@ hr {
   }
   
   .navbar .all-links::-webkit-scrollbar {
-    width: 0.3em;
+    width: 0.1em;
   }
 
   .navbar #menu-toggler:checked~ .all-links {
@@ -444,7 +445,7 @@ hr {
   }
 
   .dropdown-content {    
-    background-color:rgb(241, 102, 172);
+    background-color:rgba(241, 102, 172, 1);
     left: 5%;
     border-radius: 5px;
   }
