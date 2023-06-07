@@ -1,4 +1,5 @@
 // title bergerak
+(function() {
 var titleText = "House of Heart - Rumah Singgah Pasien Jantung Anak  ";
         var speed = 100; // Kecepatan perubahan (ms)
         var i = 0;
@@ -13,8 +14,10 @@ var titleText = "House of Heart - Rumah Singgah Pasien Jantung Anak  ";
         }
 
         animateTitle();
+})();
 
 // menu-toggler tertutup otomatis
+(function() {
 var menuToggle = document.getElementById('menu-toggler');
 var menuContent = document.querySelector('.all-links');
 var menuItems = document.querySelectorAll('.all-links li');
@@ -24,3 +27,4 @@ menuItems.forEach(function(item) {
         menuToggle.checked = false;
     });
 });
+})();
