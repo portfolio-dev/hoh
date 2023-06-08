@@ -21,7 +21,7 @@ setInterval(mv, 1000);
 function mt() {
     var menuToggle = document.getElementById('menu-toggler');
     var menuContent = document.querySelector('.all-links');
-    var menuItems = document.querySelectorAll('.all-links li');
+    var menuItems = document.querySelectorAll('.all-links a');
 
     menuItems.forEach(function(item) {
         item.addEventListener('click', function() {
