@@ -92,10 +92,6 @@ header {
   margin: 0;
 }
 
-#phone {
-  display: none;
-}
-
 .navbar .nav-name {
   display: block;
   position: relative;
@@ -154,7 +150,7 @@ header {
 }
 
 header a, footer a {
-  margin-left: 40px;
+  margin-left: 35px;
   text-decoration: none;
   color: #fff;
   height: 100%;
@@ -306,12 +302,6 @@ section .cards .card {
   margin-bottom: 20px;
   border-radius: 100%;
   object-fit: cover;
-
-  /* width: 100%;
-  padding-bottom: 10px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 7px; */
 }
 
 .cards .card p {
@@ -413,14 +403,14 @@ hr {
   border-top: 1px solid #e5d7de;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1130px) {
   .navbar .all-links {
     position:fixed;
     right: -100%;
-    width: 225px;
+    width: 210px;
     display: block;
     height: 100vh;
-    top: 75px;
+    top: 76px;
     background-color: rgba(214, 31, 123, 0.9);
     border-radius: 0px 0px 5px 5px;
     transition: right 0.3s ease;
@@ -509,16 +499,27 @@ hr {
 }
 
 @media screen and (max-width: 420px) {
+  body{
+    min-width: 344px;
+  }
+
   section .cards .card {
     width: 100%;
     margin-bottom: 30px;
   }
 
-  #desktop {
-    display: none;
+  .navbar .all-links {
+    width: 180px;
+    height: 100vh;
+    top: 64px;
+    max-height: 430px;
   }
 
-  #phone {
-    display: block;
+  .navbar .all-links li{
+    font-size: 13px;
+  }
+
+  .navbar .nav-name {
+    font-size: 16px;
   }
 }
