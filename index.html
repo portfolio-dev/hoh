@@ -16,8 +16,7 @@
     <header>
       <nav class="navbar">        
         <img class="logo" src="./images/logo1.png"/>
-        <h2 class="nav-name" id="desktop"><a href="javascript:void(0)" onclick="home()">House of Heart</a></h2>
-        <h2 class="nav-name" id="phone"><a href="javascript:void(0)" onclick="home()">HOH</a></h2>
+        <h2 class="nav-name" id="desktop"><a href="javascript:void(0)" onclick="handleClick('')">House of Heart</a></h2>
         <input type="checkbox" id="menu-toggler">
         <label for="menu-toggler" id="hamburger-btn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
@@ -26,27 +25,27 @@
           </svg>
         </label>
         <ul class="all-links">
-          <li><a href="javascript:void(0)" onclick="home()">Beranda</a></li>
-          <li><a href="javascript:void(0)" onclick="about()">Tentang Kami</a></li>
-          <li class="dropdown"><a>Program</a>
+          <li><a href="javascript:void(0)" onclick="handleClick('#home')">Beranda</a></li>
+          <li><a href="javascript:void(0)" onclick="handleClick('#about')">Tentang Kami</a></li>
+          <li class="dropdown"><a href="javascript:void(0)" class="noToggle">Program</a>
               <ul class="dropdown-content">
-                <li id="menudown"><a href="javascript:void(0)" onclick="dailyNeeds()">Kebutuhan Harian</a></li>  
-                  <li id="menudown"><a href="javascript:void(0)" onclick="assistance()">Pendampingan</a></li>
-                  <li id="menudown"><a href="javascript:void(0)" onclick="icuSupport()">Dukungan ICU</a></li>                
-                  <li id="menudown"><a href="javascript:void(0)" onclick="consultation()">Konsultasi</a></li>
+                <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#services')">Kebutuhan Harian</a></li>  
+                  <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#services')">Pendampingan</a></li>
+                  <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#services')">Dukungan ICU</a></li>                
+                  <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#services')">Konsultasi</a></li>
               </ul>
           </li>
-          <li><a href="javascript:void(0)" onclick="facilities()">Fasilitas</a></li>   
+          <li><a href="javascript:void(0)" onclick="handleClick('#facilities')">Fasilitas</a></li>   
 
-          <li class="dropdown"><a>Cerita</a>
+          <li class="dropdown"><a href="javascript:void(0)" class="noToggle">Cerita</a>
             <ul class="dropdown-content">
-              <li id="menudown"><a href="javascript:void(0)" onclick="myPrayers()">Doa dan harapanku</a></li>
-              <li id="menudown"><a href="javascript:void(0)" onclick="healed()">Aku sudah sembuh</a></li>
-              <li id="menudown"><a href="javascript:void(0)" onclick="rip()">Aku tidak sakit lagi</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#')">Doa dan harapanku</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#')">Aku sudah sembuh</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#')">Aku tidak sakit lagi</a></li>
             </ul>
           </li>
-          <li><a href="javascript:void(0)" onclick="finance()">Keuangan</a></li>
-          <li id="donate"><a href="javascript:void(0)" onclick="donate()">Donasi</a></li>
+          <li><a href="javascript:void(0)" onclick="handleClick('#')">Keuangan</a></li>
+          <li id="donate"><a href="javascript:void(0)" onclick="handleClick('#contact')">Donasi</a></li>
         </ul>
       </nav>
     </header>
@@ -205,7 +204,7 @@
         <span>Copyright © 2023 All Rights Reserved</span>
         <span class="link">
             <a href="javascript:void(0)">Tiktok</a>
-            <a href="javascript:void(0)" onclick="igLink()">Instagram</a>
+            <a href="javascript:void(0)" onclick="handleClick('https://www.instagram.com/houseofheart.rumahsinggah/', true)">Instagram</a>
         </span>
       </div>
     </footer>
