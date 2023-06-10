@@ -1,7 +1,7 @@
 // title on browser tab running
 function tabRunning() {
 var titleText = "House of Heart - Rumah Singgah Khusus Pasien PJB Anak ";
-        var speed = 2000; // Kecepatan perubahan (ms)
+        var speed = 500; // Kecepatan perubahan (ms)
         var i = 0;
 
         function animateTitle() {
@@ -26,7 +26,28 @@ function handleClick(link, newTab) {
     }
 };
 
-// menu-toggler closed auto
+function toggleDisplay(elementId) {
+    var elements = ['homepage', 'about', 'services', 'facilities'];
+
+    for (var i = 0; i < elements.length; i++) {
+        var element = document.getElementById(elements[i]);
+        element.style.display = (elements[i] === elementId) ? 'flex' : 'none';
+    }
+}
+
+function about() {
+    toggleDisplay('about');
+}
+
+function services() {
+    toggleDisplay('services');
+}
+
+function facilities() {
+    toggleDisplay('facilities');
+}
+
+// menu-toggler auto close
 function menuToggler() {
     var menuToggle = document.getElementById('menu-toggler');
     var menuItems = document.querySelectorAll('.all-links a');
