@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="tabTitle"></title>
-    
+    <title id="tabTitle"></title>    
     <link rel="icon" type="image/png" href="/images/logo1.png">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-    
   </head>
   <body>    
     <header>
@@ -23,44 +22,45 @@
             <path d="M0 0h24v24H0z" fill="none"/>
             <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
           </svg>
-        </label>
+        </label> 
         <ul class="all-links">
-          <li><a href="javascript:void(0)" onclick="handleClick('#home')">Beranda</a></li>
-          <li><a href="javascript:void(0)" onclick="handleClick('#about')">Tentang Kami</a></li>
-          <li class="dropdown"><a href="javascript:void(0)" class="noToggle">Program</a>
+          <li><a href="javascript:void(0)" onclick="handleClick('')"><i class="fas fa-home-user"></i> Beranda</a></li>
+          <li><a href="javascript:void(0)" onclick="about()"><i class="fas fa-people-roof"></i> Tentang Kami</a></li>
+          <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-book-medical"></i> Program</a>
               <ul class="dropdown-content">
-                <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#services')">Kebutuhan Harian</a></li>  
-                  <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#services')">Pendampingan</a></li>
-                  <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#services')">Dukungan ICU</a></li>                
-                  <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#services')">Konsultasi</a></li>
+                <li id="menudown"><a href="javascript:void(0)" onclick="services()">Kebutuhan Harian</a></li>  
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()">Pendampingan</a></li>
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()">Dukungan ICU</a></li>                
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()">Konsultasi</a></li>
               </ul>
           </li>
-          <li><a href="javascript:void(0)" onclick="handleClick('#facilities')">Fasilitas</a></li>   
+          <li><a href="javascript:void(0)" onclick="facilities()"><i class="fas fa-gift"></i> Fasilitas</a></li>   
 
-          <li class="dropdown"><a href="javascript:void(0)" class="noToggle">Cerita</a>
+          <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-shield-heart"></i> Cerita</a>
             <ul class="dropdown-content">
-              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#')">Doa dan harapanku</a></li>
-              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#')">Aku sudah sembuh</a></li>
-              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('#')">Aku tidak sakit lagi</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('')">Doa dan harapanku</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('')">Aku sudah sembuh</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('')">Aku tidak sakit lagi</a></li>
             </ul>
           </li>
-          <li><a href="javascript:void(0)" onclick="handleClick('#')">Keuangan</a></li>
-          <li id="donate"><a href="javascript:void(0)" onclick="handleClick('#contact')">Donasi</a></li>
+          <li><a href="javascript:void(0)" onclick="handleClick('#')"><i class="fas fa-money-bills"></i> Keuangan</a></li>
+          <li id="donate"><a href="javascript:void(0)" onclick="handleClick('')"><i class="fa-solid fa-rupiah-sign fa-bounce"></i> Donasi</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="homepage" id="home">
+    <section class="homepage" id="homepage">
       <div class="content">
         <div class="text">
           <h1>Rumah Singgah House of Heart</h1>
           <p>
             Menyediakan tempat tinggal yang nyaman & ramah anak bagi para pasien jantung anak yang menjalani pengobatan di Jakarta tanpa memandang SARA.</p>
         </div>
-        <a href="#about">Tentang Kami</a>
+        <a href="javascript:void(0)" onclick="about()">Tentang Kami</a>
       </div>
     </section>
 
+    
     <section class="about" id="about">
       <h2>Tentang Kami</h2>
       <p>Temukan kisah kami dalam menyediakan layanan Rumah Singgah.</p>
@@ -73,7 +73,7 @@
           Di Jakarta sendiri sebenarnya sudah ada beberapa rumah singgah yang disediakan oleh yayasan/ komunitas sosial, namun bercampur tinggal bersama pasien-pasien dengan aneka jenis penyakit dan usia dewasa. Sementara, pasien jantung anak memiliki kondisi imunitas yang lebih rendah sehingga mudah tertular penyakit, mudah sesak, dan riskan mengalami kejang karena desaturasi (penurunan kadar oksigen dalam darah).
         </p><br>
         <p>
-          Berangkat dari kepedulian akan adanya kendala tersebut, kami dari Komunitas Pejuang Cipto mengupayakan project rumah singgah yang khusus bagi para pejuang jantung kecil dan tanpa memandang SARA.
+          Berangkat dari kepedulian akan adanya kendala tersebut, kami dari <i class="fas fa-people-roof"></i>Komunitas "Pejuang Cipto Community" mengupayakan project rumah singgah yang khusus bagi para pejuang jantung kecil dan tanpa memandang SARA.
         </p><br>
         <p>
           Dan melalui perantara salah satu orang baik, project ini bisa kami realisasikan pada tahun 2020, dengan melaunching rumah singgah House of Hope yang berlokasi di Jalan Rawa Selatan V No. 11 RT 07 RW 07 Johar Baru, Jakarta Pusat.
@@ -151,7 +151,7 @@
     <hr>
     <section class="facilities" id="facilities">
       <h2>Fasilitas</h2>
-      <p>Memenuhi Kebutuhan Tanpa Beban: Fasilitas Gratis untuk Anak-anak Penyakit Jantung di Rumah Singgah.</p>
+      <p>Fasilitas Gratis untuk Anak-anak Penyakit Jantung Bawaan di Rumah Singgah.</p>
       <ul class="cards">
         <li class="card">
           <img src="images/logo.png" alt="img">
@@ -172,18 +172,18 @@
     </section>        
     <hr>
     <section class="contact" id="contact">
-      <h2>Hubungi Kami</h2>
-      <p>Dapatkan Bantuan yang Anda Butuhkan di Rumah Singgah Anak Penyakit Jantung.</p>
+      <h2><i class="fa-solid fa-envelopes-bulk fa-fade"></i>  Hubungi Kami</h2>
+      <p>Dapatkan bantuan atau informasi yang Anda butuhkan di Rumah Singgah House of Heart.</p>
       <div class="row">
         <div class="col information">
           <div class="contact-details">
+            <p><i class="fas fa-house-chimney-user"></i> House of Heart - Rumah Singgah Pasien Anak Penyakit Jantung Bawaan</p>
             <p><i class="fas fa-map-marker-alt"></i> Jl. Kramat Lontar 14/ No. J163, Rt 008/ Rw 001, Paseban, Kotamadya Jakarta Pusat, DKI Jakarta</p>
             <p><i class="fas fa-envelope"></i> houseofheart.rumahsinggah@gmail.com</p>
             <p><i class="fas fa-phone"></i> (62) 821-3293-6477</p>
-            <p><i class="fas fa-clock"></i> Senin - Jumat: 9:00 AM - 5:00 PM</p>
-            <p><i class="fas fa-clock"></i> Sabtu: 9:00 AM - 3:00 PM</p>
-            <p><i class="fas fa-clock"></i> Minggu: Libur</p>
-            <p><i class="fas fa-globe"></i> www.houseofheart.io</p>
+            <p><i class="fas fa-clock"></i> Senin - Sabtu (09:00 - 16:00 WIB)</p>
+            <p><i class="fas fa-clock"></i> Minggu (Libur)</p>
+                   
           </div>          
         </div>
         <div class="col form">
@@ -193,8 +193,10 @@
               <input type="email" placeholder="Email*" required>
               <textarea placeholder="Pesan*" required></textarea>
               <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>
-              <button id="submit" type="submit">Kirim Pesan</button>
+              
+              <button id="submit" type="submit">Kirim Pesan <i class="fa-thin fa-paper-plane-top fa-beat-fade"></i></button>
             </form>
+
         </div>
       </div>
     </section>
@@ -207,7 +209,6 @@
             <a href="javascript:void(0)" onclick="handleClick('https://www.instagram.com/houseofheart.rumahsinggah/', true)">Instagram</a>
         </span>
       </div>
-    </footer>
-    <script src="js/script.js"></script>
+    </footer>    
   </body>
 </html>
