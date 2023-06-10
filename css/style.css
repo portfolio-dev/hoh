@@ -28,8 +28,8 @@ header {
 
 .navbar {
   display: flex;
-  padding: 0 10px;
-  max-width: 1200px;
+  padding: 0 5px;
+  max-width: 1300px;
   width: 100%;
   align-items: center;
   justify-content:space-between;
@@ -97,6 +97,7 @@ header {
   position: relative;
   padding-right: 86px;
   animation: glowing 4s infinite;
+  font-size: 20px;
 }
 
 @keyframes glowing {
@@ -162,12 +163,16 @@ header a:hover, footer a:hover {
   color: #ddd;
 }
 
+
+
+
 .homepage {
+  display: flex;
   height: 100vh;
   width: 100%;
   position: relative;
   background: url("../images/home-bg.jpg");
-  background-position:center 150%;
+  background-position:center 100%;
   background-size: 165vh;
 }
 
@@ -202,6 +207,18 @@ header a:hover, footer a:hover {
   font-size: 20px;
   text-align: center;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about {
+  display: none;
+}
+
+.services {
+  display: none;
+}
+
+.facilities {
+  display: none;
 }
 
 .content a {
@@ -403,14 +420,14 @@ hr {
   border-top: 1px solid #e5d7de;
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1223px) {
   .navbar .all-links {
     position:fixed;
     right: -100%;
-    width: 210px;
+    width: 220px;
     display: block;
     height: 100vh;
-    top: 76px;
+    top: 70px;
     background-color: rgba(214, 31, 123, 0.9);
     border-radius: 0px 0px 5px 5px;
     transition: right 0.3s ease;
@@ -438,7 +455,7 @@ hr {
 
   .dropdown-content {    
     background-color:rgba(241, 102, 172, 1);
-    left: 5%;
+    left: 12%;
     border-radius: 5px;
   }
 
@@ -511,7 +528,7 @@ hr {
   .navbar .all-links {
     width: 180px;
     height: 100vh;
-    top: 64px;
+    top: 63px;
     max-height: 430px;
   }
 
