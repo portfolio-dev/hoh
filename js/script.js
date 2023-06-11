@@ -27,7 +27,7 @@ function handleClick(link, newTab) {
 };
 
 function toggleDisplay(elementId) {
-    var elements = ['homepage', 'about', 'services', 'facilities'];
+    var elements = ['homepage', 'about', 'services', 'facilities', 'finance'];
 
     for (var i = 0; i < elements.length; i++) {
         var element = document.getElementById(elements[i]);
@@ -45,6 +45,10 @@ function services() {
 
 function facilities() {
     toggleDisplay('facilities');
+}
+
+function finance() {
+    toggleDisplay('finance');
 }
 
 // menu-toggler auto close
