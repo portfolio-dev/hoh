@@ -260,12 +260,22 @@ hr {
   margin-bottom: 10px;
 }
 
+.homepage .content h2 {
+  color: white;
+}
+
 .homepage .content .text {
   margin-bottom: 50px;
   color: #fff;
   font-size: 20px;
   text-align: center;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content .text p {
+  padding: 0px 40px;
+  font-style: italic;
+  background-color: rgba(214, 31, 123, 0.5);
 }
 
 
@@ -430,14 +440,36 @@ footer a {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 1223px) {
+@media screen and (max-width: 1234px) {
+
+  .navbar .nav-name {
+    font-size: 16px;
+  }
+
+  .navbar .all-links li {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+  .navbar .nav-name {
+    font-size: 16px;
+  }
+
+  .navbar .all-links li {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .navbar .all-links {
     position:fixed;
     right: -100%;
     width: 220px;
     display: block;
     height: 100vh;
-    top: 67px;
+    top: 70px;
     background-color: rgba(214, 31, 123, 0.9);
     border-radius: 0px 0px 5px 5px;
     transition: right 0.3s ease;
@@ -448,6 +480,10 @@ footer a {
 
   .navbar .all-links li {
     font-size: 15px;
+  }
+
+  .navbar .nav-name {
+    font-size: 20px;
   }
 
   .navbar .all-links li:hover {
@@ -463,6 +499,13 @@ footer a {
     right: 0;
   }
 
+  .navbar #hamburger-btn {
+    display: block;
+  }
+
+  .all-links #donate {
+    background-color: rgba(214, 31, 123, 1);
+  }
 
   .dropdown-content {    
     background-color:rgba(241, 102, 172, 1);
@@ -475,15 +518,7 @@ footer a {
     background-color: rgba(120, 2, 78, 0.9);
     border-radius: 5px;
   }
-
-  .all-links #donate {
-    background-color: rgba(214, 31, 123, 1);
-  }
-
-  .navbar #hamburger-btn {
-    display: block;
-  }
-
+ 
   section > p {
     text-align: center;
     color:#78024e;
@@ -526,14 +561,10 @@ footer a {
   }
 }
 
+
 @media screen and (max-width: 420px) {
   body{
     min-width: 344px;
-  }
-
-  section .cards .card {
-    width: 100%;
-    margin-bottom: 30px;
   }
 
   .navbar .all-links {
@@ -549,5 +580,10 @@ footer a {
 
   .navbar .nav-name {
     font-size: 16px;
+  }
+  
+  section .cards .card {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
