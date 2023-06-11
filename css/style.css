@@ -138,6 +138,10 @@ header a:hover, footer a:hover {
   }
 }
 
+.navbar .all-links #login {
+  display: none;
+}
+
 .dropdown {
   position: absolute;
   display: block;
@@ -353,6 +357,48 @@ hr {
   object-fit: cover;
 }
 
+/* FINANCE SECTION */
+.finance {
+  display: none;
+}
+
+.finance .showPdf{ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.finance form select {
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 10px;  
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #bfbfbf;  
+  color: #7a7a7a;  
+}
+
+.finance form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background:#d61f7b;
+  transition: 0.2s ease;
+}
+
+.finance form button:hover {
+  background: #78024e;
+}
+
+.finance #pdfReport {
+  height: 100%;
+  width: 75vw;
+}
+
 /* CONTACT SECTION */
 .contact .row {
   margin: 60px 0 90px;
@@ -386,6 +432,28 @@ hr {
   font-size: 16px;
   outline: none;
   border: 1px solid #bfbfbf;
+}
+
+.contact #noTelp {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact form select {
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 45%;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #bfbfbf;
+  color: #7a7a7a;    
 }
 
 .contact form textarea {
@@ -468,12 +536,12 @@ footer a {
     right: -100%;
     width: 220px;
     display: block;
-    height: 100vh;
+    height: 150vh;
     top: 70px;
     background-color: rgba(214, 31, 123, 0.9);
     border-radius: 0px 0px 5px 5px;
     transition: right 0.3s ease;
-    max-height: 460px;
+    max-height: 520px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
@@ -500,6 +568,10 @@ footer a {
   }
 
   .navbar #hamburger-btn {
+    display: block;
+  }
+
+  .navbar .all-links #login {
     display: block;
   }
 
@@ -568,10 +640,10 @@ footer a {
   }
 
   .navbar .all-links {
-    width: 180px;
+    width: 200px;
     height: 100vh;
     top: 63px;
-    max-height: 430px;
+    max-height: 490px;
   }
 
   .navbar .all-links li{
@@ -581,7 +653,7 @@ footer a {
   .navbar .nav-name {
     font-size: 16px;
   }
-  
+
   section .cards .card {
     width: 100%;
     margin-bottom: 30px;
