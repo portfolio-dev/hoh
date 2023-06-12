@@ -397,33 +397,33 @@ hr {
   background-color: #ffffff;
 }
 
-#pdfFieldset {
+.finance #pdfFieldset {
   display: none;
 }
 
-#pdfViewer {
+.finance #pdfViewer {
   display: none;
   overflow-y: auto;
   max-height: 100%; 
 }
 
-#pdfWrapper {
+.finance #pdfWrapper {
   display: flex;
   flex-direction: column;
 }
 
-.pdfPageWrapper {
+.finance .pdfPageWrapper {
   margin-bottom: 20px; 
 }
 
 @media screen and (max-width: 600px) {
-  #pdfViewer {
+  .finance #pdfViewer {
     max-width: 500px; 
     max-height: 500px;
   }
 }
 @media screen and (max-width: 500px) {
-  #pdfViewer {
+  .finance #pdfViewer {
     max-width: 340px;     
     max-height: 500px;
   }
@@ -586,7 +586,6 @@ footer a {
 
   .navbar .nav-name {
     font-size: 20px;
-    right: -70px;
   }
 
   .navbar .all-links li:hover {
