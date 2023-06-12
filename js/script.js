@@ -48,7 +48,7 @@ function facilities() {
 }
 
 function finance() {
-    toggleDisplay('finance');
+    window.location.href = link;
 }
 
 // menu-toggler auto close
