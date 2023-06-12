@@ -14,8 +14,7 @@ var titleText = "House of Heart - Rumah Singgah Khusus Pasien PJB Anak ";
         }
 
         animateTitle();
-};
-document.addEventListener("DOMContentLoaded", tabRunning);
+} document.addEventListener("DOMContentLoaded", tabRunning);
 
 // redirect link
 function handleClick(link, newTab) {
@@ -59,5 +58,4 @@ function menuToggler() {
             }
         });
     });
-};
-document.addEventListener("DOMContentLoaded", menuToggler);
+} document.addEventListener("DOMContentLoaded", menuToggler);
