@@ -561,6 +561,10 @@ footer a {
 }
 
 @media screen and (max-width: 1000px) {
+  .navbar {
+    justify-content:space-around;
+  }
+
   .navbar .all-links {
     position:fixed;
     right: -100%;
@@ -582,6 +586,7 @@ footer a {
 
   .navbar .nav-name {
     font-size: 20px;
+    right: -70px;
   }
 
   .navbar .all-links li:hover {
