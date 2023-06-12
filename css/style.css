@@ -404,7 +404,7 @@ hr {
 #pdfViewer {
   display: none;
   overflow-y: auto;
-  max-height: 500px; 
+  max-height: 100%; 
 }
 
 #pdfWrapper {
@@ -418,12 +418,14 @@ hr {
 
 @media screen and (max-width: 600px) {
   #pdfViewer {
-    max-width: 500px;
+    max-width: 500px; 
+    max-height: 500px;
   }
 }
 @media screen and (max-width: 500px) {
   #pdfViewer {
-    max-width: 340px;
+    max-width: 340px;     
+    max-height: 500px;
   }
 }
 
