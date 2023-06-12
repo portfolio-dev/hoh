@@ -358,16 +358,6 @@ hr {
 }
 
 /* FINANCE SECTION */
-.finance {
-  display: none;
-}
-
-.finance .showPdf{ 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .finance form select {
   height: 45px;
   margin-bottom: 20px;
@@ -378,10 +368,13 @@ hr {
   color: #7a7a7a;  
 }
 
-.finance form button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-size: 17px;
+.finance button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  margin: 0px 0px 20px 10px;
+  font-size: 16px;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -390,13 +383,48 @@ hr {
   transition: 0.2s ease;
 }
 
-.finance form button:hover {
+.finance button:hover {
   background: #78024e;
 }
 
-.finance #pdfReport {
-  height: 100%;
-  width: 75vw;
+.finance .showPdf { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.finance fieldset {
+  background-color: #ffffff;
+}
+
+#pdfFieldset {
+  display: none;
+}
+
+#pdfViewer {
+  display: none;
+  overflow-y: auto;
+  max-height: 500px; 
+}
+
+#pdfWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.pdfPageWrapper {
+  margin-bottom: 20px; 
+}
+
+@media screen and (max-width: 600px) {
+  #pdfViewer {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #pdfViewer {
+    max-width: 340px;
+  }
 }
 
 /* CONTACT SECTION */
@@ -541,7 +569,7 @@ footer a {
     background-color: rgba(214, 31, 123, 0.9);
     border-radius: 0px 0px 5px 5px;
     transition: right 0.3s ease;
-    max-height: 520px;
+    max-height: 530px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
@@ -643,7 +671,7 @@ footer a {
     width: 200px;
     height: 100vh;
     top: 63px;
-    max-height: 490px;
+    max-height: 500px;
   }
 
   .navbar .all-links li{
