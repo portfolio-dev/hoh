@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title id="tabTitle"></title>    
+    <link rel="icon" type="image/png" href="../images/logo1.png">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- PDF Viewer -->
+    <script src="../js/pdfViewer.js"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  </head>
+  <body>    
+    <header>
+      <nav class="navbar">        
+        <img class="logo" src="../images/logo1.png"/>
+        <h2 class="nav-name" id="desktop"><a href="javascript:void(0)" onclick="handleClick('index.html')">House of Heart<i class="fa-solid fa-heart-pulse fa-xs"></i></a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label> 
+        <ul class="all-links">
+          <li><a href="javascript:void(0)" onclick="handleClick('index.html')"><i class="fas fa-home-user"></i> Beranda</a></li>
+          <li><a href="javascript:void(0)" onclick="about()"><i class="fas fa-people-roof"></i> Tentang Kami</a></li>
+          <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-book-medical"></i> Program</a>
+              <ul class="dropdown-content">
+                <li id="menudown"><a href="javascript:void(0)" onclick="services()">Kebutuhan Harian</a></li>  
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()">Pendampingan</a></li>
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()">Dukungan ICU</a></li>                
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()">Konsultasi</a></li>
+              </ul>
+          </li>
+          <li><a href="javascript:void(0)" onclick="facilities()"><i class="fas fa-gift"></i> Fasilitas</a></li>   
+
+          <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-shield-heart"></i> Cerita</a>
+            <ul class="dropdown-content">
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('')">Doa dan harapanku</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('')">Aku sudah sembuh</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('')">Aku tidak sakit lagi</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" onclick="handleClick('finance.html')"><i class="fas fa-money-bills"></i> Keuangan</a></li>
+          <li id="donate"><a href="javascript:void(0)" onclick="handleClick('')"><i class="fa-solid fa-rupiah-sign fa-bounce"></i> Donasi</a></li>
+          <br><hr>
+          <li id="login"><a href="javascript:void(0)" onclick="handleClick('')"><i class="fa-solid fa-user"></i> Masuk / Daftar</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="finance" id="finance">
+      <h2><i class="fa-solid fa-coins"></i> Keuangan</h2>
+      <p>Dapatkan informasi laporan bulanan keuangan Rumah Singgah House of Heart.</p><br>
+      <div class="showPdf">
+        <form>
+          <select id="pdfSelect" name="bulan" required>              
+              <option>Bulan*</option>
+              <option id="btn-jan" value="files/pdf-report/lapkeu-jan2023.pdf">Januari</option>
+              <option id="btn-feb" value="files/pdf-report/nihil.pdf">Februari</option>
+              <option id="btn-mar" value="files/pdf-report/nihil.pdf">Maret</option>
+              <option id="btn-apr" value="files/pdf-report/nihil.pdf">April</option>
+              <option id="btn-mei" value="files/pdf-report/nihil.pdf">Mei</option>
+              <option id="btn-jun" value="files/pdf-report/nihil.pdf">Juni</option>
+              <option id="jul" value="files/pdf-report/nihil.pdf">Juli</option>
+              <option id="agu" value="files/pdf-report/nihil.pdf">Agustus</option>
+              <option id="sep" value="files/pdf-report/nihil.pdf">September</option>
+              <option id="okt" value="files/pdf-report/nihil.pdf">Oktober</option>
+              <option id="nov" value="files/pdf-report/nihil.pdf">November</option>
+              <option id="des" value="files/pdf-report/nihil.pdf">Desember</option>
+          </select>
+          <select>
+              <option>2023</option>
+          </select>        
+        </form>
+        <button id="openPdf" onclick="openPdf(); return false;"><i class="fa-solid fa-folder-open"></i> Lihat</button>
+        <br>
+    </div>
+    <div>
+      <fieldset id="pdfFieldset">
+          <legend id="pdfLegend"><h3><i class="fa-solid fa-eye fa-beat-fade"></i></h3></legend>
+          <div id="pdfViewer">
+
+          </div>
+      </fieldset>
+    </div>
+    <br>
+    </section>
+    <hr>
+    <section class="contact" id="contact">
+      <h2><i class="fa-solid fa-envelopes-bulk fa-fade"></i>  Hubungi Kami</h2>
+      <p>Dapatkan informasi yang Anda butuhkan di Rumah Singgah House of Heart.</p>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p><i class="fas fa-house-chimney-user"></i> House of Heart - Rumah Singgah Pasien Anak Penyakit Jantung Bawaan</p>
+            
+            <p><i class="fas fa-map-marker-alt"></i> Jl. Kramat Lontar 14/ No. J163, Rt 008/ Rw 001, Paseban, Kotamadya Jakarta Pusat, DKI Jakarta 10450</p>
+            
+            <p><i class="fa-solid fa-map-location-dot"></i> Lihat di Google Map <i class="fa-solid fa-up-right-from-square fa-2xs"></i></p>
+            
+            <p><i class="fas fa-envelope"></i> info@houseofheart.com <a href="javascript:void(0)" onclick="handleClick('mailto:info@houseofheart.com', true)"><i class="fa-solid fa-up-right-from-square fa-2xs"></i></a></p>
+                        
+            <p><i class="fa-brands fa-whatsapp"></i> (62) 821-3293-6477 <a href="javascript:void(0)" onclick="handleClick('https://wa.me/6282132936477', true)"><i class="fa-solid fa-up-right-from-square fa-2xs"></i></a></p>
+            <br><hr>                   
+          </div>          
+        </div>
+        <div class="col form">
+
+            <form>
+              <input type="text" placeholder="Nama Lengkap*" required>
+              <input type="email" placeholder="Email*" required>
+              <input id="noTelp" type="text" placeholder="No Telepon*" required>
+              <select name="category" required>
+                  <option value="pilihCat">Pilih Kategori*</option>
+                  <option value="orangTua">Orang Tua Pasien</option>
+                  <option value="relawan">Relawan</option> 
+                  <option value="donatur">Donatur</option>
+                  <option value="lainnya">Lainnya</option>
+              </select>
+              <textarea placeholder="Pesan*" required></textarea>
+              <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>
+              
+              <button id="submit" type="submit"><i class="fa-regular fa-paper-plane"></i> Kirim</button>
+            </form>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <span>Copyright © 2023 All Rights Reserved</span>
+        <span class="link">
+          <a href="javascript:void(0)"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+          <a href="javascript:void(0)" onclick="handleClick('https://www.instagram.com/houseofheart.rumahsinggah/', true)"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        </span>
+      </div>
+    </footer>    
+  </body>
+</html>
