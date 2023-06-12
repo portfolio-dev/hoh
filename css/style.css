@@ -47,7 +47,7 @@ header a:hover, footer a:hover {
   max-width: 1300px;
   width: 100%;
   align-items: center;
-  justify-content:space-between;
+  justify-content:space-around;
 }
 
 .navbar input#menu-toggler {
@@ -83,7 +83,6 @@ header a:hover, footer a:hover {
 .navbar .nav-name {
   display: block;
   position: relative;
-  padding-right: 86px;
   animation: glowing 4s infinite;
   font-size: 18px;
 }
@@ -561,10 +560,6 @@ footer a {
 }
 
 @media screen and (max-width: 1000px) {
-  .navbar {
-    justify-content:space-around;
-  }
-
   .navbar .all-links {
     position:fixed;
     right: -100%;
