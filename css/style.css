@@ -581,6 +581,7 @@ footer a {
 
   .navbar .nav-name {
     font-size: 20px;
+    left: -20px;
   }
 
   .navbar .all-links li:hover {
