@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title id="tabTitle"></title>    
-    <link rel="icon" type="image/png" href="images/logo1.png">
+    <link rel="icon" type="image/png" href="/images/logo1.png">
 
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
@@ -17,7 +17,7 @@
     <header>
       <nav class="navbar">        
         <img class="logo" src="images/logo1.png"/>
-        <h2 class="nav-name" id="desktop"><a href="javascript:void(0)" onclick="handleClick('')">House of Heart<i class="fa-solid fa-heart-pulse fa-xs"></i></a></h2>
+        <h2 class="nav-name">House of Heart<i class="fa-solid fa-heart-pulse fa-xs"></i></h2>
         <input type="checkbox" id="menu-toggler">
         <label for="menu-toggler" id="hamburger-btn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
@@ -27,7 +27,7 @@
         </label> 
         <ul class="all-links">
           <li><a href="javascript:void(0)" onclick="handleClick('')"><i class="fas fa-home-user"></i> Beranda</a></li>
-          <li><a href="javascript:void(0)" onclick="about()"><i class="fas fa-people-roof"></i> Tentang Kami</a></li>
+          <li><a href="javascript:void(0)" onclick="handleClick('about.html')"><i class="fas fa-people-roof"></i> Tentang Kami</a></li>
           <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-book-medical"></i> Program</a>
               <ul class="dropdown-content">
                 <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Kebutuhan Harian</a></li>  
@@ -62,72 +62,10 @@
           <p>
             Menyediakan tempat tinggal sementara yang nyaman & ramah bagi para pasien jantung anak yang menjalani pengobatan di Jakarta.</p>
         </div>
-        <a href="javascript:void(0)" onclick="about()">Tentang Kami</a>
+        <a href="javascript:void(0)" onclick="handleClick('about.html')">Tentang Kami</a>
       </div>
     </section>
 
-    
-    <section class="about" id="about">
-      <h2>Tentang Kami</h2>
-      <p>Temukan kisah kami dalam menyediakan layanan Rumah Singgah.</p>
-      <div class="row company-info">
-        <h3><i class="fa-solid fa-clock-rotate-left"></i> Latar Belakang</h3>
-        <p>
-          Salah satu perbantuan yang sangat dibutuhkan keluarga pasien ketika menjalani pengobatan di Jakarta adalah tempat tinggal. Sebelumnya, keluarga pasien harus membayar sewa kost bulanan yang cukup besar selama berobat, dan ini belum termasuk untuk makan, transport, serta kebutuhan sehari-hari lainnya. Terkadang masa pengobatan pasien juga cukup lama, bahkan ada yang harus tinggal di Jakarta selama beberapa bulan untuk menuntaskan pengobatan jantungnya.
-        </p><br>
-        <p>
-          Di Jakarta sendiri sebenarnya sudah ada beberapa rumah singgah yang disediakan oleh yayasan/ komunitas sosial, namun bercampur tinggal bersama pasien-pasien dengan aneka jenis penyakit dan usia dewasa. Sementara, pasien jantung anak memiliki kondisi imunitas yang lebih rendah sehingga mudah tertular penyakit, mudah sesak, dan riskan mengalami kejang karena desaturasi (penurunan kadar oksigen dalam darah).
-        </p><br>
-        <p>
-          Berangkat dari kepedulian akan adanya kendala tersebut, kami dari <i class="fas fa-people-roof"></i>Komunitas "Pejuang Cipto Community" mengupayakan project rumah singgah yang khusus bagi para pejuang jantung kecil dan tanpa memandang SARA.
-        </p><br>
-        <p>
-          Dan melalui perantara salah satu orang baik, project ini bisa kami realisasikan pada tahun 2020, dengan melaunching rumah singgah House of Hope yang berlokasi di Jalan Rawa Selatan V No. 11 RT 07 RW 07 Johar Baru, Jakarta Pusat.
-        </p><br>
-        <p>
-          Selama hampir 3 tahun beroperasi, House of Hope telah menjadi shelter bagi puluhan keluarga pasien jantung anak yang sedang berjuang untuk sembuh. Kami merekrut beberapa relawan untuk memberikan pendampingan berobat pasien di rumah sakit, serta menjalin kolaborasi dengan donatur-donatur untuk memberikan supply dan perbantuan pasien di rumah singgah, salah satunya untuk keperluan sembako di dapur umum dan susu-diapers pasien.
-        </p>
-      </div>
-      <div class="row mission-vision">
-        <h3><i class="fa-solid fa-person-circle-exclamation"></i> Misi Kami</h3>
-        <p>
-          Menyediakan tempat tinggal yang nyaman & ramah anak bagi para pasien jantung anak yang menjalani pengobatan di Jakarta tanpa memandang SARA.
-        </p><br>
-        <p>
-          Memberikan edukasi & pendampingan bagi para pasien selama proses pengobatan di rumah sakit.
-        </p><br>
-        <p>
-          Menjalin kerjasama dengan donaturdonatur untuk menyediakan supply sembako serta susu-diapers bagi pasien.
-        </p>
-        <h3><i class="fa-solid fa-eye-low-vision"></i> Visi Kami</h3>
-        <p>
-          Visi rumah singgah untuk penyakit jantung anak kami adalah menciptakan lingkungan yang aman, nyaman, dan penuh perhatian, di mana anak-anak dengan penyakit jantung dapat mendapatkan perawatan terbaik dan mendapatkan dukungan lengkap dalam perjalanan mereka menuju pemulihan. Kami bertekad untuk menjadi tempat yang menjadi tempat berbagi pengetahuan, pengalaman, dan harapan, yang memungkinkan keluarga dan anak-anak tersebut merasa didukung sepenuh hati dan tidak sendirian dalam perjuangan mereka.
-        </p><br>
-        <p>
-          Rumah singgah kami akan menyediakan fasilitas medis yang lengkap dan modern, dengan peralatan terbaru untuk perawatan penyakit jantung anak. Kami juga akan bekerja sama dengan tim medis yang terampil dan berpengalaman dalam merawat anak-anak dengan penyakit jantung, termasuk dokter spesialis jantung anak, perawat, terapis, dan tenaga medis lainnya.
-        </p><br>
-        <p>
-          Selain perawatan medis yang berkualitas, rumah singgah kami akan memberikan perhatian khusus pada kebutuhan emosional dan psikologis anak-anak. Kami akan menyediakan program pendidikan dan aktivitas yang menyenangkan untuk membantu mereka menjalani kehidupan sehari-hari dengan lebih baik, sambil tetap memperhatikan batasan-batasan kesehatan mereka.
-        </p><br>
-        <p>
-          Kami juga berkomitmen untuk memastikan akses mudah bagi keluarga dengan biaya yang terjangkau. Rumah singgah kami akan menyediakan akomodasi yang nyaman dan ramah keluarga, termasuk fasilitas seperti dapur bersama, area bermain, dan ruang keluarga, yang menciptakan lingkungan yang hangat dan mendukung.
-        </p><br>
-        <p>
-          Visi kami adalah menjadikan rumah singgah ini sebagai tempat harapan, kesembuhan, dan kebahagiaan bagi anak-anak dengan penyakit jantung, di mana mereka dapat merasa didukung, dikelilingi oleh orang-orang yang peduli, dan memiliki kesempatan untuk hidup secara penuh dan berarti.
-        </p>
-      </div>
-      <div class="row team">
-        <h3><i class="fa-solid fa-users"></i> Tim Kami</h3>
-        <ul>
-          <li>Dwi Hermawati - Founder</li>
-          <li>Lusi Sagita - Public Relations</li>
-          <li>Unknown - Finance</li>
-          <li>Unknown - Admin</li>
-          <li>Unknown - Coordinator</li>
-        </ul>
-      </div>
-    </section>
-    <hr>
     <section class="services" id="services">
       <h2>Program</h2>
       <p>Rumah Singgah Anak Penyakit Jantung: Menciptakan Lingkungan Peduli untuk Pemulihan Optimal.</p>
