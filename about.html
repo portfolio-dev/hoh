@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title id="tabTitle"></title>    
+    <link rel="icon" type="image/png" href="/images/logo1.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <script src="js/about.js"></script>
+
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>    
+    <header>
+      <nav class="navbar">        
+        <img class="logo" src="images/logo1.png"/>
+        <h2 class="nav-name">House of Heart<i class="fa-solid fa-heart-pulse fa-xs"></i></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label> 
+        <ul class="all-links">
+          <li><a href="javascript:void(0)" onclick="handleClick('index.html')"><i class="fas fa-home-user"></i> Beranda</a></li>
+          <li><a href="javascript:void(0)" onclick="handleClick('about.html')"><i class="fas fa-people-roof"></i> Tentang Kami</a></li>
+          <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-book-medical"></i> Program</a>
+              <ul class="dropdown-content">
+                <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Kebutuhan Harian</a></li>  
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Pendampingan</a></li>
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Dukungan ICU</a></li>                
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Konsultasi</a></li>
+              </ul>
+          </li>
+          <li><a href="javascript:void(0)" onclick="facilities()"><i class="fas fa-gift"></i> Fasilitas</a></li>   
+
+          <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-shield-heart"></i> Cerita</a>
+            <ul class="dropdown-content">
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('')"><i class="fa-solid fa-hands-praying"></i> Doa dan harapanku</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('')"><i class="fa-solid fa-child-reaching"></i> Aku sudah sembuh</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('')"><i class="fa-solid fa-hands-holding-child"></i> Aku tidak sakit lagi</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" onclick="handleClick('finance.html')"><i class="fas fa-money-bills"></i> Keuangan</a></li>
+          <li id="donate"><a href="javascript:void(0)" onclick="handleClick('')"><i class="fa-solid fa-hand-holding-heart fa-bounce"></i> Donasi</a></li>
+          <br><hr>
+          <li id="login"><a href="javascript:void(0)" onclick="handleClick('')"><i class="fa-solid fa-user"></i> Masuk | Daftar</a></li>
+        </ul>
+      </nav>
+    </header>    
+    <div class="loginLink"><a href=""><i class="fa-regular fa-user"></i></a></div>
+    <section class="about" id="about">
+      <h2><i class="fas fa-people-roof"></i> Tentang Kami</h2>
+      <p>Temukan kisah kami dalam menyediakan layanan Rumah Singgah.</p>
+      <div class="row company-info">
+        <h3><i class="fa-solid fa-timeline"></i> Latar Belakang</h3>
+        <p>
+            Rumah singgah pasien penyakit jantung bawaan anak ini adalah untuk mereka, mereka yang sedang berobat di Rumah Sakit khusus menangani jenis penyakit spesial ini. Secara umum rujukan Rumah Sakit daerah untuk penyakit ini diarahkan ke Rumah Sakit yang ada di wilayah Jakarta.
+        </p><br>
+        <p>
+            Perjuangan mereka dari daerah untuk mengobati buah hati ke Jakarta adalah perjuangan yang total sebagai orang tua, dimana mereka diberikan anak yang spesial untuk dapat menyalurkan anugrah khusus dari Tuhan yang Maha Esa yakni menuntun buah hati mereka pada kesembuhan jantung.
+        </p><br>
+        <p>
+            <u>Kami, <b>House of Heart</b><i class="fa-solid fa-heart-pulse fa-xs"></i>. Dan kami adalah mereka.</u> Ya kami perah merasakan dan berjuang seperti mereka, kami pernah takut dan cemas seperti mereka, kami pernah putus asa dan menyerah seperti mereka, kami pernah mengharapkan buah hati memiliki jantung yang sehat seperti mereka, kami pernah mencari kesalahan kami di masa lalu karena diberi anak spesial seperti mereka, kami selalu berdoa dan berharap akan kesembuhan buah hati kami dari penyakit jantung bawaan seperti mereka. Kami orang tua yang pernah seperti mereka.
+        </p><br>
+        <p>[FOTO Pejuang Cipto Community di sini!!!]</p><br>
+        <p>
+            Mereka tidak sendiri, mereka adalah kami dan bersatu sebagai komunitas <b>"Pejuang Cipto Community"</b>. Komunitas khusus bagi para orang tua pasien anak dengan diagnosa penyakit jantung bawaan. Kami berbagi dukungan dan doa, kami memiliki semangat baru untuk memperjuangkan kesembuhan buah hati dari penyakit spesial ini. Kami bersama-sama mempelajari penyakit ini, kami bersama-sama saling mendukung mulai dari awal persiapan kami dari rumah mulai dari persiapan berkas-berkas, pengobatan awal di fasilitas kesehatan daerah hingga mendapatkan rujukan ke Rumah Sakit di Jakarta.
+        </p><br>
+        <p>
+          Salah satu perbantuan yang sangat dibutuhkan 'mereka' keluarga pasien ketika menjalani pengobatan di Jakarta adalah tempat tinggal. Waktu yang dibutuhkan untuk pengurusan pendaftaran, pemeriksaan, penjadwalan hingga operasi dan pasca operasi memakan banyak waktu bahkan hingga berbulan-bulan. Sebelumnya, keluarga pasien harus membayar sewa kost bulanan yang cukup besar di Ibu Kota dan ini belum termasuk untuk kebutuhan makan, transport, serta kebutuhan sehari-hari lainnya. Tidak semua keluarga pasien adalah keluarga yang berkecukupan, namun karena diberi Anak Spesial mereka tetap harus berjuang demi kesembuhan. Rumah singgah adalah salah satu solusi tersebut.
+        </p><br>
+        <p>
+          Di Jakarta sebenarnya sudah ada beberapa rumah singgah yang disediakan oleh beberapa yayasan dan komunitas sosial, namun kondisinya bercampur tinggal bersama pasien-pasien dengan aneka jenis penyakit dan usia dewasa. Sementara, pasien penyakit jantung bawaan anak memiliki kondisi imunitas yang lebih rendah sehingga mudah tertular penyakit, mudah sesak, dan riskan mengalami kejang karena desaturasi (penurunan kadar oksigen dalam darah).
+        </p><br>
+        <p style="text-align: center;">
+          <img src="images/logo-pcc.png" alt="image" class="logoPcc">
+        </p>
+        <p>
+          Berangkat dari kepedulian akan kondisi tersebut, kami dari Komunitas "Pejuang Cipto Community" mengupayakan project rumah singgah yang khusus bagi para pasien penyakit jantung bawaan anak.
+        </p>
+        </div>
+     <div class="row company-info">
+     <h3><i class="fa-solid fa-clock-rotate-left"></i> Sejarah</h3>
+        <p class="logo-container">
+          <img src="images/logo-houseofhope.png" alt="logo lama" class="logoAbout">
+        </p><br>
+        <p>
+            Pada tahun 2020 project Rumah Singgah dapat terlaksana dan dimulai. Dengan dukugan orang baik yang bersedia rumahnya dipergunakan sebagai Rumah Singgah khusus pasien anak dengan diagnosis Penyakit Jantung Bawaan, dapat menampung hingga 9 pasien anak dan masing-masing 1 hingga 2 pendampingnya. Kami sangat berbahagia dan bersukacita dapat menjadi tangan Tuhan untuk membantu meringankan beban keluarga pasien selama di Jakarta.
+        </p><br>
+        <p>
+            Alamat rumah tersebut berada di Jl. Rawa Selatan V No. 11 RT 07 RW 07 Johar Baru, Jakarta Pusat dengan nama <b></b>Rumah Singgah House of Hope</b>. Jaraknya tidak jauh dari Rumah sakit khusus yang mampu menangani penyakit jantung anak. Sebelumnya rumah tersebut memang diperuntunkan sebagai Rumah Singgah oleh pemiliknya dan semenjak kami sebagai pengurusnya maka secara khusus kami atur agar dipuntutunkan untuk pasien anak penyakit jantung bawaan saja.
+        </p><br>
+        <p>
+            Selama hampir 3 tahun beroperasi, House of Hope telah menjadi shelter bagi puluhan keluarga pasien penyakit jantung bawaan anak yang sedang berjuang untuk sembuh di Jakarta. Kami merekrut beberapa relawan untuk memberikan pendampingan berobat hingga di rumah sakit, serta menjalin kolaborasi dengan donatur-donatur untuk memberikan supply dan perbantuan pasien selama di rumah singgah, salah satunya untuk keperluan sembako di dapur umum dan susu-diapers pasien. Banyak kisah yang kami lalui dan penyemangat agar kami terus melanjutkan langkah ini. Tidak selalu kesembuhan berita yang harus kami terima, namun perjuangan mereka untuk mengantar anak ke meja operasi adalah semangat kami untuk terus memperjuangkan keberlangsungan rumah singgah khusus penyakit jantung bawaan anak ini.
+        </p><br>
+        <p>
+            Namun pada akhir tahun 2022 kami harus bersedih hati karena rumah yang kami gunakan sebagai rumah singgah tersebut segera diminta kembali oleh pemiliknya. Kami diberi kesempatan untuk mengurus pindah hingga pertengahan tahun 2023. Mulai dari itu kami mulai mencari tempat baru dengan dukungan donatur dan banyak pihak akhirnya kami menemukan rumah kontrakan yang akan kami gunakan sebagai Rumah Singgah saat ini yang berada di alamat Jl. Kramat Lontar 14/ No. J163, Paseban, Jakarta Pusat, DKI Jakarta. Dan di tempat ini sebagai awal mula Rumah Singgah dengan nama House of Heart.
+        </p><br>
+        <p>
+            Rumah Singgah House of Heart ini rumah yang berukuran lebih kecil dari sebelumnya dan hanya bisa menampung maksimal 3 pasien anak bersama masing-masing 1 pendamping/ wali. Walaupun tidak sebesar rumah singgah kami sebelumnya yang mampu menampung 9 pasien anak beserta pendampingnya tidak menghilangkan semangat dan tekan kami.
+        </p><br>
+        <p>
+            Kami menyadari kebutuhan Rumah Singgah khusus untuk anak dengan diagnosis Penyakit Jantung Bawaan sangat dan terus akan dibutuhkan. Terutama untuk keluarga pasien dari daerah yang berkekurangan dan diharuskan berobat di Jakarta. Oleh karena hal tersebut, kami peduli kepada mereka.
+        </p><br>
+        <p>
+            Menyadari tidak mampu sendiri dan berharap pertolongan kepada Tuhan yang Maha Esa. Kami yakin pertolongan Tuhan akan datang melalui para donatur-donatur yang digerakan hatinya untuk ikut berbagian dalam perjuangan kami.
+        </p><br>
+        <p>
+            Melalui pengalaman kami tersebut hingga saat ini, mengharuskan kami membangun website ini dengan tujuan sebagai informasi terbaru bagi donatur, pendaftaran calon penghuni, sistim peminjaman inventaris alat pendukung dan kesehatan bagi para pasien, keterbukaan laporan keuanganb ulanan, dll.
+        </p>
+      </div>
+      <div class="row mission-vision">
+        <h3><i class="fa-solid fa-eye-low-vision"></i> Visi</h3>
+        <p>
+          Visi kami adalah menjadikan rumah singgah ini sebagai tempat harapan, kesembuhan, dan kebahagiaan bagi anak-anak dengan penyakit jantung, di mana mereka dapat merasa didukung, dikelilingi oleh orang-orang yang peduli, dan memiliki kesempatan untuk hidup secara penuh dan berarti.
+        </p>        
+        <h3><i class="fa-solid fa-person-circle-exclamation"></i> Misi</h3>
+        <p>
+          Menyediakan tempat tinggal sementara yang nyaman & ramah anak bagi para pasien jantung anak yang menjalani pengobatan di Jakarta tanpa memandang SARA.
+        </p><br>
+        <p>
+          Menjadi tempat berbagi pengetahuan, pengalaman, dan harapan yang mendukung sepenuh hati.
+        </p><br>
+        <p>
+          Memberikan edukasi & pendampingan bagi para pasien selama proses pengobatan di rumah sakit.
+        </p><br>
+        <p>
+          Menjalin kerjasama dengan donatur-donatur untuk menyediakan supply kebutuhan sembako serta susu-diapers bagi pasien.
+        </p>
+      </div>
+      <div class="row team">
+        <h3><i class="fa-solid fa-users"></i> Tim Kami</h3>
+        <ul>
+          <li>Dwi Hermawati - Founder & Finance</li>
+          <li>Lusi Sagita - Public Relations & Coordinator</li>
+          <li>Adi - IT & Admin</li>
+        </ul>
+      </div>
+    </section>
+    <hr>    
+    <section class="contact" id="contact">
+      <h2><i class="fa-solid fa-envelopes-bulk fa-fade"></i>  Hubungi Kami</h2>
+      <p>Dapatkan informasi yang Anda butuhkan di Rumah Singgah House of Heart.</p>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p><i class="fas fa-house-chimney-user"></i> House of Heart - Rumah Singgah Pasien Anak Penyakit Jantung Bawaan</p>
+            
+            <p><i class="fas fa-map-marker-alt"></i> Jl. Kramat Lontar 14/ No. J163, Rt 008/ Rw 001, Paseban, Kotamadya Jakarta Pusat, DKI Jakarta 10450</p>
+            
+            <p><i class="fa-solid fa-map-location-dot"></i> Lihat di Google Map <i class="fa-solid fa-up-right-from-square fa-2xs"></i></p>
+            
+            <p><i class="fas fa-envelope"></i> info@houseofheart.com <a href="javascript:void(0)" onclick="handleClick('mailto:info@houseofheart.com', true)"><i class="fa-solid fa-up-right-from-square fa-2xs"></i></a></p>
+                        
+            <p><i class="fa-brands fa-whatsapp"></i> (62) 821-3293-6477 <a href="javascript:void(0)" onclick="handleClick('https://wa.me/6282132936477', true)"><i class="fa-solid fa-up-right-from-square fa-2xs"></i></a></p>
+            <br><hr>                   
+          </div>          
+        </div>
+        <div class="col form">
+
+            <form>
+              <input type="text" placeholder="Nama Lengkap*" required>
+              <input type="email" placeholder="Email*" required>
+              <input id="noTelp" type="text" placeholder="No Telepon*" required>
+              <select name="category" required>
+                  <option value="pilihCat">Pilih Kategori*</option>
+                  <option value="orangTua">Orang Tua Pasien</option>
+                  <option value="relawan">Relawan</option> 
+                  <option value="donatur">Donatur</option>
+                  <option value="lainnya">Lainnya</option>
+              </select>
+              <textarea placeholder="Pesan*" required></textarea>
+              <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>
+              
+              <button id="submit" type="submit"><i class="fa-regular fa-paper-plane"></i> Kirim</button>
+            </form>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <span>Copyright © 2023 All Rights Reserved</span>
+        <span class="link">
+          <a href="javascript:void(0)"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+          <a href="javascript:void(0)" onclick="handleClick('https://www.instagram.com/houseofheart.rumahsinggah/', true)"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        </span>
+      </div>
+    </footer>    
+  </body>
+</html>
