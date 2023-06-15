@@ -82,6 +82,7 @@ header a:hover, footer a:hover {
 
 .navbar .nav-name {
   display: block;
+  color: white;
   position: relative;
   animation: glowing 4s infinite;
   font-size: 18px;
@@ -304,10 +305,6 @@ hr {
 }
 
 /* ABOUT SECTION */
-.about {
-  display: none;
-}
-
 .about .company-info {
   margin-top: 30px;
 }
@@ -316,7 +313,6 @@ hr {
   margin: 30px 0 10px;
   color:#d61f7b;
 }
-
 
 .about .team {
   text-align: left;
@@ -329,6 +325,32 @@ hr {
 
 .about .row {
   padding: 0 10px;
+}
+
+.logoPcc {
+  height: 150px;
+  width: 150px;
+}
+
+.logo-container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.logoAbout {
+  width: 100%;
+  height: 100%;
+  animation: animasiBergerak 2s linear infinite;
+}
+
+@keyframes animasiBergerak {
+  0% {
+    transform: opacity 10s ease-in-out;
+  }
+  100% {
+    transform: opacity 50s ease-in-out;
+  }
 }
 
 /* SERVICES SECTION */
@@ -583,7 +605,7 @@ footer a {
     width: 190px;
     display: block;
     height: 150vh;
-    top: 70px;
+    top: 40px;
     background-color: rgba(214, 31, 123, 0.9);
     border-radius: 0px 0px 5px 5px;
     transition: right 0.3s ease;
@@ -696,7 +718,7 @@ footer a {
   .navbar .all-links {
     width: 180px;
     height: 100vh;
-    top: 63px;
+    top: 40px;
     max-height: 500px;
   }
 
