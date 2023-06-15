@@ -26,16 +26,12 @@ function handleClick(link, newTab) {
 };
 
 function toggleDisplay(elementId) {
-    var elements = ['homepage', 'about', 'services', 'facilities'];
+    var elements = ['homepage', 'services', 'facilities'];
 
     for (var i = 0; i < elements.length; i++) {
         var element = document.getElementById(elements[i]);
         element.style.display = (elements[i] === elementId) ? 'flex' : 'none';
     }
-}
-
-function about() {
-    toggleDisplay('about');
 }
 
 function services() {
