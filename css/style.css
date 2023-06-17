@@ -69,6 +69,12 @@ header a:hover, footer a:hover {
   list-style: none;
 }
 
+.navbar .all-links li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .navbar .logo {
   background-color: #ffffff;
   border-radius: 3px;
@@ -85,7 +91,7 @@ header a:hover, footer a:hover {
   color: white;
   position: relative;
   animation: glowing 4s infinite;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 @keyframes glowing {
@@ -291,7 +297,7 @@ hr {
   font-size: 18px;
   margin: 0 10px;
   padding: 10px 30px;
-  border-radius: 5px;
+  border-radius: 2px;
   background: #fff;
   border: 2px solid #fff;
   transition: 0.4s ease;
@@ -328,28 +334,74 @@ hr {
 }
 
 .logoPcc {
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
 }
 
+
+
 .logo-container {
-  width: 100px;
-  height: 100px;
+  width: 240px;
+  height: 240px;
   position: relative;
+  overflow: hidden;
 }
 
 .logoAbout {
-  width: 100%;
-  height: 100%;
-  animation: animasiBergerak 2s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  transition: transform 7s ease-in-out;
 }
 
-@keyframes animasiBergerak {
-  0% {
-    transform: opacity 10s ease-in-out;
+.logo-lama {
+  transform: translateX(0);
+}
+
+.logo-baru {
+  transform: translateX(400px);
+}
+
+.logo-baru.show {
+  transform: translateX(0px);
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image-container figure {
+  text-align: center;
+  margin: 10px;
+}
+
+.image-container img {
+  width: 250px;
+  height: 240px;
+  border-radius: 50%;
+  border: 2px solid #d61f7b;
+}
+
+.image-container figcaption {
+  margin-top: 5px;
+  color:#d61f7b;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  100% {
-    transform: opacity 50s ease-in-out;
+
+  .image-container img {
+    width: 100%;
+    max-width: 300px;
   }
 }
 
@@ -563,7 +615,7 @@ footer a {
 @media screen and (max-width: 1234px) {
 
   .navbar .nav-name {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .navbar .all-links li {
@@ -580,10 +632,6 @@ footer a {
 }
 
 @media screen and (max-width: 1100px) {
-
-  .navbar .nav-name {
-    font-size: 16px;
-  }
 
   .navbar .all-links li {
     font-size: 11px;
@@ -612,6 +660,10 @@ footer a {
     max-height: 530px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .navbar .logo {
+    border-radius: 0;
   }
 
   .navbar .all-links li {
@@ -727,7 +779,7 @@ footer a {
   }
 
   .navbar .nav-name {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   section .cards .card {
