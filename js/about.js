@@ -1,23 +1,27 @@
 function runLogo() {
     // Ambil elemen logo
-    const logoElement = document.querySelector('.logoAbout');
+    const logoLama = document.querySelector('.logo-lama');
+    const logoBaru = document.querySelector('.logo-baru');
 
-    // Atur waktu pergantian logo (misalnya setelah 3 detik)
-    const waktuPergantian = 10000;
-    let waktuAnimasi;
+    // Fungsi untuk memeriksa apakah elemen logo lama sedang terlihat dalam viewport
+    function isLogoLamaVisible() {
+    const rect = logoLama.getBoundingClientRect();
+    return rect.top >= 0 && rect.bottom <= window.innerHeight;
+    }
 
     // Fungsi untuk mengganti logo
     function gantiLogo() {
-        logoElement.src = 'images/logo.png';
-
-        // Menghapus timeout untuk menghentikan animasi
-        clearTimeout(waktuAnimasi);
-
-        // Mengatur logo tetap dengan atribut src yang baru
-        logoElement.removeAttribute('src');
-        logoElement.setAttribute('src', 'images/logo.png');
+    // Memeriksa apakah elemen logo lama sedang terlihat dalam viewport
+    if (isLogoLamaVisible()) {
+        // Menghilangkan logo lama
+        logoLama.style.transform = 'translateX(-200px)';
+    
+        // Mengubah logo baru menjadi jelas
+        logoBaru.classList.add('show');
+    }
     }
 
-    // Mulai animasi pergantian logo setelah waktu tertentu
-    waktuAnimasi = setTimeout(gantiLogo, waktuPergantian);
+    // Mengecek posisi logo saat scroll atau resize
+    window.addEventListener('scroll', gantiLogo);
+    window.addEventListener('resize', gantiLogo);
 } document.addEventListener("DOMContentLoaded", runLogo);
