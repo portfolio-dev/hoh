@@ -338,6 +338,51 @@ hr {
   width: 250px;
 }
 
+.photoes {
+  border-radius: 8px;
+  border: 1px solid #d61f7b;;
+  width: auto;
+  height: auto;
+  max-width: min-content;
+  max-height: min-content;
+}
+@media (max-width: 1030px) {
+  .photoes {
+    width: 800px;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .photoes {
+    width: 700px;
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  .photoes {
+    width: 600px;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .photoes {
+    width: 500px;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .photoes {
+    width: 400px;
+    height: auto;
+  }
+}
+@media (max-width: 400px) {
+  .photoes {
+    width: 300px;
+    height: auto;
+  }
+}
+
 
 
 .logo-container {
