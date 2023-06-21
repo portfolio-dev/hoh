@@ -10,9 +10,14 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
     <script src="js/about.js"></script>
+    <script src="js/slide.js" defer></script>
+    <script src="js/slide2.js" defer></script>
+    <script src="js/slide3.js" defer></script>
 
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <audio id="myAudio" src="files/Yiruma-KisstheRain.mp3" preload="auto"></audio>
   </head>
   <body>    
     <header>
@@ -91,14 +96,19 @@
             </lu>
             Dan masih banyak lagi.
         </p><br>
-        <h4>Rumah Sakit</h4>
+        <h4>Rumah Sakit</h4>       
+
         <p>
-          Rumah Sakit di Jakarta dengan Departemen Kardiologi Anak dan mampu menangani penyakit jantung bawaan pada anak:<br>
+          Rumah Sakit di Jakarta dengan Departemen Kardiologi Anak dan mampu menangani penyakit jantung bawaan pada anak:<br><br>
+          <p style="text-align: center;">
+            <img src="images/about/rsCipto.jpg" alt="image" class="photoes">
+          </p><br>
+          <br>
           <lu>
           <li><b>Rumah Sakit Kardiovaskular Harapan Kita - Jakarta</b>: Rumah sakit ini memiliki layanan kardiologi anak yang komprehensif dan dilengkapi dengan fasilitas dan peralatan yang modern.</li><br>
-
+                    
           <li><b>Rumah Sakit Jakarta Heart Center - Jakarta</b>: Rumah sakit ini memiliki tim dokter spesialis kardiologi anak dan dilengkapi dengan fasilitas medis dan peralatan yang canggih untuk melakukan pemeriksaan dan tindakan prosedur yang diperlukan.</li><br>
-
+                    
           <li><b>Rumah Sakit Dr. Cipto Mangunkusumo - Jakarta</b>: Merupakan salah satu rumah sakit rujukan nasional di bidang kardiologi anak dan menyediakan pelayanan kardiologi anak yang lengkap.</li><br>
           </lu>
         </p>
@@ -125,9 +135,33 @@
         <p>
           Pendiri komunitas ini adalah Ibu <b>Dwi Hermawati</b> dengan pasien anak bernama Chester Dashtan Rosyadi. Menjalani pengobatan mulai dari tahun 2017 didiagnosis memiliki penyakit jantung bawaan sejak lahir dengan kasus Tetralogi of Fallot (TOF) dan akhirnya menjalani operasi bedah jantung pada akhir tahun 2018. Operasi yang dilakukan di Rumah Sakit Dr. Cipto Mangunkusumo telah berhasil dan memberikan hadiah jantung baru pada awal tahun 2019, hingga saat ini adik Chester dapat menjalani hidup seperti anak sehat lainnya. 
         </p><br>
-        [Slide foto Chester] 
+
+        <center>
+        <div class="slide-container">
+          <img src="images/about/chesTof1.jpg" class="slide" alt="" />
+          <img src="images/about/chesTof2.jpg" class="slide" alt="" />
+          <img src="images/about/chesTof3.jpg" class="slide" alt="" />
+          <img src="images/about/chesTof4.jpg" class="slide" alt="" />
+          <img src="images/about/chesTof5.jpg" class="slide" alt="" />
+          <img src="images/about/chesTof6.jpg" class="slide" alt="" />
+          <img src="images/about/chesTof7.jpg" class="slide" alt="" />
+          <img src="images/about/chesTof9.jpg" class="slide" alt="" />
+          <img src="images/about/chesTof10.jpg" class="slide" alt="" />
+          <img src="images/about/chesTof11.jpg" class="slide" alt="" />
+              
+          <!-- BUTTONS -->
+          <button id="prev" onclick="goPrev()" title="Prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button id="next" onclick="goNext()" title="Next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        </center>
+
+        <br>
         <p>
-          Salah satu doa Ibu Dwi Hermawati adalah jika adik Chester berhasil memperoleh kesembuhan maka dia akan membantu orang tua lainnya untuk bisa mengejar kesembuhan jantung buah hatinya agar sembuh seperti adik Chester ini. Dan sampai saat ini terus dilakukan melalui Komunitas "Pejuang Cipto Community".
+          Salah satu janji doa Ibu Dwi Hermawati adalah jika adik Chester berhasil memperoleh kesembuhan maka dia akan membantu orang tua lainnya untuk bisa mengejar kesembuhan jantung buah hatinya agar dapat sembuh seperti adik Chester ini. Dan sampai saat ini terus dilakukan melalui Komunitas "Pejuang Cipto Community".
         </p><br>
         <p>
           Dengan kepedulian kepada sesama orang tua maka mulai dari membuat group whatsapp para orang tua pasien dengan hanya beberapa anggota saja di awal-awal, dengan semangat belajar dan peduli Ibu Dwi Hermawati kepada sesama orang tua dan khususnya pasien penyakit jantung bawaan pada anak, maka Ibu Dwi Hermawati mulai dapat membantu para orang tua pasien melalui konsultasi ringan, berbagi informasi pengobatan mulai tahap persiapan, langkah-langkah yang harus dilakukan para orang tua sejak dari fasilitas kesehatan di daerah hingga mendapat rujukan ke Jakarta dan berbagai saran masukan untuk perawatan setelah tindakan operasi. Sejauh yang dapat dilakukan oleh orang tua pasien. 
@@ -156,7 +190,43 @@
         <p>
           Dengan dukungan banyak orang rumah singgah ini terus berkembang, mengundang banyak empati dari para relawan, darmawan dan donatur. Semua kebutuhan diapers dan susu para pasien dapat terpenuhi, kebutuhan makan sehari-hari juga terpenuhi, berbagai macam fasilitas hiburan anak seperti playground indoor, pojok baca denga meja dan buku-buku bacaan anak, dan alat pendukung kesehatan seperti tabung oksigen, kursi roda, stroller dan lain-lain juga tersedia.
         </p><br>
-        [Slide foto House of Hope beserta fasilitasnya]
+        
+        <center>
+          <div class="slide-container-2">
+            <img src="images/about/hohFacelities (1).jpg" class="slide2" alt="" />
+            <img src="images/about/hohFacelities (2).jpg" class="slide2" alt="" />
+            <img src="images/about/hohFacelities (3).jpeg" class="slide2" alt="" />
+            <img src="images/about/hohFacelities (4).jpeg" class="slide2" alt="" />
+            <img src="images/about/hohFacelities (5).jpg" class="slide2" alt="" />
+            <img src="images/about/hohFacelities (6).jpg" class="slide2" alt="" />
+            <img src="images/about/hohFacelities (7).jpg" class="slide2" alt="" />
+            <img src="images/about/hohFacelities (8).jpeg" class="slide2" alt="" />
+            <img src="images/about/hohFacelities (9).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (1).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (2).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (3).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (4).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (5).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (6).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (7).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (8).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (9).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (10).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (11).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (12).jpg" class="slide2" alt="" />
+            <img src="images/about/hohMakan (13).jpeg" class="slide2" alt="" />
+
+                
+            <!-- BUTTONS -->
+            <button id="prev" onclick="goPrev2()" title="Prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="next" onclick="goNext2()" title="Next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          </center>
+          <br>
         <p>
           Sehingga para orang tua pasien dapat fokus pada pengobatan anak tanpa harus terbebani dengan tempat tinggal dan kebutuhan hidup selama di Jakarta. Khususnya untuk mereka dari daerah yang memiliki ekonomi terbatas dan butuh pertolongan.
         </p><br>
@@ -184,16 +254,31 @@
         <p>
           Hingga mendekati batas waktu akhir kami harus pindah, ternyata dana yang terkumpul belum menyentuh 30% dari target di atas. Akhirnya kami harus mencari rumah kontrakan yang sesuai dengan kemampuan dana yang ada. Dan bersyukur atas kebaikan dan pertolongan Tuhan pada akhir bulan Mei 2023 kami memenumkan sebuah rumah kontrakan yang cocok dengan kemampuan dana yang ada.
         </p><br>
-        <p style="text-align: center;">
-          <img src="images/about/hohdepan.jpeg" alt="image" class="photoes">
-        </p><br>
+        
+        <center>
+          <div class="slide-container-3">
+            <img src="images/about/hoheart 1.jpeg" class="slide3" alt="" />
+            <img src="images/about/hoheart 2.jpeg" class="slide3" alt="" />
+            <img src="images/about/hoheart 3.jpeg" class="slide3" alt="" />
+            <img src="images/about/hoheart 4.jpeg" class="slide3" alt="" />
+            <img src="images/about/hoheart 5.jpeg" class="slide3" alt="" />      
+                
+            <!-- BUTTONS -->
+            <button id="prev" onclick="goPrev3()" title="Prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="next" onclick="goNext3()" title="Next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          </center>
+          <br>
         <p>
           Rumah dengan ukuran kecil seharga sewa Rp 30jtan untuk kontrak selama 1 tahun di Jakarta Pusat dekat dengan Rumah Sakit Cipto Mangunkusumo. Ruangan yang tersedia 1 kamar tidur yang dapat menampung 2 kasur dewasa, 1 kamar mandi, 1 dapur, 1 ruang tamu. Rencana ruang tamu akan dibuat skat atau diberi pembatas untuk dipergunakan sebagai kamar tidur tambahan.  
         </p><br>
         <p>
           Alamat rumah: Jl. Kramat Lontar 14/ No. J163, Rt 008/ Rw 001, Paseban, Kotamadya Jakarta Pusat, DKI Jakarta 10450
         </p><br>
-        [Slide Bagian Rumah] 
         <p>
           Rencana kamar tidur akan digunakan untuk 2 pasien anak dan pendampingnya. Bagian kamar di ruang tamu yang akan diskat untuk 1 ruangan kamar tidur. Sehingga mampu menampung maksimal 3 pasien anak dan pendampingnya.
         </p><br>
@@ -205,7 +290,7 @@
           <img src="images/logo-houseofhope.png" alt="Logo Lama" class="logoAbout logo-lama">
           <img src="images/logo.png" alt="Logo Baru" class="logoAbout logo-baru">
         </div>
-        </center><br>
+        </center>
         <p>
           Selamat tinggal kepada Rumah Singgah House of Hope dan selamat datang untuk Rumah Singgah House of Heart. Kenangan dan semangat perjuangan di House of Hope tidak akan terlupakan dan menjadi langkah baru dengan nama baru untuk tujuan yang sama. House of Heart adalah Rumah Jantung, secara khusus bagi kami yaitu rumah jantung untuk anak-anak spesial dengan penyakit jantung bawaan. Dimana bahagia, doa dan harapan kesembuhan akan selalu ada di dalam rumah singgah ini.
         </p><br>
@@ -269,9 +354,9 @@
           <div class="contact-details">
             <p><i class="fas fa-house-chimney-user"></i> House of Heart - Rumah Singgah Pasien Anak Penyakit Jantung Bawaan</p>
             
-            <p><i class="fas fa-map-marker-alt"></i> Jl. Kramat Lontar 14/ No. J163, Rt 008/ Rw 001, Paseban, Kotamadya Jakarta Pusat, DKI Jakarta 10450</p>
+            <p><i class="fas fa-map-marker-alt"></i> Jl. Kramat Lontar 14/ No. J163, Rt 008/ Rw 001, Paseban, Kotamadya Jakarta Pusat, DKI Jakarta 10440</p>
             
-            <p><i class="fa-solid fa-map-location-dot"></i> Lihat di Google Map <i class="fa-solid fa-up-right-from-square fa-2xs"></i></p>
+            <p><i class="fa-solid fa-map-location-dot"></i> Lihat di Google Map <a href="javascript:void(0)" onclick="handleClick('https://goo.gl/maps/yKMjEGAvpte8Cc5R9', true)"><i class="fa-solid fa-up-right-from-square fa-2xs"></i></a></p>
             
             <p><i class="fas fa-envelope"></i> info@houseofheart.com <a href="javascript:void(0)" onclick="handleClick('mailto:info@houseofheart.com', true)"><i class="fa-solid fa-up-right-from-square fa-2xs"></i></a></p>
                         
@@ -306,7 +391,6 @@
       <div>
         <span>Copyright © 2023 All Rights Reserved</span>
         <span class="link">
-          <a href="javascript:void(0)"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
           <a href="javascript:void(0)" onclick="handleClick('https://www.instagram.com/houseofheart.rumahsinggah/', true)"><i class="fa-brands fa-instagram"></i> Instagram</a>
         </span>
       </div>
