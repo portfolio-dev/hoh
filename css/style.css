@@ -241,8 +241,8 @@ hr {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url("../images/home-bg.jpg");
-  background-position:center 100%;
+  background: url("../images/home-bg2.jpg");
+  background-position:center 40%;
   background-size: 165vh;
 }
 
@@ -333,51 +333,51 @@ hr {
   padding: 0 10px;
 }
 
-.logoPcc {
+.about .logoPcc {
   height: 250px;
   width: 250px;
 }
 
-.photoes {
+.about .photoes {
   border-radius: 8px;
   border: 1px solid #d61f7b;;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   max-width: min-content;
   max-height: min-content;
 }
 @media (max-width: 1030px) {
-  .photoes {
+  .about .photoes {
     width: 800px;
     height: auto;
   }
 }
 @media (max-width: 800px) {
-  .photoes {
+  .about .photoes {
     width: 700px;
     height: auto;
   }
 }
 @media (max-width: 700px) {
-  .photoes {
+  .about .photoes {
     width: 600px;
     height: auto;
   }
 }
 @media (max-width: 600px) {
-  .photoes {
+  .about .photoes {
     width: 500px;
     height: auto;
   }
 }
 @media (max-width: 500px) {
-  .photoes {
+  .about .photoes {
     width: 400px;
     height: auto;
   }
 }
 @media (max-width: 400px) {
-  .photoes {
+  .about .photoes {
     width: 300px;
     height: auto;
   }
@@ -385,14 +385,14 @@ hr {
 
 
 
-.logo-container {
+.about .logo-container {
   width: 240px;
   height: 240px;
   position: relative;
   overflow: hidden;
 }
 
-.logoAbout {
+.about .logoAbout {
   position: absolute;
   top: 0;
   left: 0;
@@ -401,54 +401,141 @@ hr {
   transition: transform 7s ease-in-out;
 }
 
-.logo-lama {
+.about .logo-lama {
   transform: translateX(0);
 }
 
-.logo-baru {
+.about .logo-baru {
   transform: translateX(400px);
 }
 
-.logo-baru.show {
-  transform: translateX(0px);
+.about .logo-baru.show {
+  transform: translateX(25px);
 }
 
 
-.image-container {
+.about .image-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.image-container figure {
+.about .image-container figure {
   text-align: center;
   margin: 10px;
 }
 
-.image-container img {
+.about .image-container img {
   width: 250px;
   height: 240px;
   border-radius: 50%;
   border: 2px solid #d61f7b;
 }
 
-.image-container figcaption {
+.about .image-container figcaption {
   margin-top: 5px;
   color:#d61f7b;
 }
 
 @media (max-width: 768px) {
-  .image-container {
+  .about .image-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .image-container img {
+  .about .image-container img {
     width: 100%;
     max-width: 300px;
   }
 }
+
+
+
+
+.about .slide-container {
+  border: 1px solid #78024e;
+  border-radius: 50%;
+  max-width: 400px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px #d61f7b;
+}
+
+.about .slide-container-2 {
+  border: 1px solid #78024e;
+  border-radius: 10%;
+  max-width: 400px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px #d61f7b;
+}
+
+.about .slide-container-3 {
+  border: 1px solid #78024e;
+  border-radius: 10%;
+  max-width: 400px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px #d61f7b;
+}
+
+.about .slide {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s;
+}
+
+.about .slide2 {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s;
+}
+
+.about .slide3 {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s;
+}
+
+.about button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  position: absolute;
+}
+
+.about #next {
+  top: 50%;
+  right: 0;
+}
+
+.about #prev {
+  left: 0;
+  top: 50%;
+}
+
+.about button i {
+  padding: 10px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #d61f7b;
+}
+
+.about button i:active {
+  color: #78024e;
+}
+
+
 
 /* SERVICES SECTION */
 .services {
