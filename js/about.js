@@ -25,3 +25,14 @@ function runLogo() {
     window.addEventListener('scroll', gantiLogo);
     window.addEventListener('resize', gantiLogo);
 } document.addEventListener("DOMContentLoaded", runLogo);
+
+function runMusic() {
+    window.addEventListener('DOMContentLoaded', (event) => {
+        setTimeout(playMusic, 10000); // Memulai pemutaran musik setelah 10 detik
+      });
+    
+      function playMusic() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+      }
+} document.addEventListener("DOMContentLoaded", runMusic);
