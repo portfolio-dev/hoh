@@ -345,6 +345,7 @@ hr {
   height: 100%;
   max-width: min-content;
   max-height: min-content;
+  box-shadow: 0px 2px 4px #d61f7b;
 }
 @media (max-width: 1030px) {
   .about .photoes {
@@ -456,8 +457,8 @@ hr {
 .about .slide-container {
   border: 1px solid #78024e;
   border-radius: 50%;
-  max-width: 400px;
-  height: 400px;
+  max-width: 300px;
+  height: 300px;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -543,8 +544,8 @@ hr {
 }
 
 .services .card img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 20px;
   border-radius: 100%;
   object-fit: cover;
@@ -556,8 +557,8 @@ hr {
 }
 
 .facilities .card img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 20px;
   border-radius: 100%;
   object-fit: cover;
@@ -835,7 +836,7 @@ footer a {
   .dropdown:hover .dropdown-content {
     display: none;
   }
-  /* .dropdown-content { 
+  .dropdown-content { 
     background-color:rgba(241, 102, 172, 0.9);
     left: 30px;
     border-radius: 5px;  
@@ -845,7 +846,7 @@ footer a {
     min-width: 100px;
     background-color: rgba(120, 2, 78, 0.9);
     border-radius: 5px;
-  } */
+  }
 
   .loginLink {
     display: none;
