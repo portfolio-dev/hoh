@@ -26,9 +26,10 @@ function runLogo() {
     window.addEventListener('resize', gantiLogo);
 } document.addEventListener("DOMContentLoaded", runLogo);
 
+// Memulai pemutaran musik setelah 10 detik
 function runMusic() {
     window.addEventListener('DOMContentLoaded', (event) => {
-        setTimeout(playMusic, 10000); // Memulai pemutaran musik setelah 10 detik
+        setTimeout(playMusic, 10000); 
       });
     
       function playMusic() {

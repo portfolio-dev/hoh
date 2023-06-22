@@ -46,12 +46,28 @@ function facilities() {
 function menuToggler() {
     var menuToggle = document.getElementById('menu-toggler');
     var menuItems = document.querySelectorAll('.all-links a');
+    var menuContainer = document.getElementById('navbar');
 
     menuItems.forEach(function(item) {
         item.addEventListener('click', function() {
-            if(!item.classList.contains('noToggle')) {
+            if (!item.classList.contains('noToggle')) {
                 menuToggle.checked = false;
             }
         });
+    });
+
+    // Menambahkan event listener ke menu-container untuk mendeteksi klik di dalamnya
+    menuContainer.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
+
+    // Menambahkan event listener ke elemen document untuk mendeteksi klik di luar kotak menu-toggler
+    document.addEventListener('click', function(event) {
+        var targetElement = event.target;
+
+        // Periksa apakah klik dilakukan di luar kotak menu-toggler dan menu-container
+        if (!menuToggle.contains(targetElement) && !menuContainer.contains(targetElement)) {
+            menuToggle.checked = false;
+        }
     });
 } document.addEventListener("DOMContentLoaded", menuToggler);
