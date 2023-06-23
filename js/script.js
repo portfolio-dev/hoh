@@ -26,7 +26,7 @@ function handleClick(link, newTab) {
 };
 
 function toggleDisplay(elementId) {
-    var elements = ['homepage', 'services', 'facilities'];
+    var elements = ['homepage', 'services'];
 
     for (var i = 0; i < elements.length; i++) {
         var element = document.getElementById(elements[i]);
@@ -36,10 +36,6 @@ function toggleDisplay(elementId) {
 
 function services() {
     toggleDisplay('services');
-}
-
-function facilities() {
-    toggleDisplay('facilities');
 }
 
 // menu-toggler auto close
