@@ -552,16 +552,31 @@ hr {
 }
 
 /* FACILITIES SECTION */
-.facilities {
-  display: none;
+
+.facilities .card {
+  position: relative;
 }
 
 .facilities .card img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 20px;
   border-radius: 100%;
   object-fit: cover;
+  box-shadow: 0px 2px 4px #d61f7b;
+}
+
+.facilities .card .unavailable-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(-20deg);
+  background-color: rgba(214, 31, 123, 0.6);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
 }
 
 /* FINANCE SECTION */
