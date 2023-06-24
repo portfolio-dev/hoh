@@ -241,9 +241,9 @@ hr {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url("../images/home-bg2.jpg");
-  background-position:center 40%;
-  background-size: 165vh;
+  /* background: url("../images/home-bg2.jpg");
+  background-position: center 100%;
+  background-size: 165vh; */
 }
 
 .homepage::before {
@@ -570,13 +570,16 @@ hr {
   position: absolute;
   top: 25%;
   left: 50%;
+  width: auto;
+  border-radius: 20%;
   transform: translate(-50%, -50%) skew(-20deg);
-  background-color: rgba(214, 31, 123, 0.6);
+  background-color: rgba(214, 31, 123, 0.7);
   color: white;
   font-size: 12px;
   font-weight: bold;
   padding: 10px;
   text-align: center;
+  object-fit: cover;
 }
 
 /* FINANCE SECTION */
@@ -651,6 +654,84 @@ hr {
   }
 }
 
+/* DONATION SECTION */
+.donation {
+  margin: 60px 0 90px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.donation p {
+  margin-bottom: 10px;
+  color:#78024e;
+}
+
+.donation p i {
+  color: #7a7a7a;
+  margin-right: 10px;
+}
+
+.donation form input {
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #bfbfbf;
+}
+
+.donation form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.donation form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 16px;
+  height: 150px;
+  outline: none;
+  resize: vertical;
+  border: 1px solid #bfbfbf;
+}
+
+.donation .uploadFile {
+  height: 45px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #bfbfbf;
+  color: #7a7a7a;
+}
+
+.donation .uploadFile input[type="file"] {
+  display: none;
+}
+
+.donation form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background:#d61f7b;
+  transition: 0.2s ease;
+}
+
+.donation form button:hover {
+  background: #78024e;
+}
+
 /* CONTACT SECTION */
 .contact .row {
   margin: 60px 0 90px;
@@ -691,6 +772,21 @@ hr {
   margin-right: 10px;
 }
 
+.contact .uploadFile {
+  height: 45px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #bfbfbf;
+  color: #7a7a7a;
+  border-radius: 4px;
+}
+
+.contact .uploadFile input[type="file"] {
+  display: none;
+}
+
+
 .contact form {
   display: flex;
   flex-wrap: wrap;
@@ -710,6 +806,7 @@ hr {
 
 .contact form textarea {
   padding: 10px;
+  margin-bottom: 20px;
   width: 100%;
   font-size: 16px;
   height: 150px;
@@ -803,11 +900,11 @@ footer a {
     height: 150vh;
     top: 40px;
     background-color: rgba(214, 31, 123, 0.9);
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 0px 10px;
     transition: right 0.3s ease;
     max-height: 530px;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    /* overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; */
   }
 
   .navbar .logo {
@@ -828,9 +925,9 @@ footer a {
     outline: #bfbfbf 1px solid;
   }
     
-  .navbar .all-links::-webkit-scrollbar {
+  /* .navbar .all-links::-webkit-scrollbar {
     width: 0.1em;
-  }
+  } */
 
   .navbar #menu-toggler:checked~ .all-links {
     right: 0;
@@ -851,7 +948,7 @@ footer a {
   .dropdown:hover .dropdown-content {
     display: none;
   }
-  .dropdown-content { 
+  /* .dropdown-content { 
     background-color:rgba(241, 102, 172, 0.9);
     left: 30px;
     border-radius: 5px;  
@@ -861,7 +958,7 @@ footer a {
     min-width: 100px;
     background-color: rgba(120, 2, 78, 0.9);
     border-radius: 5px;
-  }
+  } */
 
   .loginLink {
     display: none;
