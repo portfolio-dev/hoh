@@ -57,19 +57,230 @@
     <section class="homepage" style="background: url('images/about/hohFacelities (3).jpeg');background-position: center 100%;background-size: 100vh;">
       <div class="content">
         <div class="text">
-          <h2 style="font-style: italic;">Cara berdonasi untuk Pejuang Jantung Anak</h2>
-          <h1>House of Heart<i class="fa-solid fa-heart-pulse"></i></h1>
+          <h2 style="font-style: italic;">Hai <i class="fa-solid fa-hand fa-shake"></i>  Orang Baik! </h2>
+          <!-- <h1>House of Heart<i class="fa-solid fa-heart-pulse"></i></h1> -->
           <p>
-            Kami bekerja sama dengan platform pengalangan dana kitabisa.com untuk menampung semua donasi yang akan digunakan untuk biaya operasional dan program-program yang ada di House of Heart.</p>
+            Bantu kami mendukung anak-anak dengan peyakit jantung bawaan untuk mengejar kesembuhan melalui rumah singgah House of Heart<i class="fa-solid fa-heart-pulse"></i>.
+          </p>
         </div>
-        <a href="javascript:void(0)" onclick="handleClick('')">kitabisa.com</a>
+        <a href="javascript:void(0)" onclick="handleClick('donate.html')">kitabisa.com/houseofheart</a>
       </div>
     </section>
-    <section>
-        <div>
+    <section class="donation">
+        <div class="donateWay">
+          <h3><i class="fa-solid fa-hand-holding-hand"></i> Cara Berdonasi</h3>
+          <p>
+            House of Heart saat ini hanya menerima donasi melalui platform penggalangan dana daring - Kitabisa.com
+          </p>
+          <p>
+            Link Kitabisa.com untuk mendukung operasional House of Heart : 
+          </p>
+          <button>Donasi <i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></button><br>
+          <br><hr><br>
+              <div class="faq-container">
+                <h3><i class="fa-solid fa-circle-exclamation"></i> Informasi Penting</h3><br>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ('answer1')">Kebutuhan operasional bulanan House of Heart</div>
+                    <div class="faq-answer" id="answer1">
+                        <ol>
+                          <li>
+                            Susu dan Popok Pasien Anak<br>                            
+                            <table class="monthlyNeeds">
+                              <tr>
+                                <th>Barang</th>
+                                <th>Jumlah</th>
+                                <th>Harga</th>
+                                <th>Total</th>
+                              </tr>
+                              <tr>
+                                <td>Susu Nutrisi</td>
+                                <td>3 Pasien</td>
+                                <td>Rp 300.000</td>
+                                <th>Rp 900.000</th>
+                              </tr>
+                              <tr>
+                                <td>Popok/ Pampers</td>
+                                <td>3 Pasien</td>
+                                <td>Rp 120.000</td>
+                                <th>Rp 360.000</th>
+                              </tr>
+                              <tr>
+                                <td>Sabun Mandi</td>
+                                <td>3 Pasien</td>
+                                <td>Rp 20.000</td>
+                                <th>Rp 60.000</th>
+                              </tr>
+                              <tr>
+                                <td>Minyak Telon</td>
+                                <td>3 Pasien</td>
+                                <td>Rp 25.000</td>
+                                <th>Rp 75.000</th>
+                              </tr>
+                              <tr>
+                                <th colspan="3" style="text-align: right;">Total</th>
+                                <th>Rp 1.395.000</th>
+                              </tr>
+                            </table>                            
+                          </li>
+                          <li>Sembako untuk dapur<br>
+                            <table class="monthlyNeeds">
+                              <tr>
+                                <th>Barang</th>
+                                <th>Jumlah</th>
+                                <th>Harga</th>
+                                <th>Total</th>
+                              </tr>
+                              <tr>
+                                <td>Beras</td>
+                                <td>50 kg</td>
+                                <td>Rp 10.000</td>
+                                <th>Rp 500.000</th>
+                              </tr>
+                              <tr>
+                                <td>Miyak Goreng</td>
+                                <td>5 liter</td>
+                                <td>Rp 100.000</td>
+                                <th>Rp 500.000</th>
+                              </tr>
+                              <tr>
+                                <td>Telur Ayam</td>
+                                <td>10 kg</td>
+                                <td>Rp 30.000</td>
+                                <th>Rp 300.000</th>
+                              </tr>
+                              <tr>
+                                <td>Daging</td>
+                                <td>10 kg</td>
+                                <td>Rp 30.000</td>
+                                <th>Rp 300.000</th>
+                              </tr>
+                              <tr>
+                                <td>Sayur</td>
+                                <td>10 kg</td>
+                                <td>Rp 30.000</td>
+                                <th>Rp 300.000</th>
+                              </tr>
+                              <tr>
+                                <td>Bumbu Dapur</td>
+                                <td>10 kg</td>
+                                <td>Rp 30.000</td>
+                                <th>Rp 300.000</th>
+                              </tr>
+                              <tr>
+                                <td>Buah</td>
+                                <td>10 kg</td>
+                                <td>Rp 30.000</td>
+                                <th>Rp 300.000</th>
+                              </tr>
+                              <tr>
+                                <td>Air Galon</td>
+                                <td>10 kg</td>
+                                <td>Rp 30.000</td>
+                                <th>Rp 300.000</th>
+                              </tr>
+                              <tr>
+                                <th colspan="3" style="text-align: right;">Total</th>
+                                <th>Rp 0</th>
+                              </tr>
+                            </table>
+                          </li>
+                          <li>Tagihan Listri dan Air<br>
+                            <table class="monthlyNeeds">
+                              <tr>
+                                <th>Tagihan</th>
+                                <th>Jumlah</th>
+                                <th>Bayar Bulanan</th>
+                              </tr>
+                              <tr>
+                                <td>Listrik</td>
+                                <td>1300 VA</td>
+                                <th>Rp 300.000</th>
+                              </tr>
+                              <tr>
+                                <td>Air PAM</td>
+                                <td>Rp 2.800/ m&#179;</td>
+                                <th>Rp 120.000</th>
+                              </tr>
+                              <tr>
+                                <th colspan="2" style="text-align: right;">Total</th>
+                                <th>Rp 1.395.000</th>
+                              </tr>
+                            </table>
+                          </li>
+                          <li>Tagihan Wifi (Hiburan Pasien)<br>
+                            <table class="monthlyNeeds">
+                              <tr>
+                                <th>Keterangan</th>
+                                <th>Jumlah</th>
+                                <th>Bayar Bulanan</th>
+                              </tr>
+                              <tr>
+                                <td>IndiHome</td>
+                                <td>20Mbps</td>
+                                <th>Rp 275.000</th>
+                              <tr>
+                                <th colspan="2" style="text-align: right;">Total</th>
+                                <th>Rp 275.000</th>
+                              </tr>
+                            </table>
+                          </li>
+                          <li>Gaji Relawan / Tim<br>
+                            <table class="monthlyNeeds">
+                              <tr>
+                                <th>Jabatan</th>
+                                <th>Gaji</th>
+                              </tr>
+                              <tr>
+                                <td>PIC</td>
+                                <th>Rp 4.000.000</th>
+                              </tr>
+                              <tr>
+                                <td>COR</td>
+                                <th>Rp 4.000.000</th>
+                              </tr>
+                              <tr>
+                                <td>IT ADM</td>
+                                <th>Rp 4.000.000</th>
+                              </tr>
+                              <tr>
+                                <th>Total</th>
+                                <th>Rp 12.000.000</th>
+                              </tr>
+                            </table>
+                          </li>                          
+                        </ol>
+                        <hr>
+                        <p style="text-align: center; font-weight: bold;">
+                          Grand Total: Rp 20.000.000/ Bulan*
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleFAQ('answer2')">House of Heart <i class="fa-solid fa-handshake-simple fa-bounce"></i> Kitabisa.com untuk mengumpulkan donasi</div>
+                  <div class="faq-answer" id="answer2">
+                      <ol>
+                        <li>Keamanan dan Kepercayaan</li>
+                        <li>Kemudahan Penggunaan</li>
+                        <li>Jangkauan dan Dampak</li>
+                        <li>Pengelolaan Dana</li>
+                        <li>Dukungan dan Bantuan</li>
+                      </ol>
+                  </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ('answer3')">Berdonasi barang atau makanan</div>
+                    <div class="faq-answer" id="answer3">
+                      <p>
+                        Untuk barang dan makanan dapat langsung diantar ke rumah singgah.
+                      </p>
+                    </div>
+                </div>
+              </div>
             
         </div>
     </section>
+    <br>
     <hr>
     <section class="donation" id="donation">
       <h2><i class="fa-solid fa-clipboard-check"></i>  Konfirmasi Donasi</h2>
@@ -78,10 +289,9 @@
         <div class="col form">
             <form>
               <input type="text" placeholder="Nama*" required>
-              <input type="text" placeholder="No Telepon | Whatsapp*" required>
-              <textarea placeholder="Berikan Pesan atau Doa"></textarea>
+              <input type="text" placeholder="No Telepon / Whatsapp*" required>
               <label for="buktiTF" class="uploadFile">
-                <input type="file" id="buktiTF" accept="image/*" required><i class="fa-solid fa-upload"></i> Upload Bukti Transfer*
+                <input type="file" id="buktiTF" accept="image/*" required><i class="fa-solid fa-upload"></i> Bukti Transfer*
               </label>
               <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>              
               <button id="submit" type="submit"><i class="fa-solid fa-check"></i> Konfirmasi</button>

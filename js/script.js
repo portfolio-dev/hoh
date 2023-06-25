@@ -67,3 +67,15 @@ function menuToggler() {
         }
     });
 } document.addEventListener("DOMContentLoaded", menuToggler);
+
+// JavaScript to handle the FAQ interaction
+function toggleFAQ(answerId) {
+    var answer = document.getElementById(answerId);
+    var answerStyle = window.getComputedStyle(answer);
+
+    if (answerStyle.display === "none") {
+        answer.style.display = "block";
+    } else {
+        answer.style.display = "none";
+    }
+}

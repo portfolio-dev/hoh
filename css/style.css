@@ -239,8 +239,9 @@ hr {
 .homepage {
   display: flex;
   height: 100vh;
-  width: 100%;
+  min-width: 100%;
   position: relative;
+  box-shadow: 0px 0px 8px 0px #d61f7b;
   /* background: url("../images/home-bg2.jpg");
   background-position: center 100%;
   background-size: 165vh; */
@@ -656,23 +657,102 @@ hr {
 
 /* DONATION SECTION */
 .donation {
-  margin: 60px 0 90px;
-  display: flex;
-  max-width: 1200px;
+  margin: 60px 0px;
+  padding: 0px 10px;
   width: 100%;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .donation p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color:#78024e;
 }
 
-.donation p i {
-  color: #7a7a7a;
-  margin-right: 10px;
+
+.donation .donateWay Button {
+  padding: 5px 10px;
+  width: auto;
+  border-radius: 5px;
+  font-size: 17px;
+  word-spacing: 25px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background:#d61f7b;
+  transition: 0.2s ease;
 }
+
+/* Styling for the FAQ menu */
+.donation .faq-container {
+  min-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(214, 31, 123, 0.1);
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.donation .faq-item {
+  margin-bottom: 18px;
+}
+
+.donation .faq-question {
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0px 2px rgba(214, 31, 123, 0.5);
+}
+
+.donation .faq-question::after {
+  content: '\25BC'; 
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.donation .faq-answer {
+  display: none;
+  margin-top: 5px;
+  width: 100%;
+  background-color: rgba(214, 31, 123, 0.2);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.donation .faq-answer ol {
+  transform: translateX(8%);
+}
+
+.donation .faq-answer li {
+  padding-bottom: 15px;
+}
+
+.donation table {
+  width: 80%;
+  font-size: auto;
+  border-collapse: collapse;
+}
+
+.donation th, td {
+    border: 1px solid rgba(120, 2, 78, 0.5);
+    padding: 8px;
+    text-align: center;
+}
+
+.donation tr:nth-child(even) {
+  background-color: rgba(214, 31, 123, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+  .donation table {
+    font-size:smaller;
+  }
+}
+
+@media screen and (max-width: 514px) {
+  .donation table {
+    font-size: x-small;
+  }
+}
+
+
 
 .donation form input {
   height: 45px;
@@ -687,7 +767,7 @@ hr {
 .donation form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between;  
 }
 
 .donation form textarea {
@@ -702,8 +782,8 @@ hr {
 }
 
 .donation .uploadFile {
-  height: 45px;
-  width: 100%;
+  height: auto;
+  width: 45%;
   padding: 10px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -717,9 +797,10 @@ hr {
 }
 
 .donation form button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  width: 100%;
+  margin-top: 0px;
+  padding: 0px;
+  width: 50%;
+  height: 45px;
   font-size: 17px;
   color: #fff;
   border: none;
@@ -835,7 +916,7 @@ hr {
 footer {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background: linear-gradient(to bottom, #d61f7b, #78024e);
   padding: 20px 0;
 }
