@@ -683,8 +683,8 @@ hr {
 
 /* Styling for the FAQ menu */
 .donation .faq-container {
-  min-width: 400px;
-  margin: 0 auto;
+  min-width: 300px;
+  margin: 0;
   background-color: rgba(214, 31, 123, 0.1);
   border-radius: 5px;
   padding: 2px 5px;
@@ -711,13 +711,13 @@ hr {
 .donation .faq-answer {
   display: none;
   margin-top: 5px;
-  width: 100%;
+  width: 96%;
   background-color: rgba(214, 31, 123, 0.2);
   border-radius: 0px 10px 10px 0px;
 }
 
 .donation .faq-answer ol {
-  transform: translateX(8%);
+  transform: translateX(6%);
 }
 
 .donation .faq-answer li {
@@ -725,7 +725,7 @@ hr {
 }
 
 .donation table {
-  width: 80%;
+  width: 90%;
   font-size: auto;
   border-collapse: collapse;
 }
@@ -770,20 +770,9 @@ hr {
   justify-content: space-between;  
 }
 
-.donation form textarea {
-  padding: 10px;
-  margin-bottom: 20px;
-  width: 100%;
-  font-size: 16px;
-  height: 150px;
-  outline: none;
-  resize: vertical;
-  border: 1px solid #bfbfbf;
-}
-
 .donation .uploadFile {
   height: auto;
-  width: 45%;
+  width: 55%;
   padding: 10px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -799,7 +788,7 @@ hr {
 .donation form button {
   margin-top: 0px;
   padding: 0px;
-  width: 50%;
+  width: 40%;
   height: 45px;
   font-size: 17px;
   color: #fff;
