@@ -203,7 +203,7 @@ section .cards {
   justify-content: space-between;
 }
 
-section.about {
+section .about {
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -337,6 +337,21 @@ hr {
 .about .logoPcc {
   height: 250px;
   width: 250px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.about #igPcc {
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 10px;
+  background-color: rgba(120, 2, 78, 0.8);
+}
+
+.about #igPcc:hover {
+  background-color: #d61f7b;
 }
 
 .about .photoes {
@@ -659,18 +674,16 @@ hr {
 .donation {
   margin: 60px 0px;
   padding: 0px 10px;
-  width: 100%;
 }
 
 .donation p {
   margin-bottom: 15px;
-  color:#78024e;
 }
 
 
 .donation .donateWay Button {
   padding: 5px 10px;
-  width: auto;
+  width: 150px;
   border-radius: 5px;
   font-size: 17px;
   word-spacing: 25px;
@@ -681,9 +694,13 @@ hr {
   transition: 0.2s ease;
 }
 
-/* Styling for the FAQ menu */
+.donation .donateWay button:hover {
+  background: #78024e;
+}
+
+
 .donation .faq-container {
-  min-width: 300px;
+  max-width: 868px;
   margin: 0;
   background-color: rgba(214, 31, 123, 0.1);
   border-radius: 5px;
@@ -711,13 +728,20 @@ hr {
 .donation .faq-answer {
   display: none;
   margin-top: 5px;
-  width: 96%;
   background-color: rgba(214, 31, 123, 0.2);
   border-radius: 0px 10px 10px 0px;
+  color: black;
 }
 
 .donation .faq-answer ol {
-  transform: translateX(6%);
+  /* transform: translateX(5%); */
+  padding: 0px 0px 0px 16px;
+}
+
+.donation .faq-answer p {
+  padding: 0px 5px;
+  color: black;
+  width: auto;
 }
 
 .donation .faq-answer li {
@@ -725,7 +749,7 @@ hr {
 }
 
 .donation table {
-  width: 90%;
+  width: 100%;
   font-size: auto;
   border-collapse: collapse;
 }
