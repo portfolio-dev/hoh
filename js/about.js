@@ -37,3 +37,21 @@ function runMusic() {
         audio.play();
       }
 } document.addEventListener("DOMContentLoaded", runMusic);
+
+// Tombol up
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollToTopBtn").classList.add("show");
+  } else {
+    document.getElementById("scrollToTopBtn").classList.remove("show");
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // Untuk browser Chrome, Firefox, Safari
+  document.documentElement.scrollTop = 0; // Untuk browser IE dan Opera
+}
+
+window.onscroll = function() {
+  scrollFunction();
+};

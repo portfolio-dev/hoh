@@ -40,6 +40,26 @@ header a:hover, footer a:hover {
   color: #ddd;
 }
 
+header #scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(214, 31, 123, 0.8);
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+header #scrollToTopBtn.show {
+  display: block;
+}
+
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -343,15 +363,17 @@ hr {
 
 .about #igPcc {
   text-decoration: none;
-  color: white;
-  border-radius: 8px;
+  color: #d61f7b;
+  border: 1px solid #d61f7b;
+  border-radius: 6px;
   font-size: 12px;
   padding: 10px;
-  background-color: rgba(120, 2, 78, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .about #igPcc:hover {
   background-color: #d61f7b;
+  color: white;
 }
 
 .about .photoes {
@@ -525,9 +547,10 @@ hr {
 }
 
 .about button {
+  background-color: rgba(255, 255, 255,0.3);
+  border-radius: 100%;
   appearance: none;
   border: none;
-  background: transparent;
   position: absolute;
 }
 
