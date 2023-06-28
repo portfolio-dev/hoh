@@ -35,11 +35,11 @@ const slide2Image = () => {
 };
 
 const handleTouchStart2 = (event) => {
-    touchStartX2 = event.touches[0].clientX2;
+    touchStartX2 = event.touches[0].clientX;
 };
 
 const handleTouchEnd2 = (event) => {
-    touchEndX2 = event.changedTouches[0].clientX2;
+    touchEndX2 = event.changedTouches[0].clientX;
     handleGesture2();
 };
 
