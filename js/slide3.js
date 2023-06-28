@@ -35,11 +35,11 @@ const slide3Image = () => {
 };
 
 const handleTouchStart3 = (event) => {
-    touchStartX3 = event.touches[0].clientX3;
+    touchStartX3 = event.touches[0].clientX;
 };
 
 const handleTouchEnd3 = (event) => {
-    touchEndX3 = event.changedTouches[0].clientX3;
+    touchEndX3 = event.changedTouches[0].clientX;
     handleGesture3();
 };
 
