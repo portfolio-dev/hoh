@@ -144,6 +144,10 @@ header #scrollToTopBtn.show {
   display: none;
 }
 
+.phoneOnly {
+  display: none;
+}
+
 .dropdown {
   position: absolute;
   display: block;
@@ -223,11 +227,6 @@ section .cards {
   justify-content: space-between;
 }
 
-section .about {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
 section .cards .card {
   background: #fff;
   padding: 40px 15px;
@@ -243,6 +242,38 @@ section .cards .card {
   padding: 0 15px;
   margin-top: 5px;
   color:#78024e;
+}
+
+section .cards2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-top: 50px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+section .cards2 .card2 {
+  background: #fff;
+  padding: 40px 15px;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  margin-bottom: 40px;
+  width: calc(100% / 3 - 30px);
+  text-align: center;
+}
+
+.cards2 .card2 p {
+  padding: 0 15px;
+  margin-top: 5px;
+  color:#78024e;
+}
+
+
+section .about {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 h3 {
@@ -583,16 +614,40 @@ hr {
 
 
 /* SERVICES SECTION */
-.services {
-  display: none;
+.services a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 
-.services .card img {
+.services .card2 img {
   width: 100px;
   height: 100px;
   margin-bottom: 20px;
   border-radius: 100%;
   object-fit: cover;
+  box-shadow: 0px 2px 4px #d61f7b;
+}
+
+.services .card2 {
+  position: relative;
+}
+
+.services button {
+  padding: 10px;
+  width: 100%;
+  bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background:#d61f7b;
+  transition: 0.2s ease;
+}
+
+.services button:hover {
+  background: #78024e;
 }
 
 /* FACILITIES SECTION */
@@ -825,18 +880,24 @@ hr {
 .donation form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;  
+  justify-content:space-between;  
+}
+
+.donation input[type="date"] {
+  color: #7a7a7a;
+  width: 50%;
 }
 
 .donation .uploadFile {
   height: auto;
-  width: 55%;
+  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   cursor: pointer;
   background-color: white;
   border: 1px solid #bfbfbf;
   color: #7a7a7a;
+  outline: none;
 }
 
 .donation .uploadFile input[type="file"] {
@@ -846,7 +907,7 @@ hr {
 .donation form button {
   margin-top: 0px;
   padding: 0px;
-  width: 40%;
+  width: 48%;
   height: 45px;
   font-size: 17px;
   color: #fff;
@@ -1082,6 +1143,14 @@ footer .imgFooter {
     background-color: rgba(214, 31, 123, 1);
   }
 
+  .phoneOnly {
+    display: flex;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
   .dropdown:hover .dropdown-content {
     display: none;
   }
@@ -1107,6 +1176,11 @@ footer .imgFooter {
   }
 
   section .cards .card {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 30px;
+  }
+
+  section .cards2 .card2 {
     width: calc(100% / 2 - 15px);
     margin-bottom: 30px;
   }
@@ -1164,7 +1238,12 @@ footer .imgFooter {
     font-size: 20px;
   }
 
-  section .cards .card {
+  section .cards .card{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  section .cards2 .card2{
     width: 100%;
     margin-bottom: 30px;
   }

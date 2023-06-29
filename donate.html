@@ -28,6 +28,9 @@
         <ul class="all-links">
           <li><a href="javascript:void(0)" onclick="handleClick('index.html')"><i class="fas fa-home-user"></i> Beranda</a></li>
           <li><a href="javascript:void(0)" onclick="handleClick('about.html')"><i class="fas fa-people-roof"></i> Tentang Kami</a></li>
+
+          <li class="phoneOnly"><a href="javascript:void(0)" onclick="handleClick('story.html')"><i class="fas fa-book-medical"></i> Program</a></li>
+
           <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-book-medical"></i> Program</a>
               <ul class="dropdown-content">
                 <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Kebutuhan Harian</a></li>  
@@ -36,7 +39,10 @@
                   <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Konsultasi</a></li>
               </ul>
           </li>
+
           <li><a href="javascript:void(0)" onclick="handleClick('facilities.html')"><i class="fas fa-gift"></i> Fasilitas</a></li>   
+
+          <li class="phoneOnly"><a href="javascript:void(0)" onclick="handleClick('story.html')"><i class="fas fa-shield-heart"></i> Cerita</a></li>
 
           <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-shield-heart"></i> Cerita</a>
             <ul class="dropdown-content">
@@ -250,8 +256,8 @@
                           </li>                          
                         </ol>
                         <hr>
-                        <p style="text-align: center; font-weight: bold;">
-                          Grand Total: Rp 16.525.000/ Bulan*
+                        <p style="text-align: center;">
+                          <b style="font-size: 14px;">Grand Total: Rp 16.525.000/ Bulan*</b><br> <i style="font-size: small;">Perhitungan ini merupakan estimasi penggunaan yang akan disesuaikan dengan kondisi yang diperoleh.</i>
                         </p>
                     </div>
                 </div>
@@ -263,11 +269,11 @@
                     </p>
                     <p>
                       <b>Keamanan dan Kepercayaan</b><br>
-                      memiliki sistem keamanan yang kuat untuk melindungi data dan transaksi keuangan pengguna. Hal ini memberikan rasa percaya kepada para donatur bahwa dana yang mereka sumbangkan akan digunakan sesuai dengan tujuan yang ditentukan.
+                      memiliki sistem keamanan yang kuat untuk melindungi data dan transaksi keuangan pengguna. Hal ini memberikan rasa percaya kepada para donatur bahwa data mereka aman dan dana yang mereka sumbangkan akan digunakan sesuai dengan tujuan yang ditentukan.
                     </p>
                     <p>
                       <b>Pengawas Penggunaan Dana</b><br>
-                      memiliki sistem yang transparan, termasuk pelaporan dan pencatatan yang terperinci tentang dana yang masuk dan keluar. Donatur dapat dengan mudah melacak bagaimana penerima dana menggunakan dana sesuai tujuan.
+                      memiliki sistem yang transparan, termasuk pelaporan dan pencatatan yang terperinci tentang dana yang masuk dan keluar. Donatur dapat dengan mudah melacak bagaimana penerima dana menggunakan dana secara lengkap sesuai tujuan.
                     </p>
                     <hr><br>
                     <p>
@@ -283,38 +289,46 @@
                 </div>
                 
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ('answer3')"><i class="fa-solid fa-cubes fa-bounce"></i> Berdonasi barang atau makanan</div>
+                    <div class="faq-question" onclick="toggleFAQ('answer3')"><i class="fa-solid fa-cubes fa-bounce"></i> Berdonasi barang</div>
                     <div class="faq-answer" id="answer3">
                       <p>
-                        Untuk barang dan makanan dapat langsung diantar ke rumah singgah dengan menghubunggi Tim kami terlebih dahulu.
-                      </p>
-                      <p>
-                        <b>Barang</b><br>
-                        Menerima donasi barang seperti pakaian, perlengkapan mandi, perlengkapan tidur, alat kesehatan, alat pendukung kegiatan berobat atau barang lainnya yang dibutuhkan pasien jantung anak.
-                      </p>
-                      <p>
-                        <b>Makanan</b><br>
-                        Menerima donasi makanan. Pastikan makanan yang Anda donasikan halal agar dapat dikonsumsi semua orang, dalam kondisi baik, segar, dan layak konsumsi untuk pasien jantung anak dan pendampingnya.
+                        Menerima donasi barang seperti pakaian, perlengkapan mandi, perlengkapan tidur, alat kesehatan, alat pendukung kegiatan berobat atau barang lainnya yang dibutuhkan pasien jantung anak.<br><br>
+                        <i>Alat kesehatan</i> : Thermometer, Oximeter, Nebulizer, tabung oksigen kecil, dll.<br><br>
+                        <i>Alat pendukung</i> : Kursi roda, stroller, pompa asi, dll.<br><br>
+                        Silahkan hubungi tim House of Heart untuk berdonasi barang:<br>
+                        <center><a href="javascript:void(0)" onclick="handleClick('https://wa.me/6282132936477', true)" style="text-decoration: none; color: black; font-weight: bold; padding: 5px; border: 1px solid black; border-radius: 10px; background-color: rgba(255,255,255,0.5);"><i class="fa-brands fa-whatsapp"></i> Hubunggi Tim</a></center><br>
                       </p>
                     </div>
                 </div>
+
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleFAQ('answer4')"><i class="fa-solid fa-bowl-rice fa-bounce"></i> Berdonasi makanan</div>
+                  <div class="faq-answer" id="answer4">
+                    <p>
+                      Menerima donasi makanan. Pastikan makanan yang Anda donasikan halal agar dapat dikonsumsi semua orang, dalam kondisi baik, segar, dan layak konsumsi untuk pasien jantung anak dan pendampingnya.<br><br>
+                      Silahkan hubungi tim House of Heart untuk berdonasi barang:<br>
+                      <center><a href="javascript:void(0)" onclick="handleClick('https://wa.me/6282132936477', true)" style="text-decoration: none; color: black; font-weight: bold; padding: 5px; border: 1px solid black; border-radius: 10px; background-color: rgba(255,255,255,0.5);"><i class="fa-brands fa-whatsapp"></i> Hubunggi Tim</a></center><br>
+                    </p>
+                  </div>
+              </div>
               </div>            
         </div>
     </section>
     <br>
     <hr>
     <section class="donation" id="donation">
-      <h2><i class="fa-solid fa-clipboard-check"></i>  Konfirmasi Donasi</h2>
-      <p>Mohon berkenan untuk mengirimkan bukti transfer donasi Anda melalui formulir di bawah ini. </p><br>
+      <h2><i class="fa-solid fa-clipboard-check"></i> Konfirmasi Donasi</h2>
+      <p>Untuk mendapatkan tanda terima resmi dari House of Heart mohon berkenan untuk mengirimkan bukti donasi Anda melalui formulir di bawah ini. </p><br>
 
         <div class="col form">
             <form>
               <input type="text" placeholder="Nama*" required>
-              <input type="text" placeholder="No Telepon / Whatsapp*" required>
+              <input type="text" placeholder="No Telepon / Whatsapp*" required>              
               <label for="buktiTF" class="uploadFile">
-                <input type="file" id="buktiTF" accept="image/*" required><i class="fa-solid fa-upload"></i> Bukti Transfer*
+                <input type="file" id="buktiTF" accept="image/*" required><i class="fa-solid fa-upload"></i> Bukti Donasi*
               </label>
-              <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>              
+              <input type="date" placeholder="mm/dd/yyyy*" required>
+              <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>
               <button id="submit" type="submit"><i class="fa-solid fa-check"></i> Konfirmasi</button>
             </form>
         </div>
