@@ -621,8 +621,8 @@ hr {
 }
 
 .services .card2 img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 20px;
   border-radius: 100%;
   object-fit: cover;
@@ -823,7 +823,6 @@ hr {
 }
 
 .donation .faq-answer ol {
-  /* transform: translateX(5%); */
   padding: 0px 0px 0px 16px;
 }
 
@@ -886,12 +885,12 @@ hr {
 .donation input[type="date"] {
   color: #7a7a7a;
   background-color: #fff;
-  width: 60%;
+  width: 100%;
 }
 
 .donation .uploadFile {
   height: auto;
-  width: 100%;
+  width: 60%;
   padding: 10px;
   margin-bottom: 20px;
   cursor: pointer;
