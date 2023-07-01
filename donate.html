@@ -46,9 +46,9 @@
 
           <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-shield-heart"></i> Cerita</a>
             <ul class="dropdown-content">
-              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('')"><i class="fa-solid fa-hands-praying"></i> Doa dan harapanku</a></li>
-              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('')"><i class="fa-solid fa-child-reaching"></i> Aku sudah sembuh</a></li>
-              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('')"><i class="fa-solid fa-hands-holding-child"></i> Aku tidak sakit lagi</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('story/prayer-and-hope.html')"><i class="fa-solid fa-hands-praying"></i> Doa dan harapanku</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('story/i-am-cured.html')"><i class="fa-solid fa-child-reaching"></i> Aku sudah sembuh</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('story/have-left-us.html')"><i class="fa-solid fa-hands-holding-child"></i> Aku tidak sakit lagi</a></li>
             </ul>
           </li>
           <li><a href="javascript:void(0)" onclick="handleClick('finance.html')"><i class="fas fa-money-bills"></i> Keuangan</a></li>
@@ -76,10 +76,10 @@
         <div class="donateWay">
           <h3><i class="fa-solid fa-hand-holding-hand"></i> Cara Berdonasi</h3>
           <p>
-            House of Heart saat ini hanya menerima donasi melalui platform penggalangan dana daring - Kitabisa.com dan Benihbaik.com
+            House of Heart saat ini hanya menerima donasi melalui platform penggalangan dana daring - Benihbaik.com
           </p>
           <p>
-            Berikut tombol Kitabisa.com dan Benihuntuk mendukung operasional House of Heart : 
+            Berikut tombol Benibaik untuk mendukung operasional Rumah Singgah House of Heart : 
           </p>
           <button>Donasi <i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></button><br>
           <br><hr><br>
@@ -87,10 +87,10 @@
                 <h3><i class="fa-solid fa-circle-exclamation"></i> Informasi Penting</h3><br>
 
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleFAQ('answer1')"><i class="fa-solid fa-handshake-simple fa-bounce"></i> Penggalangan dana House of Heart didukung oleh Kitabisa.com</div>
+                  <div class="faq-question" onclick="toggleFAQ('answer1')"><i class="fa-solid fa-handshake-simple fa-bounce"></i> Penggalangan dana House of Heart didukung oleh Benihbaik.com</div>
                   <div class="faq-answer" id="answer1">
                     <p>
-                      Kitabisa.com adalah sebuah platform crowdfunding atau penggalangan dana daring di Indonesia. Didirikan pada tahun 2013, Kitabisa.com bertujuan untuk membantu individu, organisasi non-pemerintah (NGO), dan yayasan dalam mengumpulkan dana untuk berbagai tujuan sosial dan kemanusiaan.
+                      Benihbaik.com adalah sebuah platform crowdfunding atau penggalangan dana daring di Indonesia. Benihbaik.com bertujuan untuk membantu individu, organisasi non-pemerintah (NGO), dan yayasan dalam mengumpulkan dana untuk berbagai tujuan sosial dan kemanusiaan.
                     </p>
                     <p>
                       <b>Keamanan dan Kepercayaan</b><br>
@@ -102,7 +102,7 @@
                     </p>
                     <hr><br>
                     <p>
-                      <b>Alur House of Heart mengelola dana dari Kitabisa.com</b>
+                      <b>Alur House of Heart mengelola dana dari Benihbaik.com</b>
                     </p>
                       <ol>
                         <li>Tanggal 25 s.d 30: Membuat Rencana Anggaran Bulanan (RAB) untuk bulan depan.</li>                        
@@ -323,11 +323,10 @@
       <h2><i class="fa-solid fa-clipboard-check"></i> Konfirmasi Donasi</h2>
       <p>Untuk mendapatkan tanda terima resmi dari House of Heart mohon berkenan untuk mengirimkan bukti donasi Anda melalui formulir di bawah ini. </p><br>
 
-        <div class="col form">
+        <div class="col">
             <form>
-              <input type="text" placeholder="Nama*" required>
-              <input type="text" placeholder="No Telepon / Whatsapp*" required>
-              <input type="date" required>              
+              <input class="inputDonation" type="text" placeholder="Nama*" required>
+              <input class="inputDonation" type="text" placeholder="No Telepon / Whatsapp*" required>             
               <label for="buktiTF" class="uploadFile">
                 <input type="file" id="buktiTF" accept="image/*" required><i class="fa-solid fa-upload"></i> Bukti Donasi*
               </label>              

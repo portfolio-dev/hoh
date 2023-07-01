@@ -882,12 +882,6 @@ hr {
   justify-content:space-between;  
 }
 
-/* .donation input[type="date"] {
-  color: #7a7a7a;
-  background-color: #fff;
-  width: 100%;
-} */
-
 .donation .uploadFile {
   height: auto;
   width: 60%;
