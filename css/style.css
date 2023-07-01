@@ -763,6 +763,7 @@ hr {
 .donation {
   margin: 60px 0px;
   padding: 0px 10px;
+  min-width: 355px;
 }
 
 .donation p {
@@ -787,13 +788,40 @@ hr {
   background: #78024e;
 }
 
+.donation .donateWay a {
+  text-decoration: none;
+  padding: 0px 5px;
+  max-width: 100%;
+  margin: 0 5px;
+  color: black;
+  cursor: pointer;
+  background: rgb(145, 215, 145);
+  border-radius: 5px;
+}
+
+.donation .donateWay a:hover {
+  background-color: #d61f7b;
+}
+
+.donation .imgDonate {
+  height: 60px;
+  width: 180px;
+  padding: 2px;
+  border: 1px solid green;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.donation .imgDonate:hover {
+  background-color: rgba(214, 31, 123, 0.9);
+  border: 0;
+}
 
 .donation .faq-container {
-  max-width: 868px;
-  margin: 0;
+  max-width: 100%;
   background-color: rgba(214, 31, 123, 0.1);
   border-radius: 5px;
-  padding: 2px 5px;
+  padding: 20px 6px;
 }
 
 .donation .faq-item {
