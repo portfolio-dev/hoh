@@ -771,7 +771,7 @@ hr {
 }
 
 .donation h3 {
-  padding: 30px 10px 0px;
+  padding: 30px 10px 0px 10px;
 }
 
 
@@ -804,10 +804,10 @@ hr {
 }
 
 .donation .faq-container {
-  /* min-width: 354px; */
+  max-width: 890px;
   background-color: rgba(214, 31, 123, 0.1);
   border-radius: 5px;
-  padding: 20px 10px;
+  padding: 5px;
 }
 
 .donation .faq-item {
@@ -818,7 +818,7 @@ hr {
   cursor: pointer;
   position: relative;
   box-shadow: 0px 2px rgba(214, 31, 123, 0.5);
-  padding: 0px 10px;
+  padding: 0px 6px;
 }
 
 .donation .faq-question::after {
@@ -831,20 +831,20 @@ hr {
 
 .donation .faq-answer {
   display: none;
-  padding: 5px 2px;
+  padding: 5px 1px;
   background-color: rgba(214, 31, 123, 0.2);
   border-radius: 0px 10px 10px 0px;
   color: black;
 }
 
 .donation .faq-answer ol {
-  padding-left: 18px;
+  padding-left: 17px;
 }
 
 .donation .faq-answer p {
   padding: 0px 5px;
   color: black;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .donation .faq-answer li {
@@ -852,7 +852,7 @@ hr {
 }
 
 .donation table {
-  width: 95%;
+  width: 98%;
   font-size: auto;
   border-collapse: collapse;
 }
