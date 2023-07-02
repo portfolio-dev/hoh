@@ -761,45 +761,31 @@ hr {
 
 /* DONATION SECTION */
 .donation {
-  margin: 60px 0px;
+  margin: 40px 0px;
   padding: 0px 10px;
-  min-width: 355px;
 }
 
 .donation p {
   margin-bottom: 15px;
+  padding: 0px 10px;
+}
+
+.donation h3 {
+  padding: 30px 10px 0px;
 }
 
 
-.donation .donateWay Button {
-  padding: 5px 10px;
-  width: 150px;
-  border-radius: 5px;
-  font-size: 17px;
-  word-spacing: 25px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  background:#d61f7b;
-  transition: 0.2s ease;
-}
-
-.donation .donateWay button:hover {
-  background: #78024e;
-}
-
-.donation .donateWay a {
-  text-decoration: none;
-  padding: 0px 5px;
-  max-width: 100%;
-  margin: 0 5px;
+.donation a {  
+  padding: 0px;
+  margin: 0px;
   color: black;
   cursor: pointer;
   background: rgb(145, 215, 145);
   border-radius: 5px;
+  text-decoration: none;
 }
 
-.donation .donateWay a:hover {
+.donation a:hover {
   background-color: #d61f7b;
 }
 
@@ -818,10 +804,10 @@ hr {
 }
 
 .donation .faq-container {
-  max-width: 100%;
+  /* min-width: 354px; */
   background-color: rgba(214, 31, 123, 0.1);
   border-radius: 5px;
-  padding: 20px 6px;
+  padding: 20px 10px;
 }
 
 .donation .faq-item {
@@ -832,6 +818,7 @@ hr {
   cursor: pointer;
   position: relative;
   box-shadow: 0px 2px rgba(214, 31, 123, 0.5);
+  padding: 0px 10px;
 }
 
 .donation .faq-question::after {
@@ -844,20 +831,20 @@ hr {
 
 .donation .faq-answer {
   display: none;
-  margin-top: 5px;
+  padding: 5px 2px;
   background-color: rgba(214, 31, 123, 0.2);
   border-radius: 0px 10px 10px 0px;
   color: black;
 }
 
 .donation .faq-answer ol {
-  padding: 0px 0px 0px 16px;
+  padding-left: 18px;
 }
 
 .donation .faq-answer p {
   padding: 0px 5px;
   color: black;
-  width: auto;
+  width: 100%;
 }
 
 .donation .faq-answer li {
@@ -865,7 +852,7 @@ hr {
 }
 
 .donation table {
-  width: 100%;
+  width: 95%;
   font-size: auto;
   border-collapse: collapse;
 }
@@ -1241,9 +1228,9 @@ footer .imgFooter {
 
 
 @media screen and (max-width: 420px) {
-  body{
-    min-width: 344px;
-  }
+  /* body{
+    min-width: 340px;
+  } */
 
   .navbar .all-links {
     width: 180px;
