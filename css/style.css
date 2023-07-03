@@ -238,7 +238,7 @@ section .cards .card {
   text-align: center;
 }
 
-.cards .card p {
+section .cards .card p {
   padding: 0 15px;
   margin-top: 5px;
   color:#78024e;
@@ -264,16 +264,10 @@ section .cards2 .card2 {
   text-align: center;
 }
 
-.cards2 .card2 p {
+section .cards2 .card2 p {
   padding: 0 15px;
   margin-top: 5px;
   color:#78024e;
-}
-
-
-section .about {
-  margin: 0 auto;
-  max-width: 1200px;
 }
 
 h3 {
@@ -285,6 +279,134 @@ hr {
   border-top: 1px solid #e5d7de;
 }
 
+.cardsPost {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  height: 600px;
+  margin-top: 50px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.cardsPost .cardPost {
+  background: #fff;
+  padding: 40px 15px;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  margin-bottom: 40px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.cardPost {
+  position: relative;
+}
+
+.cardsPost .slide-container {
+  border: 1px solid #78024e;
+  border-radius: 10px;
+  max-width: 350px;
+  height: 350px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px #d61f7b;
+}
+
+
+.cardsPost .slide {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s;
+}
+
+.cardsPost .slide-container-2 {
+  border: 1px solid #78024e;
+  border-radius: 10px;
+  max-width: 350px;
+  height: 350px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px #d61f7b;
+}
+
+
+.cardsPost .slide2 {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s;
+}
+
+
+.cardsPost button {
+  background-color: rgba(255, 255, 255,0.3);
+  border-radius: 100%;
+  appearance: none;
+  border: none;
+  position: absolute;
+}
+
+.cardsPost #next {
+  top: 50%;
+  right: 0;
+}
+
+.cardsPost #prev {
+  left: 0;
+  top: 50%;
+}
+
+.cardsPost button i {
+  padding: 10px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #d61f7b;
+}
+
+.cardsPost button i:active {
+  color: #78024e;
+}
+
+
+
+.donate-list .slider img {
+  margin: 0px 20px;
+  border-radius: 50%;
+  border: 1px solid green;
+  height: 120px;
+  width: 120px;
+  /* box-shadow: 0px 0px 8px 0px green; */
+}
+
+.donate-list .slider {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  background: white;
+}
+
+.donate-list .logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  animation: slide 25s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 /* HOMEPAGE SECTION */
 .homepage {
@@ -364,8 +486,11 @@ hr {
 
 /* ABOUT SECTION */
 .about {
+  margin: 0 auto;
+  max-width: 1200px;
   padding-left: 6px;
   padding-right: 6px;
+
 }
 
 .about .company-info {
@@ -1253,6 +1378,11 @@ footer .imgFooter {
   }
 
   section .cards2 .card2{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  section .cardsPost .cardPost{
     width: 100%;
     margin-bottom: 30px;
   }

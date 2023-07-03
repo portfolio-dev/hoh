@@ -79,3 +79,17 @@ function toggleFAQ(answerId) {
         answer.style.display = "none";
     }
 }
+
+function sliderRun() {
+    window.onload = function() {
+        const slider = document.querySelector('.slider');
+        const logoContainers = document.querySelectorAll('.logoContainer');
+        const slideWidth = logoContainers[0].offsetWidth;
+      
+        slider.style.width = slideWidth + 'px';
+      
+        setInterval(function() {
+          slider.appendChild(logoContainers[0]);
+        }, 10000);
+      };
+} document.addEventListener("DOMContentLoaded",sliderRun);
