@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title id="tabTitle"></title>    
+    <link rel="icon" type="image/png" href="../images/logo1.png">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>    
+    <header>
+      <nav class="navbar" id="navbar">        
+        <img class="logo" src="../images/logo1.png"/>
+        <h2 class="nav-name">House of Heart<i class="fa-solid fa-heart-pulse fa-xs"></i></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label> 
+        <ul class="all-links">
+          <li><a href="javascript:void(0)" onclick="handleClick('../index.html')"><i class="fas fa-home-user"></i> Beranda</a></li>
+          <li><a href="javascript:void(0)" onclick="handleClick('../about.html')"><i class="fas fa-people-roof"></i> Tentang Kami</a></li>
+
+          <li class="phoneOnly"><a href="javascript:void(0)" onclick="handleClick('../program.html')"><i class="fas fa-book-medical"></i> Program</a></li>
+
+          <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-book-medical"></i> Program</a>
+              <ul class="dropdown-content">
+                <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Kebutuhan Harian</a></li>  
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Pendampingan</a></li>
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Dukungan ICU</a></li>                
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Konsultasi</a></li>
+              </ul>
+          </li>
+
+          <li><a href="javascript:void(0)" onclick="handleClick('../facilities.html')"><i class="fas fa-gift"></i> Fasilitas</a></li>   
+
+          <li class="phoneOnly"><a href="javascript:void(0)" onclick="handleClick('../story.html')"><i class="fas fa-shield-heart"></i> Cerita</a></li>
+
+          <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-shield-heart"></i> Cerita</a>
+            <ul class="dropdown-content">
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('prayer-and-hope.html')"><i class="fa-solid fa-hands-praying"></i> Doa dan harapanku</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('i-am-cured.html')"><i class="fa-solid fa-child-reaching"></i> Aku sudah sembuh</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('have-left-us.html')"><i class="fa-solid fa-hands-holding-child"></i> Aku tidak sakit lagi</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" onclick="handleClick('../finance.html')"><i class="fas fa-money-bills"></i> Keuangan</a></li>
+          <li id="donate"><a href="javascript:void(0)" onclick="handleClick('../donate.html')"><i class="fa-solid fa-hand-holding-heart fa-bounce"></i> Donasi</a></li>
+          <br><hr>
+          <li id="login"><a href="javascript:void(0)" onclick="handleClick('../account.html')"><i class="fa-solid fa-user"></i> Akun</a></li>
+        </ul>
+      </nav>
+    </header>    
+    <div class="loginLink"><a href="javascript:void(0)" onclick="handleClick('../account.html')"><i class="fa-regular fa-user"></i></a></div>
+
+    <section class="hluStory" id="hluStory">
+      <h2>Kenangan Mereka</h2>
+      <p>Mereka telah mengakhiri perjuangan dan bahagia bermain di Surga.</p>
+    </section>
+    <br>
+    <hr>
+    <section class="contact" id="contact">
+      <h2><i class="fa-solid fa-envelopes-bulk"></i>  Hubungi Kami</h2>
+      <p>Dapatkan informasi yang Anda butuhkan di Rumah Singgah House of Heart.</p>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p><i class="fas fa-house-chimney-user"></i> House of Heart - Rumah Singgah Pasien Anak dengan Penyakit Jantung Bawaan</p>
+            
+            <p><i class="fas fa-map-marker-alt"></i> Jl. Kramat Lontar 14/ No. J163, Rt 008/ Rw 001, Paseban, Kotamadya Jakarta Pusat, DKI Jakarta 10440</p>
+            
+            <p><i class="fa-solid fa-map-location-dot"></i> Lihat di Google Map <a href="javascript:void(0)" onclick="handleClick('https://goo.gl/maps/yKMjEGAvpte8Cc5R9', true)"><i class="fa-solid fa-up-right-from-square fa-2xs"></i></a></p>
+            
+            <p><i class="fas fa-envelope"></i> info@houseofheart.com <a href="javascript:void(0)" onclick="handleClick('mailto:info@houseofheart.com', true)"><i class="fa-solid fa-up-right-from-square fa-2xs"></i></a></p>
+
+            <p><i class="fa-brands fa-instagram"></i> @houseofheart.rumahsinggah <a href="javascript:void(0)" onclick="handleClick('https://www.instagram.com/houseofheart.rumahsinggah', true)"><i class="fa-solid fa-up-right-from-square fa-2xs"></i></a></p>
+
+            <p><i class="fa-brands fa-tiktok"></i> @houseofheart.rmhsinggah <a href="javascript:void(0)" onclick="handleClick('https://www.tiktok.com/@houseofheart.rmhsinggah', true)"><i class="fa-solid fa-up-right-from-square fa-2xs"></i></a></p>
+
+            <p><i class="fa-brands fa-whatsapp"></i> (62) 821-3293-6477 <a href="javascript:void(0)" onclick="handleClick('https://wa.me/6282132936477', true)"><i class="fa-solid fa-up-right-from-square fa-2xs"></i></a></p>
+            <br><hr>                   
+          </div>          
+        </div>
+        <div class="col form">
+
+            <form>
+              <input type="text" placeholder="Nama Lengkap*" required>
+              <input type="email" placeholder="Email*" required>
+              <input id="noTelp" type="text" placeholder="No Telepon / WA*" required>
+              <select name="category" required>
+                  <option value="pilihCat">Pilih Kategori*</option>
+                  <option value="orangTua">Orang Tua Pasien</option>
+                  <option value="relawan">Relawan</option> 
+                  <option value="donatur">Donatur</option>
+                  <option value="lainnya">Lainnya</option>
+              </select>
+              <textarea placeholder="Pesan*" required></textarea>
+              <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>
+              
+              <button id="submit" type="submit"><i class="fa-regular fa-paper-plane"></i> Kirim</button>
+            </form>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <span>Copyright © 2023 All Rights Reserved</span>
+        <span class="link">          
+          <a href="javascript:void(0)" onclick="handleClick('https://www.instagram.com/pejuangciptocommunity', true)"><img class="imgFooter" src="../images/logo-pcc.png"></a>
+        </span>
+      </div>
+    </footer>    
+  </body>
+</html>

@@ -12,9 +12,6 @@
 
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-   
-    <script src="js/slide.js" defer></script>
-    <script src="js/slide2.js" defer></script>
   </head>
   <body>    
     <header>
@@ -63,120 +60,43 @@
     </header>    
     <div class="loginLink"><a href="javascript:void(0)" onclick="handleClick('account.html')"><i class="fa-regular fa-user"></i></a></div>
 
-    <section class="homepage" style="background: url('images/about/hohFacelities\ \(4\).jpeg');background-position: center 100%;background-size: 100vh;">
-      <div class="content">
-        <div class="text">
-          <h2>House of Heart<i class="fa-solid fa-heart-pulse"></i></h2>
-          <p>
-            Menyediakan tempat tinggal sementara yang nyaman & ramah bagi para pasien jantung anak yang menjalani pengobatan di Jakarta.</p>
-        </div>
-        <a href="javascript:void(0)" onclick="handleClick('about.html')">Tentang Kami</a>
-      </div>
+    <section class="services" id="services">
+      <h2><i class="fa-solid fa-book-open"></i> Cerita</h2>
+      <p>
+        Jantung kami memang spesial di baliknya tersembunyi kisah-kisah yang penuh perjuangan, kekuatan dan kenangan.
+      </p>
+      <ul class="cards2">
+        <li class="card2">
+          <a href="javascript:void(0)" onclick="handleClick('story/prayer-and-hope.html')">
+          <img src="images/story/bersama.jpg" alt="img">
+          <h3><i class="fa-solid fa-hands-praying"></i> Doa dan harapanku</h3>
+          <button><i class="fa-solid fa-book-open"></i> Lihat Kami</button><br><hr><br>
+          <p>Doa dan harapan kami mengalir dalam setiap kalimat, merangkai harapan cemerlang untuk sembuh dari penyakit jantung bawaan.</p>
+          </a>          
+        </li>
+        <li class="card2">
+          <a href="javascript:void(0)" onclick="handleClick('story/i-am-cured.html')">
+          <img src="images/story/ceriah.jpeg" alt="img">
+          <h3><i class="fa-solid fa-child-reaching"></i> Aku sudah sembuh</h3>
+          <button><i class="fa-solid fa-book-open"></i> Lihat Kami</button><br><hr><br>
+          <p>Dalam perjalanan melawan penyakit jantung bawaan, aku berhasil menemukan kesembuhan dan mengubah cerita menjadi kemenangan yang menginspirasi agar pejuang lain tetap semangat.</p>
+          </a>          
+        </li>
+        <li class="card2">
+          <a href="javascript:void(0)" onclick="handleClick('story/have-left-us.html')">
+          <img src="images/story/angle.jpg" alt="img">
+          <h3><i class="fa-solid fa-hands-holding-child"></i> Aku tidak sakit lagi</h3>
+          <button><i class="fa-solid fa-book-open"></i> Lihat Kami</button><br><hr><br>
+          <p>Dalam kenangan mereka yang pergi, dari penyakit jantung bawaan. Berjuanglah dengan kuat, meski kami tak lagi hadir. Semangat kami menyertaimu.</p>
+          </a>        
+        </li>       
+      </ul>
     </section>
-
-    <section class="contact" id="contact" style="padding-top: 10px;">
-      <div class="row">
-        <div class="col news">
-          <div class="contact-details">
-            <h2><i class="fa-solid fa-newspaper fa-fade"></i> Kabar Terbaru</h2>
-
-            <div class="cardsPost">
-              <div class="cardPost">
-                <p style="font-size: smaller; text-align: left;">
-                  <i class="fa-regular fa-calendar-days"></i> Tanggal 2 Juni 2023
-                </p>
-                
-                <div class="slide-container">
-                  <img src="images/about/hoheart 1.jpeg" class="slide" alt="" />
-                  <img src="images/about/hoheart 2.jpeg" class="slide" alt="" />
-                  <img src="images/about/hoheart 3.jpeg" class="slide" alt="" />
-                  <img src="images/about/hoheart 4.jpeg" class="slide" alt="" />
-                  <img src="images/about/hoheart 5.jpeg" class="slide" alt="" />      
-                      
-                  <!-- BUTTONS -->
-                  <button id="prev" onclick="goPrev()" title="Prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </button>
-                  <button id="next" onclick="goNext()" title="Next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </button>
-                </div>
-                <br>
-                <h3>Rumah Singgah Baru</h3>
-                <p>
-                  Komunitas "Pejuang Cipto Community" menandatangani surat perjanjian sewa rumah selama 12 bulan pada tanggal 2 Juni 2023 untuk rumah singgaha baru House of Heart.
-                </p>
-              </div>
-  
-            </div>
-            <hr>                
-          </div>          
-        </div>
-        <div class="col update">
-          <h2><i class="fa-brands fa-leanpub fa-fade"></i> Update Program</h2>
-          <div class="cardsPost">
-            <div class="cardPost">
-              <p style="font-size: smaller; text-align: left;">
-                <i class="fa-regular fa-calendar-days"></i> Tanggal 2 Juni 2023
-              </p>
-              
-              <div class="slide-container-2">
-                <img src="images/about/hoheart 1.jpeg" class="slide2" alt="" />
-                <img src="images/about/hoheart 2.jpeg" class="slide2" alt="" />
-                <img src="images/about/hoheart 3.jpeg" class="slide2" alt="" />
-                <img src="images/about/hoheart 4.jpeg" class="slide2" alt="" />
-                <img src="images/about/hoheart 5.jpeg" class="slide2" alt="" />      
-                    
-                <!-- BUTTONS -->
-                <button id="prev" onclick="goPrev2()" title="Prev">
-                  <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <button id="next" onclick="goNext2()" title="Next">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </button>
-              </div>
-              <br>
-              <h3>Rumah Singgah Baru</h3>
-              <p>
-                Rumah Singgah baru mulai ditempati tanggal 7 Juli 2023
-              </p>
-            </div>
-
-          </div>
-          <hr>
-        </div>
-      </div>
-    </section>
-    <section class="donate-list">
-      <h2><i class="fa-solid fa-user-group fa-fade"></i> Donatur</h2>
-
-      <div class="slider">
-        <div class="logoContainer">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-        </div>
-
-      </div>
-    </section>
-    <br>
+    <hr>
+    
     <hr>
     <section class="contact" id="contact">
-      <h2><i class="fa-solid fa-envelopes-bulk fa-fade"></i>  Hubungi Kami</h2>
+      <h2><i class="fa-solid fa-envelopes-bulk"></i>  Hubungi Kami</h2>
       <p>Dapatkan informasi yang Anda butuhkan di Rumah Singgah House of Heart.</p>
       <div class="row">
         <div class="col information">

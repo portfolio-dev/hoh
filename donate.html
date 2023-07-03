@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title id="tabTitle"></title>    
+    <link rel="icon" type="image/png" href="images/logo1.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>    
+    <header>
+      <nav class="navbar" id="navbar">        
+        <img class="logo" src="images/logo1.png"/>
+        <h2 class="nav-name">House of Heart<i class="fa-solid fa-heart-pulse fa-xs"></i></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label> 
+        <ul class="all-links">
+          <li><a href="javascript:void(0)" onclick="handleClick('index.html')"><i class="fas fa-home-user"></i> Beranda</a></li>
+          <li><a href="javascript:void(0)" onclick="handleClick('about.html')"><i class="fas fa-people-roof"></i> Tentang Kami</a></li>
+
+          <li class="phoneOnly"><a href="javascript:void(0)" onclick="handleClick('program.html')"><i class="fas fa-book-medical"></i> Program</a></li>
+
+          <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-book-medical"></i> Program</a>
+              <ul class="dropdown-content">
+                <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Kebutuhan Harian</a></li>  
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Pendampingan</a></li>
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Dukungan ICU</a></li>                
+                  <li id="menudown"><a href="javascript:void(0)" onclick="services()"><i class="fa-regular fa-heart"></i> Konsultasi</a></li>
+              </ul>
+          </li>
+
+          <li><a href="javascript:void(0)" onclick="handleClick('facilities.html')"><i class="fas fa-gift"></i> Fasilitas</a></li>   
+
+          <li class="phoneOnly"><a href="javascript:void(0)" onclick="handleClick('story.html')"><i class="fas fa-shield-heart"></i> Cerita</a></li>
+
+          <li class="dropdown"><a href="javascript:void(0)" class="noToggle"><i class="fas fa-shield-heart"></i> Cerita</a>
+            <ul class="dropdown-content">
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('story/prayer-and-hope.html')"><i class="fa-solid fa-hands-praying"></i> Doa dan harapanku</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('story/i-am-cured.html')"><i class="fa-solid fa-child-reaching"></i> Aku sudah sembuh</a></li>
+              <li id="menudown"><a href="javascript:void(0)" onclick="handleClick('story/have-left-us.html')"><i class="fa-solid fa-hands-holding-child"></i> Aku tidak sakit lagi</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" onclick="handleClick('finance.html')"><i class="fas fa-money-bills"></i> Keuangan</a></li>
+          <li id="donate"><a href="javascript:void(0)" onclick="handleClick('donate.html')"><i class="fa-solid fa-hand-holding-heart fa-bounce"></i> Donasi</a></li>
+          <br><hr>
+          <li id="login"><a href="javascript:void(0)" onclick="handleClick('account.html')"><i class="fa-solid fa-user"></i> Akun</a></li>
+        </ul>
+      </nav>
+    </header>    
+    <div class="loginLink"><a href="javascript:void(0)" onclick="handleClick('account.html')"><i class="fa-regular fa-user"></i></a></div>
+
+    <section class="homepage" style="background: url('images/about/hohFacelities (3).jpeg');background-position: center 100%;background-size: 100vh;">
+      <div class="content">
+        <div class="text">
+          <h2 style="font-style: italic;">Hai <i class="fa-solid fa-hand fa-shake"></i>  Orang Baik! </h2>
+          <!-- <h1>House of Heart<i class="fa-solid fa-heart-pulse"></i></h1> -->
+          <p>
+            Bantu kami mendukung anak-anak dengan peyakit jantung bawaan untuk mengejar kesembuhan melalui rumah singgah House of Heart<i class="fa-solid fa-heart-pulse"></i>.
+          </p>
+        </div>
+        <a href="javascript:void(0)" onclick="handleClick('https://benihbaik.com/campaign/bantu-rumah-singgah-pejuang-jantung-anak', true)">Donasi sekarang</a>
+      </div>
+    </section>
+    <section class="donation">
+      <h2><i class="fa-solid fa-hand-holding-heart"></i> Cara Berdonasi</h2>
+        <div class="donateWay">          
+          <h3><i class="fa-solid fa-hand-holding-hand"></i> Dukung Operasional House of Heart</h3>
+          <p>
+            House of Heart saat ini hanya menerima donasi melalui platform penggalangan dana daring - Benihbaik.com : 
+          </p>
+          <!-- <a href="https://benihbaik.com/campaign/bantu-rumah-singgah-pejuang-jantung-anak">
+            <button>Donasi <i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></button>
+          </a><br> -->
+          <p>
+            <center>
+              <a href="https://m.benihbaik.com/campaign/bantu-rumah-singgah-pejuang-jantung-anak" style="background: transparent;"><img src="images/donation/benihbaik-logo.png" class="imgDonate"></a>
+              <br><br>
+              <a href="https://m.benihbaik.com/campaign/bantu-rumah-singgah-pejuang-jantung-anak">https://m.benihbaik.com/campaign/bantu-rumah-singgah-pejuang-jantung-anak</a>
+            </center>
+          </p>
+          
+          <br><hr><br>
+              <div class="faq-container">
+                <h3><i class="fa-solid fa-circle-exclamation"></i> Informasi Penting</h3><br>
+
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleFAQ('answer1')"><i class="fa-solid fa-handshake-simple fa-bounce"></i> Penggalangan dana House of Heart didukung oleh Benihbaik.com</div>
+                  <div class="faq-answer" id="answer1">
+                    <p>
+                      Benihbaik.com adalah sebuah platform crowdfunding atau penggalangan dana daring di Indonesia. Benihbaik.com bertujuan untuk membantu individu, organisasi non-pemerintah (NGO), dan yayasan dalam mengumpulkan dana untuk berbagai tujuan sosial dan kemanusiaan.
+                    </p>
+                    <p>
+                      <b>Keamanan dan Kepercayaan</b><br>
+                      memiliki sistem keamanan yang kuat untuk melindungi data dan transaksi keuangan pengguna. Hal ini memberikan rasa percaya kepada para donatur bahwa data mereka aman dan dana yang mereka sumbangkan akan digunakan sesuai dengan tujuan yang ditentukan.
+                    </p>
+                    <p>
+                      <b>Pengawas Penggunaan Dana</b><br>
+                      memiliki sistem yang transparan, termasuk pelaporan dan pencatatan yang terperinci tentang dana yang masuk dan keluar. Donatur dapat dengan mudah melacak bagaimana penerima dana menggunakan dana secara lengkap sesuai tujuan.
+                    </p>
+                    <hr><br>
+                    <p>
+                      <b>Alur House of Heart mengelola dana dari Benihbaik.com</b>
+                    </p>
+                      <ol>
+                        <li>Tanggal 25 s.d 30: Membuat Rencana Anggaran Bulanan (RAB) untuk bulan depan.</li>                        
+                        <li>Tanggal 1: Update Laporan Keuangan bulan sebelumnya di Menu <a href="finance.html" target="_blank" style="color: black;font-weight: bold;">Keuangan</a></li>
+                        <li>Tanggal 1: Mengajukan pencairan sesuai RAB</li>
+                        <li>Tanggal 1 s.d 24: Mulai menjalankan fungsi penggunaan dana</li>                        
+                      </ol>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ('answer2')"><i class="fa-solid fa-clipboard-list fa-bounce"></i> Kebutuhan operasional bulanan House of Heart</div>
+                    <div class="faq-answer" id="answer2">
+                        <ol>
+                          <li>
+                            Susu dan Popok Pasien Anak <i class="fa-solid fa-child"></i><br>                            
+                            <table class="monthlyNeeds">
+                              <tr>
+                                <th>Barang</th>
+                                <th>Jumlah</th>
+                                <th>Harga</th>
+                                <th>Total</th>
+                              </tr>
+                              <tr>
+                                <td>Susu Nutrisi</td>
+                                <td>3 Pasien</td>
+                                <td>Rp 300.000</td>
+                                <th>Rp 900.000</th>
+                              </tr>
+                              <tr>
+                                <td>Popok/ Pampers</td>
+                                <td>3 Pasien</td>
+                                <td>Rp 120.000</td>
+                                <th>Rp 360.000</th>
+                              </tr>
+                              <tr>
+                                <td>Sabun Mandi</td>
+                                <td>3 Pasien</td>
+                                <td>Rp 25.000</td>
+                                <th>Rp 75.000</th>
+                              </tr>
+                              <tr>
+                                <td>Minyak Telon</td>
+                                <td>3 Pasien</td>
+                                <td>Rp 25.000</td>
+                                <th>Rp 75.000</th>
+                              </tr>
+                              <tr>
+                                <th colspan="3" style="text-align: right;">Total</th>
+                                <th>Rp 1.400.000</th>
+                              </tr>
+                            </table>                            
+                          </li>
+                          <li>Kebutuhan untuk Dapur <i class="fa-solid fa-kitchen-set"></i><br>
+                            <table class="monthlyNeeds">
+                              <tr>
+                                <th>Barang</th>
+                                <th>Jumlah</th>
+                                <th>Harga</th>
+                                <th>Total</th>
+                              </tr>
+                              <tr>
+                                <td>Beras</td>
+                                <td>50 kg</td>
+                                <td>Rp 10.000</td>
+                                <th>Rp 500.000</th>
+                              </tr>
+                              <tr>
+                                <td>Miyak Goreng</td>
+                                <td>10 liter</td>
+                                <td>Rp 15.000</td>
+                                <th>Rp 150.000</th>
+                              </tr>
+                              <tr>
+                                <td>Telur Ayam</td>
+                                <td>10 kg</td>
+                                <td>Rp 30.000</td>
+                                <th>Rp 300.000</th>
+                              </tr>
+                              <tr>
+                                <td>Daging</td>
+                                <td>10 kg</td>
+                                <td>Rp 40.000</td>
+                                <th>Rp 400.000</th>
+                              </tr>
+                              <tr>
+                                <td>Sayur</td>
+                                <td>10</td>
+                                <td>Rp 30.000</td>
+                                <th>Rp 300.000</th>
+                              </tr>
+                              <tr>
+                                <td>Bumbu Dapur</td>
+                                <td>10</td>
+                                <td>Rp 20.000</td>
+                                <th>Rp 200.000</th>
+                              </tr>
+                              <tr>
+                                <td>Buah</td>
+                                <td>10 kg</td>
+                                <td>Rp 30.000</td>
+                                <th>Rp 300.000</th>
+                              </tr>
+                              <tr>
+                                <td>Refill Air Galon</td>
+                                <td>10 pcs</td>
+                                <td>Rp 20.000</td>
+                                <th>Rp 200.000</th>
+                              </tr>
+                              <tr>
+                                <th colspan="3" style="text-align: right;">Total</th>
+                                <th>Rp 2.350.000</th>
+                              </tr>
+                            </table>
+                          </li>
+                          <li>Tagihan Listrik dan Air <i class="fa-solid fa-bolt"></i><br>
+                            <table class="monthlyNeeds">
+                              <tr>
+                                <th>Tagihan</th>
+                                <th>Jumlah</th>
+                                <th>Bayar Bulanan</th>
+                              </tr>
+                              <tr>
+                                <td>Listrik</td>
+                                <td>1300 VA</td>
+                                <td>Rp 500.000</td>
+                              </tr>
+                              <tr>
+                                <td>Air Sumur</td>
+                                <td>Rp 0/ m&#179;</td>
+                                <td>Rp 0</td>
+                              </tr>
+                              <tr>
+                                <th colspan="2" style="text-align: right;">Total</th>
+                                <th>Rp 500.000</th>
+                              </tr>
+                            </table>
+                          </li>
+                          <li>Tagihan Wifi (Hiburan Pasien) <i class="fa-solid fa-wifi"></i><br>
+                            <table class="monthlyNeeds">
+                              <tr>
+                                <th>Keterangan</th>
+                                <th>Jumlah</th>
+                                <th>Bayar Bulanan</th>
+                              </tr>
+                              <tr>
+                                <td>IndiHome</td>
+                                <td>20Mbps</td>
+                                <td>Rp 275.000</td>
+                              <tr>
+                                <th colspan="2" style="text-align: right;">Total</th>
+                                <th>Rp 275.000</th>
+                              </tr>
+                            </table>
+                          </li>
+                          <li>Gaji Karyawan / Tim <i class="fa-solid fa-arrows-down-to-people"></i><br>
+                            <table class="monthlyNeeds">
+                              <tr>
+                                <th>Jabatan</th>
+                                <th>Gaji</th>
+                              </tr>
+                              <tr>
+                                <td>PIC</td>
+                                <td>Rp 0</td>
+                              </tr>
+                              <tr>
+                                <td>COR</td>
+                                <td>Rp 4.000.000</td>
+                              </tr>
+                              <tr>
+                                <td>IT ADM</td>
+                                <td>Rp 4.000.000</td>
+                              </tr>
+                              <tr>
+                                <th>Total</th>
+                                <th>Rp 8.000.000</th>
+                              </tr>
+                            </table>
+                          </li>                          
+                        </ol>
+                        <hr>
+                        <p style="text-align: center;">
+                          <b style="font-size: 14px;">Grand Total: Rp 12.525.000/ Bulan*</b><br> <i style="font-size: small;">Perhitungan ini merupakan estimasi penggunaan yang akan disesuaikan dengan kondisi yang diperoleh.</i>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleFAQ('answer3')"><i class="fa-solid fa-bowl-rice fa-bounce"></i> Berdonasi makanan</div>
+                  <div class="faq-answer" id="answer3">
+                    <p>
+                      Menerima donasi makanan. Pastikan makanan yang Anda donasikan halal agar dapat dikonsumsi semua orang, dalam kondisi baik, segar, dan layak konsumsi untuk pasien jantung anak dan pendampingnya.<br><br>
+                      Silahkan hubungi tim House of Heart untuk berdonasi makanan:<br>
+                      <center><a href="javascript:void(0)" onclick="handleClick('https://wa.me/6282132936477', true)" style="text-decoration: none; color: black; font-weight: bold; padding: 5px; border: 1px solid black; border-radius: 10px; background-color: rgba(255,255,255,0.5);"><i class="fa-brands fa-whatsapp"></i> Hubunggi Tim</a></center><br>
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ('answer4')"><i class="fa-solid fa-cubes fa-bounce"></i> Berdonasi barang</div>
+                    <div class="faq-answer" id="answer4">
+                      <p>
+                        Menerima donasi barang seperti pakaian, perlengkapan mandi, perlengkapan tidur, alat kesehatan, alat pendukung kegiatan berobat atau barang lainnya yang dibutuhkan pasien jantung anak.<br><br>
+                        <b><i class="fa-solid fa-suitcase-medical"></i> Alat kesehatan</b> : Thermometer, Oximeter, Nebulizer, Suction Pump, tabung oksigen kecil, dll.<br><br>
+                        <b><i class="fa-solid fa-baby-carriage"></i> Alat pendukung</b> : Kursi roda, stroller, pompa asi, dll.<br><br>
+                        <b><i class="fa-solid fa-rug"></i> Voucher</b> : Listrik, Transportasi Online, Belanja, dll.<br><br>
+                        Silahkan hubungi tim House of Heart untuk berdonasi barang:<br>
+                        <center><a href="javascript:void(0)" onclick="handleClick('https://wa.me/6282132936477', true)" style="text-decoration: none; color: black; font-weight: bold; padding: 5px; border: 1px solid black; border-radius: 10px; background-color: rgba(255,255,255,0.5);"><i class="fa-brands fa-whatsapp"></i> Hubunggi Tim</a></center><br>
+                      </p>
+                    </div>
+                </div>
+
+              </div>            
+        </div>
+    </section>
+    <br>
+    <hr>
+    <section class="donation" id="donation">
+      <h2><i class="fa-solid fa-clipboard-check"></i> Konfirmasi Donasi</h2>
+      <p>Untuk mendapatkan tanda terima resmi dari House of Heart mohon berkenan untuk mengirimkan bukti donasi Benihbaik.com Anda melalui formulir di bawah ini. </p><br>
+
+        <div class="col">
+            <form>
+              <input type="text" placeholder="Nama Lengkap*" required>
+              <input type="email" placeholder="Email*" required>
+              <input type="text" placeholder="No Telepon / Whatsapp*" required>             
+              <label for="buktiTF" class="uploadFile">
+                <input type="file" id="buktiTF" accept="image/*" required><i class="fa-solid fa-upload"></i> Bukti Donasi*
+              </label>              
+              <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>
+              <button id="submit" type="submit"><i class="fa-solid fa-check"></i> Konfirmasi</button>
+            </form>
+        </div>
+      </div>
+    </section>
+    <br>
+    <footer>
+      <div>
+        <span>Copyright © 2023 All Rights Reserved</span>
+        <span class="link">          
+          <a href="javascript:void(0)" onclick="handleClick('https://www.instagram.com/pejuangciptocommunity', true)"><img class="imgFooter" src="images/logo-pcc.png"></a>
+        </span>
+      </div>
+    </footer>   
+  </body>
+</html>

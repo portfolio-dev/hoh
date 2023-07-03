@@ -12,9 +12,9 @@
 
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-   
-    <script src="js/slide.js" defer></script>
-    <script src="js/slide2.js" defer></script>
+    <!-- PDF Viewer -->
+    <script src="js/pdfViewer.js"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
   </head>
   <body>    
     <header>
@@ -60,123 +60,62 @@
           <li id="login"><a href="javascript:void(0)" onclick="handleClick('account.html')"><i class="fa-solid fa-user"></i> Akun</a></li>
         </ul>
       </nav>
-    </header>    
+    </header>
     <div class="loginLink"><a href="javascript:void(0)" onclick="handleClick('account.html')"><i class="fa-regular fa-user"></i></a></div>
-
-    <section class="homepage" style="background: url('images/about/hohFacelities\ \(4\).jpeg');background-position: center 100%;background-size: 100vh;">
-      <div class="content">
-        <div class="text">
-          <h2>House of Heart<i class="fa-solid fa-heart-pulse"></i></h2>
-          <p>
-            Menyediakan tempat tinggal sementara yang nyaman & ramah bagi para pasien jantung anak yang menjalani pengobatan di Jakarta.</p>
-        </div>
-        <a href="javascript:void(0)" onclick="handleClick('about.html')">Tentang Kami</a>
-      </div>
-    </section>
-
-    <section class="contact" id="contact" style="padding-top: 10px;">
-      <div class="row">
-        <div class="col news">
-          <div class="contact-details">
-            <h2><i class="fa-solid fa-newspaper fa-fade"></i> Kabar Terbaru</h2>
-
-            <div class="cardsPost">
-              <div class="cardPost">
-                <p style="font-size: smaller; text-align: left;">
-                  <i class="fa-regular fa-calendar-days"></i> Tanggal 2 Juni 2023
-                </p>
-                
-                <div class="slide-container">
-                  <img src="images/about/hoheart 1.jpeg" class="slide" alt="" />
-                  <img src="images/about/hoheart 2.jpeg" class="slide" alt="" />
-                  <img src="images/about/hoheart 3.jpeg" class="slide" alt="" />
-                  <img src="images/about/hoheart 4.jpeg" class="slide" alt="" />
-                  <img src="images/about/hoheart 5.jpeg" class="slide" alt="" />      
-                      
-                  <!-- BUTTONS -->
-                  <button id="prev" onclick="goPrev()" title="Prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </button>
-                  <button id="next" onclick="goNext()" title="Next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </button>
-                </div>
-                <br>
-                <h3>Rumah Singgah Baru</h3>
-                <p>
-                  Komunitas "Pejuang Cipto Community" menandatangani surat perjanjian sewa rumah selama 12 bulan pada tanggal 2 Juni 2023 untuk rumah singgaha baru House of Heart.
-                </p>
-              </div>
-  
-            </div>
-            <hr>                
-          </div>          
-        </div>
-        <div class="col update">
-          <h2><i class="fa-brands fa-leanpub fa-fade"></i> Update Program</h2>
-          <div class="cardsPost">
-            <div class="cardPost">
-              <p style="font-size: smaller; text-align: left;">
-                <i class="fa-regular fa-calendar-days"></i> Tanggal 2 Juni 2023
-              </p>
-              
-              <div class="slide-container-2">
-                <img src="images/about/hoheart 1.jpeg" class="slide2" alt="" />
-                <img src="images/about/hoheart 2.jpeg" class="slide2" alt="" />
-                <img src="images/about/hoheart 3.jpeg" class="slide2" alt="" />
-                <img src="images/about/hoheart 4.jpeg" class="slide2" alt="" />
-                <img src="images/about/hoheart 5.jpeg" class="slide2" alt="" />      
-                    
-                <!-- BUTTONS -->
-                <button id="prev" onclick="goPrev2()" title="Prev">
-                  <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <button id="next" onclick="goNext2()" title="Next">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </button>
-              </div>
-              <br>
-              <h3>Rumah Singgah Baru</h3>
-              <p>
-                Rumah Singgah baru mulai ditempati tanggal 7 Juli 2023
-              </p>
-            </div>
-
-          </div>
-          <hr>
-        </div>
-      </div>
-    </section>
-    <section class="donate-list">
-      <h2><i class="fa-solid fa-user-group fa-fade"></i> Donatur</h2>
-
-      <div class="slider">
-        <div class="logoContainer">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-        </div>
-
-      </div>
-    </section>
-    <br>
+    
+    <section class="facilities" id="facilities">
+        <h2>Fasilitas</h2>
+        <p>Fasilitas Gratis untuk Anak-anak dengan Penyakit Jantung Bawaan di Rumah Singgah.</p>
+        <ul class="cards">
+          <li class="card">
+            <img src="images/facilities/kasur.jpeg" alt="img">
+            <h3><i class="fa-solid fa-bed"></i> Rumah Singgah Gratis</h3>
+            <p>Tempat tinggal sementara yang nyaman, aman dan istimewa untuk perawatan anak dengan penyakit jantung bawaan.</p>
+          </li>
+          <li class="card">
+            <img src="images/facilities/makanan-sehat.png" alt="img">
+            <h3><i class="fa-solid fa-utensils"></i> Suplai Makanan Sehat</h3>
+            <p>Memenuhi kebutuhan gizi harian untuk anak dengan penyakit jantung bawaan dan pendampingnya.</p>
+          </li>
+          <li class="card">
+            <img src="images/facilities/susu-dan-popok.jpg" alt="img">
+            <h3><i class="fa-solid fa-baby"></i> Susu & Popok</h3>
+            <p>Memenuhi kebutuhan yang berarti seperti popok, susu, dan lainnya untuk anak dengan penyakit jantung bawaan.</p>
+          </li>
+          <li class="card">
+            <img src="images/facilities/stroller.jpg" alt="img">
+            <h3><i class="fa-solid fa-baby-carriage"></i> Alat Bantu Pendukung</h3>
+            <p>Dukungan alat bantu yang memudahkan anak dengan penyakit jantung bawaan seperti stroller, kursi roda, tabung oksigen, alat nebulizer, suction pump, oximeter dll.</p>
+          </li>
+          <li class="card">
+            <img src="images/facilities/obat-obatan.jpg" alt="img">
+            <h3><i class="fa-solid fa-syringe"></i> Obat-obatan</h3>
+            <p>Memenuhi kebutuhan obat-obatan yang tidak ditanggung asuransi atau BPJS.</p>
+            <div class="unavailable-text">Belum Tersedia</div>
+          </li>
+          <li class="card">
+            <img src="images/facilities/ambulan.jpeg" alt="img">
+            <h3><i class="fa-solid fa-truck-medical"></i> Mobil Ambulans</h3>
+            <p>Memudahkan kunjungan baik dari maupun ke rumah sakit, transportasi yang aman dan nyaman untuk anak dengan penyakit jantung bawaan.</p>
+            <div class="unavailable-text">Belum Tersedia</div>
+          </li>    
+          <li class="card">
+            <img src="images/facilities/playground.jpg" alt="img">
+            <h3><i class="fa-solid fa-face-smile"></i> Pojok Bermain dan Membaca</h3>
+            <p>Menghibur dengan  berbagai permainan dan kegiatan belajar untuk menghilangkan kejenuhan dan stress anak dengan penyakit jantung bawaan selama menjalani proses pengobatan.</p>
+            <div class="unavailable-text">Belum Tersedia</div>
+          </li>                
+          <li class="card">
+            <img src="images/facilities/consulting.png" alt="img">
+            <h3><i class="fa-solid fa-person-chalkboard"></i> Pendampingan & Konsultasi</h3>
+            <p>Fokus kesembuhan anak dengan penyakit jantung bawaan adalah yang utama dengan memberikan dukungan emosional dan meningkatkan pengetahuan para pendamping.</p>
+          </li>
+        </ul>
+      </section>  
+    
     <hr>
     <section class="contact" id="contact">
-      <h2><i class="fa-solid fa-envelopes-bulk fa-fade"></i>  Hubungi Kami</h2>
+      <h2><i class="fa-solid fa-envelopes-bulk"></i>  Hubungi Kami</h2>
       <p>Dapatkan informasi yang Anda butuhkan di Rumah Singgah House of Heart.</p>
       <div class="row">
         <div class="col information">

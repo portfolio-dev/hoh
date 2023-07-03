@@ -12,9 +12,9 @@
 
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-   
-    <script src="js/slide.js" defer></script>
-    <script src="js/slide2.js" defer></script>
+    <!-- PDF Viewer -->
+    <script src="js/pdfViewer.js"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
   </head>
   <body>    
     <header>
@@ -60,123 +60,48 @@
           <li id="login"><a href="javascript:void(0)" onclick="handleClick('account.html')"><i class="fa-solid fa-user"></i> Akun</a></li>
         </ul>
       </nav>
-    </header>    
+    </header>
     <div class="loginLink"><a href="javascript:void(0)" onclick="handleClick('account.html')"><i class="fa-regular fa-user"></i></a></div>
-
-    <section class="homepage" style="background: url('images/about/hohFacelities\ \(4\).jpeg');background-position: center 100%;background-size: 100vh;">
-      <div class="content">
-        <div class="text">
-          <h2>House of Heart<i class="fa-solid fa-heart-pulse"></i></h2>
-          <p>
-            Menyediakan tempat tinggal sementara yang nyaman & ramah bagi para pasien jantung anak yang menjalani pengobatan di Jakarta.</p>
-        </div>
-        <a href="javascript:void(0)" onclick="handleClick('about.html')">Tentang Kami</a>
-      </div>
-    </section>
-
-    <section class="contact" id="contact" style="padding-top: 10px;">
-      <div class="row">
-        <div class="col news">
-          <div class="contact-details">
-            <h2><i class="fa-solid fa-newspaper fa-fade"></i> Kabar Terbaru</h2>
-
-            <div class="cardsPost">
-              <div class="cardPost">
-                <p style="font-size: smaller; text-align: left;">
-                  <i class="fa-regular fa-calendar-days"></i> Tanggal 2 Juni 2023
-                </p>
-                
-                <div class="slide-container">
-                  <img src="images/about/hoheart 1.jpeg" class="slide" alt="" />
-                  <img src="images/about/hoheart 2.jpeg" class="slide" alt="" />
-                  <img src="images/about/hoheart 3.jpeg" class="slide" alt="" />
-                  <img src="images/about/hoheart 4.jpeg" class="slide" alt="" />
-                  <img src="images/about/hoheart 5.jpeg" class="slide" alt="" />      
-                      
-                  <!-- BUTTONS -->
-                  <button id="prev" onclick="goPrev()" title="Prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </button>
-                  <button id="next" onclick="goNext()" title="Next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </button>
-                </div>
-                <br>
-                <h3>Rumah Singgah Baru</h3>
-                <p>
-                  Komunitas "Pejuang Cipto Community" menandatangani surat perjanjian sewa rumah selama 12 bulan pada tanggal 2 Juni 2023 untuk rumah singgaha baru House of Heart.
-                </p>
-              </div>
-  
-            </div>
-            <hr>                
-          </div>          
-        </div>
-        <div class="col update">
-          <h2><i class="fa-brands fa-leanpub fa-fade"></i> Update Program</h2>
-          <div class="cardsPost">
-            <div class="cardPost">
-              <p style="font-size: smaller; text-align: left;">
-                <i class="fa-regular fa-calendar-days"></i> Tanggal 2 Juni 2023
-              </p>
-              
-              <div class="slide-container-2">
-                <img src="images/about/hoheart 1.jpeg" class="slide2" alt="" />
-                <img src="images/about/hoheart 2.jpeg" class="slide2" alt="" />
-                <img src="images/about/hoheart 3.jpeg" class="slide2" alt="" />
-                <img src="images/about/hoheart 4.jpeg" class="slide2" alt="" />
-                <img src="images/about/hoheart 5.jpeg" class="slide2" alt="" />      
-                    
-                <!-- BUTTONS -->
-                <button id="prev" onclick="goPrev2()" title="Prev">
-                  <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <button id="next" onclick="goNext2()" title="Next">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </button>
-              </div>
-              <br>
-              <h3>Rumah Singgah Baru</h3>
-              <p>
-                Rumah Singgah baru mulai ditempati tanggal 7 Juli 2023
-              </p>
-            </div>
-
-          </div>
-          <hr>
-        </div>
-      </div>
-    </section>
-    <section class="donate-list">
-      <h2><i class="fa-solid fa-user-group fa-fade"></i> Donatur</h2>
-
-      <div class="slider">
-        <div class="logoContainer">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-          <img src="images/donation/benihbaik-logo.png" alt="Logo 1">
-        </div>
-
-      </div>
-    </section>
+    
+    <section class="finance" id="finance">
+      <h2><i class="fas fa-money-bills"></i> Keuangan</h2>
+      <p>Dapatkan informasi laporan bulanan keuangan Rumah Singgah House of Heart.</p><br>
+      <div class="showPdf">
+        <form>
+          <select id="pdfSelect" name="bulan" required>              
+              <option>Bulan*</option>
+              <option id="btn-jan" value="files/pdf-report/nihil.pdf">Januari</option>
+              <option id="btn-feb" value="files/pdf-report/nihil.pdf">Februari</option>
+              <option id="btn-mar" value="files/pdf-report/nihil.pdf">Maret</option>
+              <option id="btn-apr" value="files/pdf-report/nihil.pdf">April</option>
+              <option id="btn-mei" value="files/pdf-report/nihil.pdf">Mei</option>
+              <option id="btn-jun" value="files/pdf-report/lapbul-juni2023.pdf">Juni</option>
+              <option id="jul" value="files/pdf-report/nihil.pdf">Juli</option>
+              <option id="agu" value="files/pdf-report/nihil.pdf">Agustus</option>
+              <option id="sep" value="files/pdf-report/nihil.pdf">September</option>
+              <option id="okt" value="files/pdf-report/nihil.pdf">Oktober</option>
+              <option id="nov" value="files/pdf-report/nihil.pdf">November</option>
+              <option id="des" value="files/pdf-report/nihil.pdf">Desember</option>
+          </select>
+          <select>
+              <option>2023</option>
+          </select>        
+        </form>
+        <button id="openPdf" onclick="openPdf(); return false;"><i class="fa-solid fa-folder-open"></i> Lihat</button>
+        <br>
+    </div>
+    <div>
+      <fieldset id="pdfFieldset">
+          <legend id="pdfLegend"><h3><i class="fa-solid fa-eye fa-beat-fade"></i></h3></legend>
+          <div id="pdfViewer"></div>
+      </fieldset>
+      <p id="notePdf"></p>
+    </div>
     <br>
+    </section>
     <hr>
     <section class="contact" id="contact">
-      <h2><i class="fa-solid fa-envelopes-bulk fa-fade"></i>  Hubungi Kami</h2>
+      <h2><i class="fa-solid fa-envelopes-bulk"></i>  Hubungi Kami</h2>
       <p>Dapatkan informasi yang Anda butuhkan di Rumah Singgah House of Heart.</p>
       <div class="row">
         <div class="col information">
