@@ -1383,6 +1383,10 @@ footer .imgFooter {
   footer a {
     height: 0;
   }
+
+  .login-img {
+    display: none;
+  }
 }
 
 
