@@ -377,16 +377,14 @@ hr {
 
 .donate-list .slider img {
   margin: 0px 20px;
-  border-radius: 50%;
-  border: 1px solid green;
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: auto;
   /* box-shadow: 0px 0px 8px 0px green; */
 }
 
 .donate-list .slider {
   width: 100%;
-  height: 150px;
+  height: 140px;
   overflow: hidden;
   background: white;
 }
@@ -482,6 +480,30 @@ hr {
 .content a:hover {
   color: #fff;
   background: rgba(255,255,255,0.3);
+}
+
+.news .row {
+  margin: 60px 0 90px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news .row .col {
+  padding: 0 10px;
+  width: calc(100% / 2 - 50px);
+}
+
+.news .col p {
+  margin-bottom: 10px;
+  color:#78024e;
+}
+
+.news .col p i {
+  color: #7a7a7a;
+  margin-right: 10px;
 }
 
 /* ABOUT SECTION */
@@ -1334,6 +1356,18 @@ footer .imgFooter {
     padding: 5px 10px;
   }
 
+  .news .row {
+    flex-direction: column;
+  }
+
+  .news .row .col {
+    width: 100%;
+  }
+
+  .news .row .col:last-child {
+    margin-top: 40px;
+  }
+
   .contact .row {
     flex-direction: column;
   }
@@ -1348,6 +1382,10 @@ footer .imgFooter {
 
   footer a {
     height: 0;
+  }
+
+  .login-img {
+    display: none;
   }
 }
 
