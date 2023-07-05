@@ -9,53 +9,40 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <script src="js/account.js" defer></script>
 
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   </head>
-  <header>
-    
+  <header>    
   </header>
   <body>
-
     <section class="account" id="account">
     <a href="index.html">
-      <img src="images/logo.png"
-        style="
-          height: 75px;
-          width: auto;
-        "
-      >
+      <img class="logo-img" src="images/logo.png">
     </a>
-    </section>
-    
-    <section class="contact" id="contact">
-      <h2><i class="fa-solid fa-house-lock"></i> Akun HOH</h2>
-      <p>Dapatkan kemudahan yang Anda butuhkan di Rumah Singgah House of Heart.</p>
       <div class="row">
         <div class="col information">
-          <form>
+          <img class="regis-img" src="images/facilities/consulting.png">
+          <form class="login-form">
+            <h3>Masuk Akun</h3>
             <input type="email" placeholder="Email*" required>
             <input type="password" placeholder="Password*" required>
             
             <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>            
             <button id="submit" type="submit"><i class="fa-solid fa-arrow-right-to-bracket"></i> Masuk</button>
+            <p style="text-align: right;">
+              <a href="javascript:void(0)" onclick="forgotPassword()">Lupa Password?</a> | <a href="javascript:void(0)" onclick="regisAccount()">Daftar Akun</a>        
+            </p> 
           </form>
           <br>
-          <p style="text-align: center;">
-            Lupa Password? | Daftar Akun        
-          </p>     
+              
         </div>
         <br>
         <div class="col form">
-            <img class="login-img" src="images/facilities/consulting.png"
-              style="
-                height: auto;
-                width: 100%;
-                border-radius: 10px;
-              "
-            >
-            <form style="display: none;">
+            <img class="login-img" src="images/facilities/consulting.png">
+            <form class="regis-form">
+              <h3>Daftar Akun</h3>
               <input type="text" placeholder="Nama*" required>
               <input type="email" placeholder="Email*" required>
               <input type="password" placeholder="Password*" required>
@@ -68,7 +55,10 @@
               </select>
               <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>
               
-              <button id="submit" type="submit"><i class="fa-solid fa-user-plus"></i> Buat Akun</button>
+              <button id="submit" type="submit"><i class="fa-solid fa-user-plus"></i> Daftar Akun</button>
+              <p style="text-align: right;">
+                <a href="javascript:void(0)" onclick="loginAccount()">Sudah Punya Akun</a>        
+              </p> 
             </form>
 
         </div>

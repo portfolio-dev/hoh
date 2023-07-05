@@ -1,0 +1,34 @@
+var loginImg = document.querySelectorAll('.login-img');
+var loginForm = document.querySelectorAll('.login-form');
+var regisImg = document.querySelectorAll('.regis-img');
+var regisForm = document.querySelectorAll('.regis-form');
+  
+function regisAccount() {
+    loginImg.forEach(function(element) {
+        element.style.display = 'none';
+    });
+    loginForm.forEach(function(element) {
+        element.style.display = 'none';
+    });
+    regisImg.forEach(function(element) {
+        element.style.display = 'block';
+    });
+    regisForm.forEach(function(element) {
+        element.style.display = 'block';
+    });
+    }
+    
+    function loginAccount() {
+    loginImg.forEach(function(element) {
+        element.style.display = 'block';
+    });
+    loginForm.forEach(function(element) {
+        element.style.display = 'block';
+    });
+    regisImg.forEach(function(element) {
+        element.style.display = 'none';
+    });
+    regisForm.forEach(function(element) {
+        element.style.display = 'none';
+    });
+    }

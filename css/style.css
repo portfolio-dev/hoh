@@ -1177,6 +1177,126 @@ hr {
   background: #78024e;
 }
 
+
+/* ACCOUNT SECTION  */
+.account {
+  margin: 0px 0px;
+  padding: 10px 0 0px;
+}
+
+.account .logo-img {
+  padding-top: 0px;
+  margin-top: 0px;
+  height: 75px;
+  width: auto;
+}
+
+.account .login-img {
+  display: block;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.account .regis-img {
+  display: none;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.account .row {
+  margin: 30px 0 60px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.account .row .col {
+  padding: 0 10px;
+  width: calc(100% / 2 - 50px);
+}
+
+.account .col p {
+  margin-bottom: 10px;
+  color:#78024e;
+}
+
+.account .col a {
+  text-decoration: none;
+  color: #78024e;
+}
+.account .col a:hover {
+  color: #d61f7b;
+  text-decoration: underline;
+}
+
+.account .col p i {
+  color: #7a7a7a;
+  margin-right: 10px;
+}
+
+.account form input {
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #bfbfbf;
+}
+
+.account #noTelp {
+  width: 50%;
+  margin-right: 10px;
+}
+
+
+.account form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.account .login-form {
+  display: block;
+}
+
+.account .regis-form {
+  display: none;
+}
+
+.account form select {
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 45%;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #bfbfbf;
+  color: #7a7a7a;    
+}
+
+.account form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background:#d61f7b;
+  transition: 0.2s ease;
+}
+
+.account form button:hover {
+  background: #78024e;
+}
+
+
+
 /* FOOTER SECTION */
 footer {
   width: 100%;
@@ -1381,13 +1501,26 @@ footer .imgFooter {
     margin-top: 40px;
   }
 
+  .account .row {
+    flex-direction: column;
+  }
+
+  .account .row .col {
+    width: 100%;
+  }
+
+  .account .row .col:last-child {
+    margin-top: 40px;
+  }
+
+  .account .login-img {
+    display: none;
+  }
+
   footer a {
     height: 0;
   }
 
-  .login-img {
-    display: none;
-  }
 }
 
 
