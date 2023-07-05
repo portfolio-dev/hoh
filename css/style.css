@@ -1209,6 +1209,10 @@ hr {
   border-radius: 10px;
 }
 
+.account .reset-form {
+  display: none;
+}
+
 .account .row {
   margin: 30px 0 90px;
   display: flex;
