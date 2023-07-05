@@ -25,18 +25,18 @@ function handleClick(link, newTab) {
     }
 };
 
-function toggleDisplay(elementId) {
-    var elements = ['homepage', 'services'];
+// function toggleDisplay(elementId) {
+//     var elements = ['homepage', 'services'];
 
-    for (var i = 0; i < elements.length; i++) {
-        var element = document.getElementById(elements[i]);
-        element.style.display = (elements[i] === elementId) ? 'flex' : 'none';
-    }
-}
+//     for (var i = 0; i < elements.length; i++) {
+//         var element = document.getElementById(elements[i]);
+//         element.style.display = (elements[i] === elementId) ? 'flex' : 'none';
+//     }
+// }
 
-function services() {
-    toggleDisplay('services');
-}
+// function services() {
+//     toggleDisplay('services');
+// }
 
 // menu-toggler auto close
 function menuToggler() {
@@ -80,6 +80,7 @@ function toggleFAQ(answerId) {
     }
 }
 
+// Donatur Logo Running
 function sliderRun() {
     window.onload = function() {
         const slider = document.querySelector('.slider');
@@ -90,6 +91,6 @@ function sliderRun() {
       
         setInterval(function() {
           slider.appendChild(logoContainers[0]);
-        }, 10000);
+        }, 60000);
       };
 } document.addEventListener("DOMContentLoaded",sliderRun);

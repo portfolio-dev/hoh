@@ -16,7 +16,7 @@ function regisAccount() {
     regisForm.forEach(function(element) {
         element.style.display = 'block';
     });
-    }
+}
     
     function loginAccount() {
     loginImg.forEach(function(element) {
@@ -31,4 +31,4 @@ function regisAccount() {
     regisForm.forEach(function(element) {
         element.style.display = 'none';
     });
-    }
+}
