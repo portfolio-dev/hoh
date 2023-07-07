@@ -211,6 +211,7 @@ section {
 section h2 {
   font-size: 2rem;
   color:#d61f7b;
+  text-align: center;
 }
 
 section > p {
@@ -343,6 +344,43 @@ hr {
   transition: all 1s;
 }
 
+.cardsPost .slide-container-3 {
+  border: 1px solid #78024e;
+  border-radius: 10px;
+  max-width: 350px;
+  height: 350px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px #d61f7b;
+}
+
+
+.cardsPost .slide3 {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s;
+}
+
+.cardsPost .slide-container-4 {
+  border: 1px solid #78024e;
+  border-radius: 10px;
+  max-width: 350px;
+  height: 350px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px #d61f7b;
+}
+
+
+.cardsPost .slide4 {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s;
+}
 
 .cardsPost button {
   background-color: rgba(255, 255, 255,0.3);
@@ -371,6 +409,16 @@ hr {
 
 .cardsPost button i:active {
   color: #78024e;
+}
+
+.cardsPost a {
+  color: #d61f7b;
+  text-decoration: none;
+}
+
+.cardsPost a:hover {
+  background-color: #d61f7b;
+  color: white;
 }
 
 
@@ -404,6 +452,32 @@ hr {
   100% {
     transform: translateX(-100%);
   }
+}
+
+.button-page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1px;
+  margin-bottom: 20px;
+}
+
+.button-page button {
+  height: auto;
+  width: 30px;
+  margin: 0px 5px;
+  background-color: #d61f7b;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: 1px #d61f7b solid;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.button-page button:hover {
+  background-color: #78024e;
 }
 
 /* HOMEPAGE SECTION */
@@ -487,6 +561,11 @@ hr {
   padding: 0px 5px;
 }
 
+.news h3 {
+  color: #d61f7b;
+  padding-bottom: 8px;
+}
+
 .news .row {
   margin: 10px 0 90px;
   display: flex;
@@ -509,6 +588,14 @@ hr {
 .news .col p i {
   color: #7a7a7a;
   margin-right: 10px;
+}
+
+#news1 {
+  display: block;
+}
+
+#news2 {
+  display: none;
 }
 
 /* ABOUT SECTION */
@@ -1521,10 +1608,10 @@ footer .imgFooter {
   .account .row .col:last-child {
     margin-top: 40px;
   }
-
+/* 
   .account .login-img {
     display: none;
-  }
+  } */
 
   footer a {
     height: 0;

@@ -94,3 +94,20 @@ function sliderRun() {
         }, 60000);
       };
 } document.addEventListener("DOMContentLoaded",sliderRun);
+
+// News Page Button
+function button1() {
+    var news1 = document.getElementById('news1');
+    var news2 = document.getElementById('news2');
+
+    news1.style.display = "block";
+    news2.style.display = "none";
+}
+
+function button2() {
+    var news1 = document.getElementById('news1');
+    var news2 = document.getElementById('news2');
+
+    news1.style.display = "none";
+    news2.style.display = "block";
+}
