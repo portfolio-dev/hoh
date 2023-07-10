@@ -413,6 +413,9 @@ hr {
 .cardsPost a {
   color: #d61f7b;
   text-decoration: none;
+  padding: 5px;
+  border: 1px solid #d61f7b;
+  border-radius: 10px;
 }
 
 .cardsPost a:hover {
@@ -1015,11 +1018,11 @@ hr {
 
 
 .donation a {  
-  padding: 0px;
+  padding: 5px;
   margin: 0px;
   color: black;
   cursor: pointer;
-  background: rgb(145, 215, 145);
+  background: rgba(214, 31, 123, 0.7);
   border-radius: 5px;
   text-decoration: none;
 }
@@ -1032,18 +1035,18 @@ hr {
   height: 60px;
   width: 180px;
   padding: 2px;
-  border: 1px solid green;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .donation .imgDonate:hover {
   background-color: rgba(214, 31, 123, 0.9);
-  border: 0;
+  border: 1px solid #78024e;
 }
 
 .donation .faq-container {
-  max-width: 890px;
+  max-width: 750px;
+  width: 100%;
   background-color: rgba(214, 31, 123, 0.1);
   border-radius: 5px;
   padding: 5px;
