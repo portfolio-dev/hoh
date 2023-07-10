@@ -292,7 +292,8 @@ hr {
 
 .cardsPost .cardPost {
   background: #fff;
-  padding: 40px 15px;
+  padding: 30px 15px 20px;
+  margin-bottom: 5px;
   list-style: none;
   border-radius: 5px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
