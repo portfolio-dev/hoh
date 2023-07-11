@@ -1021,15 +1021,16 @@ hr {
 .donation a {  
   padding: 5px;
   margin: 0px;
-  color: black;
+  color: rgba(0, 106, 255, 0.88);
   cursor: pointer;
-  background: rgba(214, 31, 123, 0.7);
+  /* background: rgba(214, 31, 123, 0.7); */
   border-radius: 5px;
   text-decoration: none;
 }
 
 .donation a:hover {
-  background-color: #d61f7b;
+  background-color: rgba(0, 106, 255, 0.88);
+  color: white;
 }
 
 .donation .imgDonate {
@@ -1040,9 +1041,8 @@ hr {
   cursor: pointer;
 }
 
-.donation .imgDonate:hover {
-  background-color: rgba(214, 31, 123, 0.9);
-  border: 1px solid #78024e;
+.donation .imgDonate:hover {  
+  border: 1px solid rgba(0, 106, 255, 0.88);
 }
 
 .donation .faq-container {
