@@ -25,18 +25,6 @@ function handleClick(link, newTab) {
     }
 };
 
-// function toggleDisplay(elementId) {
-//     var elements = ['homepage', 'services'];
-
-//     for (var i = 0; i < elements.length; i++) {
-//         var element = document.getElementById(elements[i]);
-//         element.style.display = (elements[i] === elementId) ? 'flex' : 'none';
-//     }
-// }
-
-// function services() {
-//     toggleDisplay('services');
-// }
 
 // menu-toggler auto close
 function menuToggler() {
@@ -111,3 +99,31 @@ function button2() {
     news1.style.display = "none";
     news2.style.display = "block";
 }
+
+function contactForm() {
+    window.addEventListener('DOMContentLoaded', function () {
+        var formSection = document.getElementById('contact');
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+           if (this.readyState === 4 && this.status === 200) {
+              formSection.innerHTML = this.responseText;
+           }
+        };
+        xhr.open('GET', 'contact-master.html', true);
+        xhr.send();
+     });
+} document.addEventListener("DOMContentLoaded",contactForm);
+
+function contactForm2() {
+    window.addEventListener('DOMContentLoaded', function () {
+        var formSection2 = document.getElementById('contact');
+        var xhr2 = new XMLHttpRequest();
+        xhr2.onreadystatechange = function () {
+           if (this.readyState === 4 && this.status === 200) {
+              formSection2.innerHTML = this.responseText;
+           }
+        };
+        xhr2.open('GET', '../contact-master.html', true);
+        xhr2.send();
+     });
+} document.addEventListener("DOMContentLoaded",contactForm2);

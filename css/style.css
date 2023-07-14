@@ -439,6 +439,7 @@ hr {
 
 .button-page button:hover {
   background-color: #78024e;
+  font-weight: bold;
 }
 
 
@@ -478,8 +479,8 @@ hr {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  padding: 100px 0 0;
-  margin: 50px 0px 20px;
+  padding: 20px 0 0;
+  margin: 20px 0px 30px;
 }
 
 
@@ -1173,6 +1174,10 @@ hr {
 }
 
 /* CONTACT SECTION */
+.contact {
+  padding-top: 10px;
+}
+
 .contact .row {
   margin: 60px 0 90px;
   display: flex;
@@ -1269,6 +1274,16 @@ hr {
 
 .contact form button:hover {
   background: #78024e;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #78024e;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 
