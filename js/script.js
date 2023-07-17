@@ -127,3 +127,27 @@ function contactForm2() {
         xhr2.send();
      });
 } document.addEventListener("DOMContentLoaded",contactForm2);
+
+function fakeHtaccess() {
+    // Cek apakah history API didukung oleh browser
+    if (window.history && window.history.pushState) {
+        // Mengubah URL saat halaman dimuat
+        window.history.replaceState({}, document.title, window.location.pathname.replace('.html', ''));
+  
+        // Merekam aksi refresh halaman
+        window.addEventListener('beforeunload', function (event) {
+        // Mengembalikan ekstensi .html ke URL saat merefresh halaman
+        window.history.replaceState({}, document.title, window.location.pathname + '.html');
+        });
+    }
+} document.addEventListener("DOMContentLoaded",fakeHtaccess);
+
+function validateForm() {
+    var selectElement = document.getElementById("pilih-kategori");
+    if (!selectElement.value) {
+        selectElement.setCustomValidity("Silakan pilih opsi.");
+        selectElement.reportValidity();
+        return false; // Mencegah submit formulir
+      }
+      return true; // Submit formulir jika validasi berhasil
+}

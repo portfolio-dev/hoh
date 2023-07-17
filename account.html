@@ -26,8 +26,8 @@
           <img class="regis-img" src="images/welcome-wall.png">
           <form class="login-form">
             <h3>Masuk Akun</h3>
-            <input type="email" placeholder="Email*" required>
-            <input type="password" placeholder="Password*" required>
+            <input type="email" placeholder="Email*" title="Email" required oninvalid="this.setCustomValidity('Email belum diisi atau tidak valid!')" oninput="this.setCustomValidity('')">
+            <input type="password" placeholder="Password*" title="Password" required oninvalid="this.setCustomValidity('Password belum diisi')" oninput="this.setCustomValidity('')">
             
             <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>            
             <button id="submit" type="submit"><i class="fa-solid fa-arrow-right-to-bracket"></i> Masuk</button>
@@ -37,7 +37,7 @@
           </form>
           <form class="reset-form">
             <h3>Pemulihan Akun</h3>
-            <input type="email" placeholder="Email*" required>
+            <input type="email" placeholder="Email*" title="Email" required oninvalid="this.setCustomValidity('Email belum diisi atau tidak valid!')" oninput="this.setCustomValidity('')">
             <button id="submit" type="submit"><i class="fa-solid fa-arrow-rotate-right"></i> Pulihkan</button>
           </form>
           <br>
@@ -48,12 +48,12 @@
             <img class="login-img" src="images/facilities/consulting.png">
             <form class="regis-form">
               <h3>Daftar Akun</h3>
-              <input type="text" placeholder="Nama*" required>
-              <input type="email" placeholder="Email*" required>
-              <input type="password" placeholder="Password*" required>
-              <input type="password" placeholder="Ketik Ulang Password*" required>
-              <input id="noTelp" type="text" placeholder="No Telepon / WA*" required>
-              <select name="category" required>
+              <input type="text" placeholder="Nama*" title="Nama Lengkap" required oninvalid="this.setCustomValidity('Nama lengkap belum diisi!')" oninput="this.setCustomValidity('')">
+              <input type="email" placeholder="Email*" title="Email" required oninvalid="this.setCustomValidity('Email belum diisi atau tidak valid!')" oninput="this.setCustomValidity('')">
+              <input type="password" placeholder="Password*" title="Password" required oninvalid="this.setCustomValidity('Password belum diisi')" oninput="this.setCustomValidity('')">
+              <input type="password" placeholder="Ketik Ulang Password*" title="Konfirmasi Password" required oninvalid="this.setCustomValidity('Password belum diisi')" oninput="this.setCustomValidity('')">
+              <input id="noTelp" type="text" placeholder="No Telepon / WA*" title="No Telepon atau Whatsapp" required oninvalid="this.setCustomValidity('Nomor telepon atau whatsapp belum diisi!')" oninput="this.setCustomValidity('')">
+              <select name="category" title="Kategori" required oninvalid="this.setCustomValidity('Kategori belum dipilih!')" oninput="this.setCustomValidity('')">
                   <option value="pilihCat">Jenis Akun*</option>
                   <option value="orangTua">Orang Tua Pasien</option>
                   <option value="donatur">Donatur</option>

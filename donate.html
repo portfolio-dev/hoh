@@ -12,6 +12,7 @@
 
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
   </head>
   <body>    
     <header>
@@ -386,10 +387,10 @@
 
         <div class="col">
             <form>
-              <input type="text" placeholder="Nama Lengkap*" required>
-              <input type="email" placeholder="Email*" required>
-              <input type="text" placeholder="No Telepon / Whatsapp*" required>             
-              <label for="buktiTF" class="uploadFile">
+              <input type="text" placeholder="Nama Lengkap*" title="Nama Lengkap" required oninvalid="this.setCustomValidity('Nama lengkap belum diisi!')" oninput="this.setCustomValidity('')">
+              <input type="email" placeholder="Email*" title="Email" required oninvalid="this.setCustomValidity('Email belum diisi atau tidak valid!')" oninput="this.setCustomValidity('')">
+              <input type="text" placeholder="No Telepon / Whatsapp*" title="No Telepon atau Whatsapp" required oninvalid="this.setCustomValidity('Nomor telepon atau whatsapp belum diisi!')" oninput="this.setCustomValidity('')">             
+              <label for="buktiTF" class="uploadFile" title="Bukti Transfer">
                 <input type="file" id="buktiTF" accept="image/*" required><i class="fa-solid fa-upload"></i> Bukti Donasi*
               </label>              
               <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>

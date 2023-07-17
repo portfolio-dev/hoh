@@ -1345,6 +1345,7 @@ hr {
 .account .col a:hover {
   color: #d61f7b;
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .account .col p i {

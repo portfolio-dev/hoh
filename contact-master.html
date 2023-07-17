@@ -34,18 +34,18 @@
         </div>
         <div class="col form">
 
-            <form id="myForm" action="send_message.php" method="post">
-              <input name="nama" type="text" placeholder="Nama Lengkap*" required title="masukan nama lengkap">
-              <input name="email" type="email" placeholder="Email*" required>
-              <input name="telp" id="noTelp" type="text" placeholder="No Telepon / WA*" required>
-              <select name="kategori" required>
-                  <option value="pilih_kategori">Pilih Kategori*</option>
+            <form id="myForm" action="send_message.php" method="post" onsubmit="return validateForm()">
+              <input name="nama" type="text" placeholder="Nama Lengkap*" title="Nama Lengkap" required oninvalid="this.setCustomValidity('Nama lengkap belum diisi!')" oninput="this.setCustomValidity('')">
+              <input name="email" type="email" placeholder="Email*" title="Email" required oninvalid="this.setCustomValidity('Email belum diisi atau tidak valid!')" oninput="this.setCustomValidity('')">
+              <input name="telp" id="noTelp" type="text" placeholder="No Telepon / WA*" title="No Telepon atau Whatsapp" required oninvalid="this.setCustomValidity('Nomor telepon atau whatsapp belum diisi!')" oninput="this.setCustomValidity('')">
+              <select id="pilih-kategori" name="kategori" title="Kategori" required oninvalid="this.setCustomValidity('Kategori belum dipilih!')" oninput="this.setCustomValidity('')">
+                  <option value="" >Pilih Kategori*</option>
                   <option value="orang_tua_pasien">Orang Tua Pasien</option>
                   <option value="relawan">Relawan</option> 
                   <option value="donatur">Donatur</option>
                   <option value="lainnya">Lainnya</option>
               </select>
-              <textarea name="pesan" placeholder="Pesan*" required></textarea>
+              <textarea name="pesan" placeholder="Pesan*" title="Pesan" required oninvalid="this.setCustomValidity('Belum ada pesan, silahkan tulis pesan Anda di sini!')" oninput="this.setCustomValidity('')"></textarea>
               
               <button type="submit"><i class="fa-regular fa-paper-plane"></i> Kirim</button>
             </form>
