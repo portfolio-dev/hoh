@@ -84,22 +84,44 @@ function sliderRun() {
 } document.addEventListener("DOMContentLoaded",sliderRun);
 
 // News Page Button
-function button1() {
+function showNews(newsNumber) {
     var news1 = document.getElementById('news1');
     var news2 = document.getElementById('news2');
+    var news3 = document.getElementById('news3');
+    var news4 = document.getElementById('news4');
 
-    news1.style.display = "block";
-    news2.style.display = "none";
+    switch (newsNumber) {
+        case 1:
+            news1.style.display = "block";
+            news2.style.display = "none";
+            news3.style.display = "none";
+            news4.style.display = "none";
+            break;
+        case 2:
+            news1.style.display = "none";
+            news2.style.display = "block";
+            news3.style.display = "none";
+            news4.style.display = "none";
+            break;
+        case 3:
+            news1.style.display = "none";
+            news2.style.display = "none";
+            news3.style.display = "block";
+            news4.style.display = "none";
+            break;
+        case 4:
+            news1.style.display = "none";
+            news2.style.display = "none";
+            news3.style.display = "none";
+            news4.style.display = "block";
+            break;
+        default:
+            console.error("Invalid news number!");
+            break;
+    }
 }
 
-function button2() {
-    var news1 = document.getElementById('news1');
-    var news2 = document.getElementById('news2');
-
-    news1.style.display = "none";
-    news2.style.display = "block";
-}
-
+// Contact Form Master
 function contactForm() {
     window.addEventListener('DOMContentLoaded', function () {
         var formSection = document.getElementById('contact');
