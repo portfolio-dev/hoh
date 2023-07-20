@@ -1106,14 +1106,14 @@ hr {
 .donation a {  
   padding: 5px 10px;
   margin: 0px;
-  color: rgba(77, 145, 240, 0.88);
+  color: rgba(106, 166, 250, 0.88);
   cursor: pointer;
   border-radius: 4px;
   text-decoration: none;
 }
 
 .donation a:hover {
-  background-color: rgba(77, 145, 240, 0.88);
+  background-color: rgba(106, 166, 250, 0.88);
   color: white;
 }
 
