@@ -84,41 +84,16 @@ function sliderRun() {
 } document.addEventListener("DOMContentLoaded",sliderRun);
 
 // News Page Button
-function showNews(newsNumber) {
+function showNews(newsId) {
     var news1 = document.getElementById('news1');
     var news2 = document.getElementById('news2');
     var news3 = document.getElementById('news3');
     var news4 = document.getElementById('news4');
 
-    switch (newsNumber) {
-        case 1:
-            news1.style.display = "block";
-            news2.style.display = "none";
-            news3.style.display = "none";
-            news4.style.display = "none";
-            break;
-        case 2:
-            news1.style.display = "none";
-            news2.style.display = "block";
-            news3.style.display = "none";
-            news4.style.display = "none";
-            break;
-        case 3:
-            news1.style.display = "none";
-            news2.style.display = "none";
-            news3.style.display = "block";
-            news4.style.display = "none";
-            break;
-        case 4:
-            news1.style.display = "none";
-            news2.style.display = "none";
-            news3.style.display = "none";
-            news4.style.display = "block";
-            break;
-        default:
-            console.error("Invalid news number!");
-            break;
-    }
+    news1.style.display = (newsId === 1) ? "block" : "none";
+    news2.style.display = (newsId === 2) ? "block" : "none";
+    news3.style.display = (newsId === 3) ? "block" : "none";
+    news4.style.display = (newsId === 4) ? "block" : "none";
 }
 
 // Contact Form Master
@@ -173,3 +148,10 @@ function validateForm() {
       }
       return true; // Submit formulir jika validasi berhasil
 }
+
+// No Copy and Download Pict
+function rightBlock() {
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+      });
+} document.addEventListener("DOMContentLoaded",rightBlock);
