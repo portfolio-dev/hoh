@@ -1,3 +1,10 @@
+// No Copy and Download Pict
+function rightBlock() {
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+      });
+} document.addEventListener("DOMContentLoaded",rightBlock);
+
 // title on browser tab running
 function tabRunning() {
 var titleText = "House of Heart - Rumah Singgah Khusus Pasien PJB Anak ";
@@ -125,6 +132,7 @@ function contactForm2() {
      });
 } document.addEventListener("DOMContentLoaded",contactForm2);
 
+// Hide .html Tab Browser
 function fakeHtaccess() {
     // Cek apakah history API didukung oleh browser
     if (window.history && window.history.pushState) {
@@ -139,19 +147,28 @@ function fakeHtaccess() {
     }
 } document.addEventListener("DOMContentLoaded",fakeHtaccess);
 
+// Validasi Form Select
 function validateForm() {
     var selectElement = document.getElementById("pilih-kategori");
     if (!selectElement.value) {
-        selectElement.setCustomValidity("Silakan pilih opsi.");
+        selectElement.setCustomValidity("Silakan pilih kategori!");
         selectElement.reportValidity();
         return false; // Mencegah submit formulir
       }
       return true; // Submit formulir jika validasi berhasil
 }
 
-// No Copy and Download Pict
-function rightBlock() {
-    document.addEventListener('contextmenu', function (event) {
-        event.preventDefault();
-      });
-} document.addEventListener("DOMContentLoaded",rightBlock);
+// document.addEventListener("DOMContentLoaded", function () {
+//     const fileInput = document.getElementById("buktiTF");
+//     const label = document.querySelector(".uploadFile");
+
+//     fileInput.addEventListener("change", function () {
+//       const fileName = fileInput.value.split("\\").pop(); // Get the selected file name
+
+//       if (fileName) {
+//         label.textContent = fileName; // Update the label text with the file name
+//       } else {
+//         label.innerHTML = '<i class="fa-solid fa-upload"></i> Bukti Donasi*'; // Reset label text if no file is selected
+//       }
+//     });
+//   });

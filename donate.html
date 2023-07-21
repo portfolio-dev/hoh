@@ -85,13 +85,12 @@
               <a href="https://kitabisa.com/campaign/banturumahsinggahuntukpenyakitjantunganak" style="background: transparent;"><img src="images/donation/kitabisa-logo.png" class="imgDonate"></a>
               <br><br>
               <a href="https://kitabisa.com/campaign/banturumahsinggahuntukpenyakitjantunganak">https://kitabisa.com/campaign/<br>banturumahsinggahuntukpenyakit<br>jantunganak</a>
-              <br><br>
+              <br><br><br>
               <button style="background-color: white; border: 1px rgb(106, 166, 250); font-size: larger;">
                 <a href="javascript:void(0)" onclick="handleClick('https://kitabisa.com/campaign/banturumahsinggahuntukpenyakitjantunganak', true)">Donasi Sekarang</a>
               </button>
             </center>
-          </p><br>
-              <br>    
+          </p>   
           <br><hr><br>
               <div class="faq-container">
                 <h3><i class="fa-solid fa-circle-exclamation"></i> Informasi Penting</h3><br>
@@ -390,12 +389,12 @@
       <p>Untuk mendapatkan tanda terima resmi dari House of Heart mohon berkenan untuk mengirimkan bukti donasi Kitabisa.com Anda melalui formulir di bawah ini. </p><br>
 
         <div class="col">
-            <form>
-              <input type="text" placeholder="Nama Lengkap*" title="Nama Lengkap" required oninvalid="this.setCustomValidity('Nama lengkap belum diisi!')" oninput="this.setCustomValidity('')">
-              <input type="email" placeholder="Email*" title="Email" required oninvalid="this.setCustomValidity('Email belum diisi atau tidak valid!')" oninput="this.setCustomValidity('')">
-              <input type="text" placeholder="No Telepon / Whatsapp*" title="No Telepon atau Whatsapp" required oninvalid="this.setCustomValidity('Nomor telepon atau whatsapp belum diisi!')" oninput="this.setCustomValidity('')">             
+            <form action="send_confirm.php" method="post" enctype="multipart/form-data">
+              <input name="name" type="text" placeholder="Nama Lengkap*" title="Nama Lengkap" required oninvalid="this.setCustomValidity('Nama lengkap belum diisi!')" oninput="this.setCustomValidity('')">
+              <input name="email" type="email" placeholder="Email*" title="Email" required oninvalid="this.setCustomValidity('Email belum diisi atau tidak valid!')" oninput="this.setCustomValidity('')">
+              <input name="telp" type="text" placeholder="No Telepon / Whatsapp*" title="No Telepon atau Whatsapp" required oninvalid="this.setCustomValidity('Nomor telepon atau whatsapp belum diisi!')" oninput="this.setCustomValidity('')">             
               <label for="buktiTF" class="uploadFile" title="Bukti Transfer">
-                <input type="file" id="buktiTF" accept="image/*" required><i class="fa-solid fa-upload"></i> Bukti Donasi*
+                <input name="foto" type="file" id="buktiTF" accept="images/*" required><i class="fa-solid fa-upload"></i> Bukti Donasi*
               </label>              
               <div class="g-recaptcha" data-sitekey="SITE_KEY"></div>
               <button id="submit" type="submit"><i class="fa-solid fa-check"></i> Konfirmasi</button>
