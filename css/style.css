@@ -1115,6 +1115,22 @@ hr {
 .donation a:hover {
   background-color: rgba(106, 166, 250, 0.88);
   color: white;
+  font-style: italic;
+}
+
+.donation center button {
+  padding: 8px;
+  background-color: rgba(214, 31, 123, 0.7);
+  color: white;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.donation center button:hover {
+  background-color: rgba(106, 166, 250, 0.88);
+  font-style: italic;
 }
 
 .donation .imgDonate {
