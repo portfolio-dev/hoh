@@ -493,3 +493,378 @@ slides8.forEach((slide8) => {
     slide8.addEventListener("touchstart", handleTouchStart8, false);
     slide8.addEventListener("touchend", handleTouchEnd8, false);
 });
+
+// SLIDE9
+const slides9 = document.querySelectorAll(".slide9");
+let counter9 = 0;
+let touchStartX9 = 0;
+let touchEndX9 = 0;
+
+slides9.forEach((slide9, index) => {
+    slide9.style.left = `${index * 100}%`;
+});
+
+const goPrev9 = () => {
+    if (counter9 === 0) {
+        counter9 = slides9.length - 1;
+        slide9Image();
+    } else {
+        counter9--;
+        slide9Image();
+    }
+};
+
+const goNext9 = () => {
+    if (counter9 === slides9.length - 1) {
+        counter9 = 0;
+        slide9Image();
+    } else {
+        counter9++;
+        slide9Image();
+    }
+};
+
+const slide9Image = () => {
+    slides9.forEach((slide9) => {
+        slide9.style.transform = `translateX(-${counter9 * 100}%)`;
+    });
+};
+
+const handleTouchStart9 = (event) => {
+    touchStartX9 = event.touches[0].clientX;
+};
+
+const handleTouchEnd9 = (event) => {
+    touchEndX9 = event.changedTouches[0].clientX;
+    handleGesture9();
+};
+
+const handleGesture9 = () => {
+    const gestureDelta9 = touchStartX9 - touchEndX9;
+    const swipeThreshold9 = 50;
+
+    if (gestureDelta9 > swipeThreshold9) {
+        goNext9();
+    } else if (gestureDelta9 < -swipeThreshold9) {
+        goPrev9();
+    }
+};
+
+// Menambahkan event listener untuk sentuhan
+slides9.forEach((slide9) => {
+    slide9.addEventListener("touchstart", handleTouchStart9, false);
+    slide9.addEventListener("touchend", handleTouchEnd9, false);
+});
+
+
+// SLIDE10  
+const slides10 = document.querySelectorAll(".slide10");
+let counter10 = 0;
+let touchStartX10 = 0;
+let touchEndX10 = 0;
+
+slides10.forEach((slide10, index) => {
+    slide10.style.left = `${index * 100}%`;
+});
+
+const goPrev10 = () => {
+    if (counter10 === 0) {
+        counter10 = slides10.length - 1;
+        slide10Image();
+    } else {
+        counter10--;
+        slide10Image();
+    }
+};
+
+const goNext10 = () => {
+    if (counter10 === slides10.length - 1) {
+        counter10 = 0;
+        slide10Image();
+    } else {
+        counter10++;
+        slide10Image();
+    }
+};
+
+const slide10Image = () => {
+    slides10.forEach((slide10) => {
+        slide10.style.transform = `translateX(-${counter10 * 100}%)`;
+    });
+};
+
+const handleTouchStart10 = (event) => {
+    touchStartX10 = event.touches[0].clientX;
+};
+
+const handleTouchEnd10 = (event) => {
+    touchEndX10 = event.changedTouches[0].clientX;
+    handleGesture10();
+};
+
+const handleGesture10 = () => {
+    const gestureDelta10 = touchStartX10 - touchEndX10;
+    const swipeThreshold10 = 50;
+
+    if (gestureDelta10 > swipeThreshold10) {
+        goNext10();
+    } else if (gestureDelta10 < -swipeThreshold10) {
+        goPrev10();
+    }
+};
+
+// Menambahkan event listener untuk sentuhan
+slides10.forEach((slide10) => {
+    slide10.addEventListener("touchstart", handleTouchStart10, false);
+    slide10.addEventListener("touchend", handleTouchEnd10, false);
+});
+
+
+
+// SLIDE11
+const slides11 = document.querySelectorAll(".slide11");
+let counter11 = 0;
+let touchStartX11 = 0;
+let touchEndX11 = 0;
+
+slides11.forEach((slide11, index) => {
+    slide11.style.left = `${index * 100}%`;
+});
+
+const goPrev11 = () => {
+    if (counter11 === 0) {
+        counter11 = slides11.length - 1;
+        slide11Image();
+    } else {
+        counter11--;
+        slide11Image();
+    }
+};
+
+const goNext11 = () => {
+    if (counter11 === slides11.length - 1) {
+        counter11 = 0;
+        slide11Image();
+    } else {
+        counter11++;
+        slide11Image();
+    }
+};
+
+const slide11Image = () => {
+    slides11.forEach((slide11) => {
+        slide11.style.transform = `translateX(-${counter11 * 100}%)`;
+    });
+};
+
+const handleTouchStart11 = (event) => {
+    touchStartX11 = event.touches[0].clientX;
+};
+
+const handleTouchEnd11 = (event) => {
+    touchEndX11 = event.changedTouches[0].clientX;
+    handleGesture11();
+};
+
+const handleGesture11 = () => {
+    const gestureDelta11 = touchStartX11 - touchEndX11;
+    const swipeThreshold11 = 50;
+
+    if (gestureDelta11 > swipeThreshold11) {
+        goNext11();
+    } else if (gestureDelta11 < -swipeThreshold11) {
+        goPrev11();
+    }
+};
+
+// Menambahkan event listener untuk sentuhan
+slides11.forEach((slide11) => {
+    slide11.addEventListener("touchstart", handleTouchStart11, false);
+    slide11.addEventListener("touchend", handleTouchEnd11, false);
+});
+
+// SLIDE12
+const slides12 = document.querySelectorAll(".slide12");
+let counter12 = 0;
+let touchStartX12 = 0;
+let touchEndX12 = 0;
+
+slides12.forEach((slide12, index) => {
+    slide12.style.left = `${index * 100}%`;
+});
+
+const goPrev12 = () => {
+    if (counter12 === 0) {
+        counter12 = slides12.length - 1;
+        slide12Image();
+    } else {
+        counter12--;
+        slide12Image();
+    }
+};
+
+const goNext12 = () => {
+    if (counter12 === slides12.length - 1) {
+        counter12 = 0;
+        slide12Image();
+    } else {
+        counter12++;
+        slide12Image();
+    }
+};
+
+const slide12Image = () => {
+    slides12.forEach((slide12) => {
+        slide12.style.transform = `translateX(-${counter12 * 100}%)`;
+    });
+};
+
+const handleTouchStart12 = (event) => {
+    touchStartX12 = event.touches[0].clientX;
+};
+
+const handleTouchEnd12 = (event) => {
+    touchEndX12 = event.changedTouches[0].clientX;
+    handleGesture12();
+};
+
+const handleGesture12 = () => {
+    const gestureDelta12 = touchStartX12 - touchEndX12;
+    const swipeThreshold12 = 50;
+
+    if (gestureDelta12 > swipeThreshold12) {
+        goNext12();
+    } else if (gestureDelta12 < -swipeThreshold12) {
+        goPrev12();
+    }
+};
+
+// Menambahkan event listener untuk sentuhan
+slides12.forEach((slide12) => {
+    slide12.addEventListener("touchstart", handleTouchStart12, false);
+    slide12.addEventListener("touchend", handleTouchEnd12, false);
+});
+
+// SLIDE13
+const slides13 = document.querySelectorAll(".slide13");
+let counter13 = 0;
+let touchStartX13 = 0;
+let touchEndX13 = 0;
+
+slides13.forEach((slide13, index) => {
+    slide13.style.left = `${index * 100}%`;
+});
+
+const goPrev13 = () => {
+    if (counter13 === 0) {
+        counter13 = slides13.length - 1;
+        slide13Image();
+    } else {
+        counter13--;
+        slide13Image();
+    }
+};
+
+const goNext13 = () => {
+    if (counter13 === slides13.length - 1) {
+        counter13 = 0;
+        slide13Image();
+    } else {
+        counter13++;
+        slide13Image();
+    }
+};
+
+const slide13Image = () => {
+    slides13.forEach((slide13) => {
+        slide13.style.transform = `translateX(-${counter13 * 100}%)`;
+    });
+};
+
+const handleTouchStart13 = (event) => {
+    touchStartX13 = event.touches[0].clientX;
+};
+
+const handleTouchEnd13 = (event) => {
+    touchEndX13 = event.changedTouches[0].clientX;
+    handleGesture13();
+};
+
+const handleGesture13 = () => {
+    const gestureDelta13 = touchStartX13 - touchEndX13;
+    const swipeThreshold13 = 50;
+
+    if (gestureDelta13 > swipeThreshold13) {
+        goNext13();
+    } else if (gestureDelta13 < -swipeThreshold13) {
+        goPrev13();
+    }
+};
+
+// Menambahkan event listener untuk sentuhan
+slides13.forEach((slide13) => {
+    slide13.addEventListener("touchstart", handleTouchStart13, false);
+    slide13.addEventListener("touchend", handleTouchEnd13, false);
+});
+
+// SLIDE14
+const slides14 = document.querySelectorAll(".slide14");
+let counter14 = 0;
+let touchStartX14 = 0;
+let touchEndX14 = 0;
+
+slides14.forEach((slide14, index) => {
+    slide14.style.left = `${index * 100}%`;
+});
+
+const goPrev14 = () => {
+    if (counter14 === 0) {
+        counter14 = slides14.length - 1;
+        slide14Image();
+    } else {
+        counter14--;
+        slide14Image();
+    }
+};
+
+const goNext14 = () => {
+    if (counter14 === slides14.length - 1) {
+        counter14 = 0;
+        slide14Image();
+    } else {
+        counter14++;
+        slide14Image();
+    }
+};
+
+const slide14Image = () => {
+    slides14.forEach((slide14) => {
+        slide14.style.transform = `translateX(-${counter14 * 100}%)`;
+    });
+};
+
+const handleTouchStart14 = (event) => {
+    touchStartX14 = event.touches[0].clientX;
+};
+
+const handleTouchEnd14 = (event) => {
+    touchEndX14 = event.changedTouches[0].clientX;
+    handleGesture14();
+};
+
+const handleGesture14 = () => {
+    const gestureDelta14 = touchStartX14 - touchEndX14;
+    const swipeThreshold14 = 50;
+
+    if (gestureDelta14 > swipeThreshold14) {
+        goNext14();
+    } else if (gestureDelta14 < -swipeThreshold14) {
+        goPrev14();
+    }
+};
+
+// Menambahkan event listener untuk sentuhan
+slides14.forEach((slide14) => {
+    slide14.addEventListener("touchstart", handleTouchStart14, false);
+    slide14.addEventListener("touchend", handleTouchEnd14, false);
+});

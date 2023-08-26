@@ -96,11 +96,17 @@ function showNews(newsId) {
     var news2 = document.getElementById('news2');
     var news3 = document.getElementById('news3');
     var news4 = document.getElementById('news4');
+    var news5 = document.getElementById('news5');
+    var news6 = document.getElementById('news6');
+    var news7 = document.getElementById('news7');
 
     news1.style.display = (newsId === 1) ? "block" : "none";
     news2.style.display = (newsId === 2) ? "block" : "none";
     news3.style.display = (newsId === 3) ? "block" : "none";
     news4.style.display = (newsId === 4) ? "block" : "none";
+    news5.style.display = (newsId === 5) ? "block" : "none";
+    news6.style.display = (newsId === 6) ? "block" : "none";
+    news7.style.display = (newsId === 7) ? "block" : "none";
 }
 
 // Contact Form Master
